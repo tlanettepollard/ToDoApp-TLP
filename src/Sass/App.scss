@@ -1,13 +1,14 @@
 // Abstracts
-
+@import './abstracts/variables';
 // Base
 @import './base/base'; 
 @import './base/fonts';
 
 // Components
 
-// Layout
 
+// Layout
+@import './layout/header';
 
 // Vendors
 @import './vendors/normalize';
