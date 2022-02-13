@@ -10,9 +10,13 @@ Resources:
 - [Implementing Dark Mode in your React App with SCSS](https://dev.to/cmcwebcode40/simple-react-dark-mode-with-scss-lae)
 - [Creating Add/Remove Effects for list items](https://dev.to/cmcwebcode40/simple-react-dark-mode-with-scss-lae)
 
-
 ## 02/13/2022
-Just found out today that Node Sass has been deprecated. I got an error "Cannot find module sass". Thank you Stack Overflow! 
+
+Just found out today that Node Sass has been deprecated. I got an error "Cannot find module sass". Thank you Stack Overflow! I decided to erase my app and start again. 🤞🏾
+
+Resources:
+
+- [Add Sass to your React App in 2021!](https://medium.com/nerd-for-tech/add-sass-to-your-react-app-in-2021-here-is-how-c7260c323a5a)
 
 ---
 
