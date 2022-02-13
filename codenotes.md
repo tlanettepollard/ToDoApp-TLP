@@ -12,7 +12,7 @@ Resources:
 
 ## 02/13/2022
 
-Just found out today that Node Sass has been deprecated. I got an error "Cannot find module sass". Thank you Stack Overflow! I decided to erase my app and start again. 🤞🏾
+Just found out today that Node Sass has been deprecated. I got an error "Cannot find module sass". Thank you Stack Overflow! I decided to erase my app and start again. 🤞🏾 Now that I've started, I've been following the tutorial on MDN. I used a ul list for my tasks. I have six, but I know I can refactor them to be less.
 
 Resources:
 
@@ -25,7 +25,7 @@ Code holder
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-  Todo
+Todo
 
   <!-- Add dynamic number --> items left
 
@@ -44,3 +44,71 @@ Drag and drop to reorder list
 
 Attributions:
 [Kremenovic](https://github.com/kremenovic/react-todo-app)-- resource sites for working with dark theme
+
+
+
+<ul
+               className='todo-list'
+               aria-labelledby='list-heading'
+            >
+                <li className='todo'>
+                    <FontAwesomeIcon
+                        className='input-icon'
+                        icon={faCircle}
+                    />
+                    <input id='todo-0' type='checkbox' defaultChecked={true} />
+                    <label className='todo-label' htmlFor='todo-0'>
+                        Pick up groceries
+                    </label>
+                </li>
+                <li className='todo'>
+                    <FontAwesomeIcon
+                        className='input-icon'
+                        icon={faCircle}
+                    />
+                    <input id='todo-1' type='checkbox' />
+                    <label className='todo-label' htmlFor='todo-1'>
+                        Take Shinxley and Mozeley to the vet
+                    </label>
+                </li>
+                <li className='todo'>
+                    <FontAwesomeIcon
+                        className='input-icon'
+                        icon={faCircle}
+                    />
+                    <input id='todo-2' type='checkbox' />
+                    <label className='todo-label' htmlFor='todo-2'>
+                        Vacuum
+                    </label>
+                </li>
+                <li className='todo'>
+                    <FontAwesomeIcon
+                        className='input-icon'
+                        icon={faCircle}
+                    />
+                    <input id='todo-3' type='checkbox' />
+                    <label className='todo-label' htmlFor='todo-3'>
+                        Wash clothes
+                    </label>
+                </li>
+                <li className='todo'>
+                    <FontAwesomeIcon
+                        className='input-icon'
+                        icon={faCircle}
+                    />
+                    <input id='todo-4' type='checkbox' />
+                    <label className='todo-label' htmlFor='todo-4'>
+                        Make doctor's appointment
+                    </label>
+                </li>
+                <li className='todo'>
+                    <FontAwesomeIcon
+                        className='input-icon'
+                        icon={faCircle}
+                    />
+                    <input id='todo-5' type='checkbox' />
+                    <label className='todo-label' htmlFor='todo-5'>
+                        Make hair appointment with Jenice.
+                    </label>
+                </li>
+            </ul>
