@@ -1,14 +1,17 @@
 import React from 'react';
 import { Header } from './index';
+import { ToDoList } from './index';
 
 
 
 
 function App() {
   return (
-    
-    <div className="container">
-      <Header />
+    <div>
+      <div>
+        <Header />
+        <ToDoList />
+      </div>
     </div>
 
   );
