@@ -1,14 +1,20 @@
 import React from 'react';
 import { Header } from './index';
+import { ToDoList } from './index';
 
 
 
 
 function App() {
+  
   return (
-    <div className="App">
-      <Header />
+    <div>
+      <div>
+        <Header />
+        <ToDoList />
+      </div>
     </div>
+
   );
 }
 
