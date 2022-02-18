@@ -16,12 +16,16 @@ function App(props) {
   
   const taskList = props.tasks.map(task => (
     <ToDoList id={task.id} name={task.name} completed={task.completed} key={task.id} />));
+  
+  function addTask(name) {
+    alert(name);
+  }
 
   return (
 
     <div className='todoapp stack-large'>
       <Header />
-      <Form />
+      <Form addTask={addTask}/>
       <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
         {taskList}
       </ul>
