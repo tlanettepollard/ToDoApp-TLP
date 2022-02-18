@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState } from 'react';
 
 import Header from './components/Header';
 import Form from './components/Form';
@@ -6,12 +6,12 @@ import ToDoList from './components/ToDoList';
 import Filters from './components/Filters';
 
 import './scss/main.scss';
+import dataList from './data';
 
 
 
-
-function App(props) {
-  //Rendering DATA with interation
+const App = () =>{
+  const MY_TASKS = localStorage.getItem('myTasks') ? JSON.parse(localStorage.getItem('myTasks')) : dataList;
   
   return (
 
@@ -29,4 +29,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default App
