@@ -66,6 +66,11 @@ body {
   white-space: nowrap;
 }
 
+[class*=stack] > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* End Global Styles */
 .todoapp {
   position: relative;
