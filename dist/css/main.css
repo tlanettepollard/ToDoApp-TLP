@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 /* RESETS */
 *,
 *::before,
@@ -46,7 +45,7 @@ body {
   width: 100%;
   margin: 0 auto;
   font: 1.6rem/1.25 Arial, sans-serif;
-  
+  background: #fafafa;
 }
 @media screen and (min-width: 620px) {
   body {
@@ -427,4 +426,4 @@ template {
  */
 [hidden] {
   display: none;
-}/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=main.css.map */
