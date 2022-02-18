@@ -1,33 +1,33 @@
 const dataList = [
     {
-        text: 'Make hair appointment',
-        id: 0,
-        listStatus: true,
+        id: "todo-0",
+        name: 'Make hair appointment',
+        completed: true
     }, 
     {
-        text: 'Vacuum',
-        id: 1,
-        listStatus: false,
+        id: "todo-1",
+        name: 'Pick up groceries',
+        completed: true
     },
     {
-        text: 'Pick up groceries',
-        id: 2,
-        listStatus: false,
+        id: "todo-2",
+        name: 'Vet appointment',
+        completed: true
     },
     {
-        text: 'Wash clothes',
-        id: 3,
-        listStatus: false,
+        id: "todo-3",
+        name: 'Pick up prescription',
+        completed: true
     },
     {
-        text: 'Sort mail',
-        id: 4,
-        listStatus: false,
+        id: "todo-4",
+        name: 'Wash clothes',
+        completed: true
     },
     {
-        text: 'Take cats to the vet',
-        id: 5,
-        listStatus: false,
+        id: "todo-5",
+        name: 'Vacuum',
+        completed: true
     },
 ]
 

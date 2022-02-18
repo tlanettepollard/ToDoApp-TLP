@@ -7,21 +7,22 @@ import Filters from './components/Filters';
 
 
 import './scss/main.scss';
+ 
 
 
 
-function App() {
+function App(props) {
+  //Rendering DATA with interation
   
   return (
+
     <div className='todoapp stack-large'>
       <Header />
       <Form />
-      <ul>
-        <ToDoList name='Eat' completed={true} id="todo-0"/>
-        <ToDoList name='Sleep' completed={false} id="todo-1"/>
-        <ToDoList name='Walk' completed={false} id="todo-2"/>
-      <Filters/>
+      <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
+        <ToDoList />
       </ul>
+      <Filters/>
       <p>Drag and drop to reorder list</p>
     </div>
 

@@ -8,11 +8,11 @@ export default function ToDoList(props) {
 
 
     return (
-        <ul
-        className="todo-list stack-large stack-exception"
-        aria-labelledby="list-heading"
+
+        <div
+        className="stack-small"
         >
-            <li className="todo stack-small">
+            <div className="todo stack-small">
                 
                 <div className="c-cb">
                     <FontAwesomeIcon
@@ -29,7 +29,7 @@ export default function ToDoList(props) {
                     <img src={crossIcon} alt="delete-icon"></img>
                 </button>
                 
-            </li>
-      </ul>
+            </div>
+      </div>
     );
 }
