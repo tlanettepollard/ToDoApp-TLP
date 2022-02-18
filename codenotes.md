@@ -18,6 +18,13 @@ Resources:
 
 - [Add Sass to your React App in 2021!](https://medium.com/nerd-for-tech/add-sass-to-your-react-app-in-2021-here-is-how-c7260c323a5a)
 
+### 02/17/2022
+
+Today I'm following the MDN Tutorial. I'm trying to learn from the tutorial as I work on this app. I learned that visually-hidden will hide the element from sighted users, but be available for screen readers.
+
+Resources:
+[Beginning our React todo list](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning)
+
 ---
 
 Code holder
@@ -44,8 +51,6 @@ Drag and drop to reorder list
 
 Attributions:
 [Kremenovic](https://github.com/kremenovic/react-todo-app)-- resource sites for working with dark theme
-
-
 
 <ul
                className='todo-list'

@@ -1,10 +1,93 @@
-html {
-    box-sizing: border-box;
-}
-
+/* RESETS */
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
+    outline: 1px solid black;
 }
 
+html {
+    font: 62.5% / 1.15 sans-serif;
+    margin: 0;
+}
+
+h1, 
+h2 {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+input[type="text"] {
+    border-radius: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 68rem;
+    margin: 0 auto;
+    font: 1.6rem/1.25 Arial, sans-serif;
+    //background-color: #f5f5f5;
+    //color: #4d4d4d; 
+
+    @media screen and (min-width: 620px) {
+        font-size: 1.9rem;
+        line-height: 1.31579;
+    }
+}
+
+/* Global Styles */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    
+}
+
+[class*='stack'] > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+/* End Global Styles */ 
+
+.todoapp {
+    position: relative;
+    padding: 1rem;
+    margin: 2rem 0 4rem 0;
+
+    @media screen and (min-width: 550px) {
+        padding: 4rem;
+    }  
+}
+
+.todoapp > * {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}

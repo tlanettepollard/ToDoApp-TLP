@@ -2,32 +2,32 @@ const dataList = [
     {
         text: 'Make hair appointment',
         id: 0,
-        completed: true,
+        listStatus: true,
     }, 
     {
         text: 'Vacuum',
         id: 1,
-        completed: false,
+        listStatus: false,
     },
     {
         text: 'Pick up groceries',
         id: 2,
-        completed: false,
+        listStatus: false,
     },
     {
         text: 'Wash clothes',
         id: 3,
-        completed: false,
+        listStatus: false,
     },
     {
         text: 'Sort mail',
         id: 4,
-        completed: false,
+        listStatus: false,
     },
     {
         text: 'Take cats to the vet',
         id: 5,
-        completed: false,
+        listStatus: false,
     },
 ]
 
