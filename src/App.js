@@ -5,7 +5,10 @@ import Form from './components/Form';
 import ToDoList from './components/ToDoList';
 import Filters from './components/Filters';
 
+
 import './scss/main.scss';
+
+
 
 function App() {
   
@@ -14,9 +17,9 @@ function App() {
       <Header />
       <Form />
       <ul>
-        <ToDoList name='Eat' completed={true}/>
-        <ToDoList name='Sleep' completed={false} />
-        <ToDoList name='Walk' completed={false}/>
+        <ToDoList name='Eat' completed={true} id="todo-0"/>
+        <ToDoList name='Sleep' completed={false} id="todo-1"/>
+        <ToDoList name='Walk' completed={false} id="todo-2"/>
       <Filters/>
       </ul>
       <p>Drag and drop to reorder list</p>
