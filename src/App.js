@@ -5,9 +5,8 @@ import Form from './components/Form';
 import ToDoList from './components/ToDoList';
 import Filters from './components/Filters';
 
-
 import './scss/main.scss';
- 
+
 
 
 
