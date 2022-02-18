@@ -3,10 +3,12 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    outline: 1px solid black;
 }
 
 html {
     font: 62.5% / 1.15 sans-serif;
+    margin: 0;
 }
 
 h1, 
@@ -46,6 +48,11 @@ body {
     font: 1.6rem/1.25 Arial, sans-serif;
     //background-color: #f5f5f5;
     //color: #4d4d4d; 
+
+    @media screen and (min-width: 620px) {
+        font-size: 1.9rem;
+        line-height: 1.31579;
+    }
 }
 
 /* Global Styles */
@@ -58,4 +65,21 @@ body {
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
     
+}
+/* End Global Styles */ 
+
+.todoapp {
+    position: relative;
+    padding: 1rem;
+    margin: 2rem 0 4rem 0;
+
+    @media screen and (min-width: 550px) {
+        padding: 4rem;
+    }  
+}
+
+.todoapp > * {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -20,7 +20,7 @@ function App() {
           className='input input__lg'
           name="text"
           autoComplete='off'
-          placeHolder='Create a new todo...'
+          placeholder='Create a new todo...'
         />
       </form>
       <ul
@@ -86,6 +86,8 @@ function App() {
           <span className="visually-hidden"> tasks</span>
         </button>
       </div>
+
+      <p>Drag and drop to reorder list</p>
     </div>
 
 

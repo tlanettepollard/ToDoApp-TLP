@@ -20,7 +20,7 @@ Resources:
 
 ### 02/17/2022
 
-Today I'm following the MDN Tutorial. I'm trying to learn from the tutorial as I work on this app.
+Today I'm following the MDN Tutorial. I'm trying to learn from the tutorial as I work on this app. I learned that visually-hidden will hide the element from sighted users, but be available for screen readers.
 
 Resources:
 [Beginning our React todo list](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning)
