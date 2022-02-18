@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react';
+import React from 'react';
 
 import Header from './components/Header';
 import Form from './components/Form';
@@ -6,22 +6,28 @@ import ToDoList from './components/ToDoList';
 import Filters from './components/Filters';
 
 import './scss/main.scss';
-import dataList from './data';
+//import dataList from './data';
 
 
 
-const App = () =>{
-  const MY_TASKS = localStorage.getItem('myTasks') ? JSON.parse(localStorage.getItem('myTasks')) : dataList;
+function App(props) {
+/*const App = (props) =>{
+  const MY_TASKS = localStorage.getItem('myTasks') ? JSON.parse(localStorage.getItem('myTasks')) : dataList;*/
   
+  const taskList = props.tasks.map(task => (
+    <ToDoList id={task.id} name={task.name} completed={task.completed} key={task.id} />));
+
   return (
 
     <div className='todoapp stack-large'>
       <Header />
       <Form />
       <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
-        <ToDoList />
+        {taskList}
       </ul>
-      <Filters/>
+      <div className='filters btn-group stack-exception'>
+        <Filters />
+      </div>
       <p>Drag and drop to reorder list</p>
     </div>
 
