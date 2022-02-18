@@ -27,7 +27,15 @@ Resources:
 
 ### 02/18/2022
 
-Hi. Started early this morning. Finally figured out why I was having an undefined error for my Sass variables. I also changed the folder back to scss.
+Hi. Started early this morning. Finally figured out why I was having an undefined error for my Sass variables. I also changed the folder back to scss. I learned today about making a unique ToDo task using name and adding props to the ToDoList Component.
+
+
+
+
+
+
+
+
 
 ---
 

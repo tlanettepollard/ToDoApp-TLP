@@ -13,9 +13,12 @@ function App() {
     <div className='todoapp stack-large'>
       <Header />
       <Form />
-      <ToDoList />
+      <ul>
+        <ToDoList name='Eat' completed={true}/>
+        <ToDoList name='Sleep' completed={false} />
+        <ToDoList name='Walk' completed={false}/>
       <Filters/>
-
+      </ul>
       <p>Drag and drop to reorder list</p>
     </div>
 
