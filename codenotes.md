@@ -25,6 +25,10 @@ Today I'm following the MDN Tutorial. I'm trying to learn from the tutorial as I
 Resources:
 [Beginning our React todo list](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning)
 
+### 02/18/2022
+
+Hi. Started early this morning. Finally figured out why I was having an undefined error for my Sass variables. I also changed the folder back to scss.
+
 ---
 
 Code holder
