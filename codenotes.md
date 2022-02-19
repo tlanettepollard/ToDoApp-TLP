@@ -44,7 +44,9 @@ Resources:
 
 - [Mileine](https://github.com/mileine/frontendmentor-todo-app-react)
 
----
+### 02/19/2022
+
+## Happy Saturday! Back again working on my todo list app. I have a better understanding of React components. 
 
 Code holder
 

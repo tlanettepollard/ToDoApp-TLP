@@ -26,3 +26,18 @@ $very-dk-grayish-blue-dth-2: hsl(237, 14%, 26%);
 $body-font-family: 'Josefin Sans', sans-serif;
 $weight-bold: 700;
 $weight-regular: 400;
+
+// Breakpoints
+$bp-mobile-start: 320px;
+$bp-mobile-end: 480px;
+$bp-tablet-start: 481px;
+$bp-tablet-end: 768px;
+$bp-notebook-start: 769px;
+$bp-notebook-end: 1024px;
+$bp-lg-screen-start: 1025px;
+$bp-lg-screen-end: 1200px;
+$bp-xl-screen-start: 1201px;
+$bp-xl-screen-end: 1440px;
+$bp-xxl-screen-start: 1441px;
+$bp-xxl-screen-end: 1920px;
+
