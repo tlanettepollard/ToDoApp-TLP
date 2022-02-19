@@ -78,19 +78,19 @@ body {
 
 /* End Global Styles */ 
 
-.todoapp {
+.wrapper {
     position: relative;
-    padding: 1rem;
-    margin: 2rem 0 4rem 0;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
     
-
-    @media screen and (min-width: 550px) {
-        padding: 4rem;
+    .light {
+        background-color: $very-light-gray;
+        
     }
+    
 }
 
-.todoapp > * {
-    max-width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
-}
