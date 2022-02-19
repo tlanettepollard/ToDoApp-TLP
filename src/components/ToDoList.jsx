@@ -7,6 +7,7 @@ function usePrevious(value) {
     useEffect(() => {
         ref.current = value;
     });
+    return ref.current;
 }
 
 export default function ToDoList(props) {

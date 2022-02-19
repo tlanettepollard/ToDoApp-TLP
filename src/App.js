@@ -102,6 +102,14 @@ function App(props) {
   const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
+  const listHeadingRef = useRef(null);
+  const prevTaskLength = usePrevious(tasks.length);
+
+  useEffect(() => {
+    if (tasks.length - prevTaskLength === -1) {
+      listHeadingRef.current.focus();
+    }
+  }, [tasks.length, prevTaskLength]);
 
 
   return (
@@ -113,9 +121,9 @@ function App(props) {
         {taskList}
       </ul>
       <div className='filters btn-group stack-exception'>
-        <p id="list-heading">
+        <h4 id="list-heading">
           {headingText}
-        </p>
+        </h4>
         {filterList}
       </div>
       <p>Drag and drop to reorder list</p>
