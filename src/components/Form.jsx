@@ -5,14 +5,14 @@ import { faCircle } from '@fortawesome/free-regular-svg-icons';
 function Form(props) {
     const [name, setName] = useState('');
 
+    function handleChange(e) {
+        setName(e.target.value);
+    }
+    
     function handleSubmit(e) {
         e.preventDefault();
         props.addTask(name);
         setName('');
-    }
-
-    function handleChange(e) {
-        setName(e.target.value);
     }
 
     return (

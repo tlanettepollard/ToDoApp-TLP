@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Header from './components/Header';
 import Form from './components/Form';
 import ToDoList from './components/ToDoList';
 import Filters from './components/Filters';
+
 
 import './scss/main.scss';
 //import dataList from './data';
@@ -13,12 +14,14 @@ import './scss/main.scss';
 function App(props) {
 /*const App = (props) =>{
   const MY_TASKS = localStorage.getItem('myTasks') ? JSON.parse(localStorage.getItem('myTasks')) : dataList;*/
+  const [tasks, setTasks] = useState(props.tasks);
   
-  const taskList = props.tasks.map(task => (
+  const taskList = tasks.map(task => (
     <ToDoList id={task.id} name={task.name} completed={task.completed} key={task.id} />));
   
   function addTask(name) {
-    alert(name);
+    const newTask = {id: 'id', name: name, completed: false};
+    setTasks([...tasks, newTask]);
   }
 
   return (
