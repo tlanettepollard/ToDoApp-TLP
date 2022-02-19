@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import ToDoList from './components/ToDoList';
 import Filters from './components/Filters';
-
+import { nanoid } from 'nanoid';
 
 import './scss/main.scss';
 //import dataList from './data';
@@ -20,7 +20,7 @@ function App(props) {
     <ToDoList id={task.id} name={task.name} completed={task.completed} key={task.id} />));
   
   function addTask(name) {
-    const newTask = {id: 'id', name: name, completed: false};
+    const newTask = {id: 'todo-' + nanoid(), name: name, completed: false};
     setTasks([...tasks, newTask]);
   }
 
@@ -42,4 +42,4 @@ function App(props) {
   );
 }
 
-export default App
+export default App;
