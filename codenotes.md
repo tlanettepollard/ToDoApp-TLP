@@ -34,6 +34,10 @@ Hi. Started early this morning. Finally figured out why I was having an undefine
 
 #### Learned: useState() creates a piece of state for a component, and its only parameter determines the initial value of that state. It returns two things: the state, and a function that can be used to update the state later.
 
+#### Learned: how to use an object spread syntax to create a new object and toggle checked property before returning it.
+
+#### Learned: using an Array.prototype.filter() to test and exclude a task from the new array if the id prop matches the id parameter passed into the deleteTask();
+
 Resources:
 
 - [Mileine](https://github.com/mileine/frontendmentor-todo-app-react)
