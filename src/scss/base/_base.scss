@@ -83,14 +83,19 @@ body {
     width: 100%;
     padding-top: 5rem;
     padding-bottom: 5rem;
+      
+    
+}
+.light {
+    background-image: url(../../images/bg-mobile-light.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
-    
-    .light {
-        background-color: $very-light-gray;
-        
-    }
-    
-}
 
+    @include tablet-breakpoint {
+        background-image: url(../../images/bg-desktop-light.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+    }
+}
