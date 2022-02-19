@@ -128,8 +128,6 @@ function App(props) {
       </div>
       <p>Drag and drop to reorder list</p>
     </div>
-
-
   );
 }
 

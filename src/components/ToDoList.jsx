@@ -28,8 +28,11 @@ export default function ToDoList(props) {
     function handleSubmit(e) {
         e.preventDefault();
         if (!newName.trim()) {
-            setEditing(false);
+            return;
         }
+        props.editTask(props.id, newName);
+        setNewName('');
+        setEditing(false);
     }
 
     const editingTemplate = (
