@@ -20,9 +20,11 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 function App(props) {
 /*const App = (props) =>{
   const MY_TASKS = localStorage.getItem('myTasks') ? JSON.parse(localStorage.getItem('myTasks')) : dataList;*/
+  const [themeLight, setThemeLight] = useState(true);
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState('All');
 
+  const themeClass = themeLight ? 'light' : 'dark';
 
   // Tasks Completed
   function toggleTaskCompleted(id) {
@@ -80,8 +82,8 @@ function App(props) {
 
   return (
 
-    <div className='todoapp stack-large'>
-      <Header />
+    <div className={`wrapper ${themeClass}`}>
+      <Header themeLight={themeLight} setThemeLight={setThemeLight} />
       <Form addTask={addTask}/>
       <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
         {taskList}
