@@ -20,7 +20,10 @@ export default function ToDoList(props) {
                     icon={faCircle}
                             />
                     <img src={checkIcon} alt="check-icon"></img>
-                    <input id={props.id} type="checkbox" defaultChecked={props.completed} />
+                    <input
+                        id={props.id} type="checkbox" defaultChecked={props.completed}
+                        onChange={() => props.toggleTaskCompleted(props.id)}
+                    />
                     <label className="todo-label" htmlFor={props.id}>
                     {props.name}
                     </label>
