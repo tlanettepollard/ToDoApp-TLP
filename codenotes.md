@@ -46,7 +46,9 @@ Resources:
 
 ### 02/19/2022
 
-## Happy Saturday! Back again working on my todo list app. I have a better understanding of React components. 
+## Happy Saturday! Back again working on my todo list app. I have a better understanding of React components.
+
+---
 
 Code holder
 
@@ -138,3 +140,8 @@ Attributions:
                     </label>
                 </li>
             </ul>
+
+<FontAwesomeIcon
+                        className='input-icon'
+                        icon={faCircle}
+                    />
