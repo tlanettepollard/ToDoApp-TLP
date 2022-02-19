@@ -46,6 +46,7 @@ function App(props) {
     setTasks(remainingTasks);
   }
   
+  // Filtering tasks 
   const taskList = tasks
     .filter(FILTER_MAP[filter])
     .map(task => (
@@ -69,7 +70,6 @@ function App(props) {
   ));
   
   
-  
   // Add Task
   function addTask(name) {
     const newTask = {id: 'todo-' + nanoid(), name: name, completed: false};
@@ -80,6 +80,8 @@ function App(props) {
   const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
+
+  
   return (
 
     <div className={`wrapper ${themeClass}`}>
