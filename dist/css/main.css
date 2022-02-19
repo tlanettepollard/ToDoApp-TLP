@@ -1,4 +1,5 @@
 /* RESETS */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -76,12 +77,15 @@ body {
   width: 100%;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
 }
-.wrapper .light {
-  background-color: #fafafa;
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 .form-control {
