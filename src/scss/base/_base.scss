@@ -87,15 +87,5 @@ body {
     
 }
 .light {
-    background-image: url(../../images/bg-mobile-light.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-
-    @include tablet-breakpoint {
-        background-image: url(../../images/bg-desktop-light.jpg);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: contain;
-    }
+    
 }
