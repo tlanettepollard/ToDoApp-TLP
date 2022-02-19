@@ -38,6 +38,8 @@ Hi. Started early this morning. Finally figured out why I was having an undefine
 
 #### Learned: using an Array.prototype.filter() to test and exclude a task from the new array if the id prop matches the id parameter passed into the deleteTask();
 
+#### Learned: how React deals with events and handles state, and implemented functionality to add tasks, delete tasks, and toggle tasks as completed.
+
 Resources:
 
 - [Mileine](https://github.com/mileine/frontendmentor-todo-app-react)
