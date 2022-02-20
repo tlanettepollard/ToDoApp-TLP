@@ -1,5 +1,6 @@
 // Abstracts
 @import 'abstracts/mixins';
+@import 'abstracts/themes';
 @import 'abstracts/variables';
 
 // Base
@@ -9,7 +10,6 @@
 @import 'base/typography';
 
 // Components
-@import 'components/attribution';
 @import 'components/filters';
 @import 'components/form';
 @import 'components/header';

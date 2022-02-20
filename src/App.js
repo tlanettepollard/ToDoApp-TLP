@@ -28,11 +28,15 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 function App(props) {
 /*const App = (props) =>{
   const MY_TASKS = localStorage.getItem('myTasks') ? JSON.parse(localStorage.getItem('myTasks')) : dataList;*/
-  
+  const [theme, setTheme] = useState('light');
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState('All');
 
   
+  // Toggle Theme
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  }
 
   // Tasks Completed
   function toggleTaskCompleted(id) {
@@ -47,6 +51,7 @@ function App(props) {
     });
     setTasks(updatedTasks);
   }
+
 
   // Deleting a task
   function deleteTask(id) {
@@ -114,9 +119,9 @@ function App(props) {
 
   return (
 
-    <div>
+    <div className={`container`}>
       <div className='main'>
-        <Header  />
+        <Header theme={theme} toggleTheme={toggleTheme}/>
         <Form addTask={addTask}/>
         <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
           {taskList}
@@ -129,7 +134,7 @@ function App(props) {
         </div>
         <span>Drag and drop to reorder list</span>
       </div>
-      <section class="attribution">
+      <section className="attribution">
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer'>Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/tlanettepollard">Trista Lanette Pollard</a>.</p>
       </section>
