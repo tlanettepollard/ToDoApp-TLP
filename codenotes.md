@@ -52,6 +52,10 @@ Happy Saturday! Back again working on my todo list app. I have a better understa
 
 Morning! My goal today is to add style and work on my theme-switcher. I have found a lot of research/samples for React apps.
 
+Resources:
+
+- [Mileine](https://github.com/mileine/frontendmentor-todo-app-react)-- used as reference for organizing theme and building theme changer.
+
 ---
 
 Code holder
