@@ -1,9 +1,23 @@
+
+
 @mixin flex ($direction, $justifyContent, $alignItems) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justifyContent;
     align-items: $alignItems;
-}
+};
+
+@mixin mobile {
+    @media screen and (max-width: #{$mobile-width}) {
+        @content
+    }
+};
+
+@mixin tablet {
+    @media screen and (min-width: #{$mobile-width} + 1) {
+        @content
+    }
+};
 
 
 

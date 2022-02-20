@@ -1,3 +1,6 @@
+@import '../abstracts/mixins';
+@import '../abstracts/themes';
+@import '../abstracts/variables';
 
 
 /* RESETS */
@@ -58,9 +61,11 @@ body {
 }
 
 /* Added Reset */
-.wrapper {
-    position: relative;
-    width: 100%;
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    @include backgroundImg;
+    @include apply-theme-color('background-color', 'container-bg-color');
     padding: 0 2rem;
 }
 
@@ -101,7 +106,7 @@ main {
 /* End Global Styles */ 
 
 
-/* Theme */
+/* Theme 
 @media (prefers-color-scheme: light) {
     :root {
         $page-bg: $very-light-gray;
@@ -161,3 +166,4 @@ main {
     $task-name-uncheck-color: $light-grayish-blue-dth;
     $input-color: $light-grayish-blue-dth;
 }
+*/
