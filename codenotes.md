@@ -55,6 +55,7 @@ Morning! My goal today is to add style and work on my theme-switcher. I have fou
 Resources:
 
 - [Mileine](https://github.com/mileine/frontendmentor-todo-app-react)-- used as reference for organizing theme and building theme changer.
+- [Kremenovic](https://github.com/kremenovic/react-todo-app)-- resource sites for working with dark theme
 
 ---
 
@@ -80,8 +81,7 @@ Drag and drop to reorder list
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
-Attributions:
-[Kremenovic](https://github.com/kremenovic/react-todo-app)-- resource sites for working with dark theme
+
 
 <ul
                className='todo-list'

@@ -86,6 +86,15 @@ main {
   margin-bottom: 0;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 /* End Global Styles */
 /* Theme */
 .attribution {

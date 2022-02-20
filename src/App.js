@@ -115,18 +115,24 @@ function App(props) {
   return (
 
     <div>
-      <Header  />
-      <Form addTask={addTask}/>
-      <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
-        {taskList}
-      </ul>
-      <div className='filters btn-group stack-exception'>
-        <h4 id="list-heading">
-          {headingText}
-        </h4>
-        {filterList}
+      <div className='main'>
+        <Header  />
+        <Form addTask={addTask}/>
+        <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
+          {taskList}
+        </ul>
+        <div className='filters btn-group stack-exception'>
+          <h4 id="list-heading">
+            {headingText}
+          </h4>
+          {filterList}
+        </div>
+        <span>Drag and drop to reorder list</span>
       </div>
-      <p>Drag and drop to reorder list</p>
+      <section class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer'>Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/tlanettepollard">Trista Lanette Pollard</a>.</p>
+      </section>
     </div>
   );
 }
