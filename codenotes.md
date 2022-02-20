@@ -46,7 +46,11 @@ Resources:
 
 ### 02/19/2022
 
-## Happy Saturday! Back again working on my todo list app. I have a better understanding of React components.
+Happy Saturday! Back again working on my todo list app. I have a better understanding of React components.
+
+### 02/20/2022
+
+Morning! My goal today is to add style and work on my theme-switcher. I have found a lot of research/samples for React apps.
 
 ---
 

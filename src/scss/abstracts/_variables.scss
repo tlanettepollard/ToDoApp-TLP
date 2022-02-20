@@ -13,6 +13,11 @@ $light-grayish-blue-lth: hsl(233, 11%, 84%);
 $dark-grayish-blue-lth: hsl(236, 9%, 61%);
 $very-dk-grayish-blue-lth: hsl(235, 19%, 35%);
 
+$header-bg-image-mobile-light: url('../../images/bg-mobile-light.jpg');
+$header-bg-image-desktop-light: url('../../images/bg-desktop-light.jpg');
+
+$icon-moon: url('../../images/icon-moon.svg');
+
 // Dark Theme 
 $very-dk-blue: hsl(235, 21%, 11%);
 $very-dk-desat-blue: hsl(235, 24%, 19%);
@@ -22,22 +27,15 @@ $dark-grayish-blue-dth: hsl(234, 11%, 52%);
 $very-dk-grayish-blue-dth-1: hsl(233, 14%, 35%);
 $very-dk-grayish-blue-dth-2: hsl(237, 14%, 26%);
 
+$header-bg-image-mobile-dark: url('../../images/bg-mobile-dark.jpg');
+$header-bg-image-desktop-dark: url('../../images/bg-desktop-dark.jpg');
+
+$icon-sun: url('../../images/icon-sun.svg');
+
 // Typography
 $body-font-family: 'Josefin Sans', sans-serif;
 $weight-bold: 700;
 $weight-regular: 400;
 
-// Breakpoints
-$bp-mobile-start: 320px;
-$bp-mobile-end: 480px;
-$bp-tablet-start: 481px;
-$bp-tablet-end: 768px;
-$bp-notebook-start: 769px;
-$bp-notebook-end: 1024px;
-$bp-lg-screen-start: 1025px;
-$bp-lg-screen-end: 1200px;
-$bp-xl-screen-start: 1201px;
-$bp-xl-screen-end: 1440px;
-$bp-xxl-screen-start: 1441px;
-$bp-xxl-screen-end: 1920px;
+
 
