@@ -109,4 +109,46 @@ main {
     }
 }
 
+.is-light-mode {
+    $page-bg: $very-light-gray;
+    $bg-header-mobile: $header-bg-image-mobile-light;
+    $header-bg-dekstop: $header-bg-image-desktop-light;
+    $icon-color-mode: $icon-moon;
+    $container-bg-color: white;
+    $shadow-color: $light-grayish-blue-lth;
+    $line-color: $very-light-grayish-blue;
+    $line-border-color: $very-light-grayish-blue;
+    $task-name-check-color: $light-grayish-blue-lth;
+    $task-name-uncheck-color: $dark-grayish-blue-lth;
+    $input-color: $very-dk-grayish-blue-lth;
+}
 
+@media (prefers-color-scheme: dark){
+    :root {
+        $page-bg: $very-dk-blue;
+        $bg-header-mobile: $header-bg-image-mobile-dark;
+        $header-bg-dekstop: $header-bg-image-desktop-dark;
+        $icon-color-mode: $icon-sun;
+        $container-bg-color: $very-dk-desat-blue;
+        $shadow-color: $very-dk-blue;
+        $line-color: $very-dk-grayish-blue-dth-1;
+        $line-border-color: $very-dk-grayish-blue-dth-2;
+        $task-name-check-color: $dark-grayish-blue-dth;
+        $task-name-uncheck-color: $light-grayish-blue-dth;
+        $input-color: $light-grayish-blue-dth;
+    }
+}
+
+.is-dark-mode {
+    $page-bg: $very-dk-blue;
+    $bg-header-mobile: $header-bg-image-mobile-dark;
+    $header-bg-dekstop: $header-bg-image-desktop-dark;
+    $icon-color-mode: $icon-sun;
+    $container-bg-color: $very-dk-desat-blue;
+    $shadow-color: $very-dk-blue;
+    $line-color: $very-dk-grayish-blue-dth-1;
+    $line-border-color: $very-dk-grayish-blue-dth-2;
+    $task-name-check-color: $dark-grayish-blue-dth;
+    $task-name-uncheck-color: $light-grayish-blue-dth;
+    $input-color: $light-grayish-blue-dth;
+}
