@@ -59,6 +59,8 @@ Resources:
 - [Kremenovic](https://github.com/kremenovic/react-todo-app)-- resource sites for working with dark theme
 - [How to create a dark mode in sass](https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995) by Katie McTigue
 
+### 02/21/2022
+Hey! Today I'm going to focus on styling the structure before I worry about the theme changing. 
 ---
 
 Code holder

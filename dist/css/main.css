@@ -1,3 +1,23 @@
+/*
+$main-pg-bg: hsl(235, 21%, 11%);
+$input-bg: hsl(235, 24%, 19%);
+$input-text-color: hsl(234, 11%, 52%);
+$todo-list-bg: hsl(237, 14%, 26%);
+$todo-list-text-color: hsl(234, 39%, 85%);
+$todo-list-item-border: hsl(0, 0%, 59%);
+$filter-text-color: hsl(235, 16%, 43%);
+$instruction-text-color: hsl(235, 16%, 43%);
+$text-hover: hsl(236, 33%, 92%);
+$shadow-color: hsl(233, 14%, 35%);
+$completed-item-text-color: hsl(233, 14%, 35%);
+$line-border-color: hsl(234, 11%, 52%);
+
+
+//Dark Theme Images
+$header-bg-image-mobile: url('../../images/bg-mobile-dark.jpg');
+$header-bg-image-desktop: url('../../images/bg-desktop-dark.jpg');
+$icon-sun: url('../../images/icon-sun.svg');
+*/
 /* RESETS */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 *,
@@ -9,7 +29,14 @@
 
 html {
   font: 62.5%/1.15 sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
   margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -113,14 +140,22 @@ h1 {
 
 .header {
   min-height: 20rem;
-  background-image: url("../../images/bg-mobile-dark.jpg");
+  background-image: url("../../images/bg-mobile-light.jpg");
   background-size: 100%;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 30rem;
+    background-image: url("../../images/bg-desktop-light.jpg");
+  }
 }
 .header-title {
   letter-spacing: 1.5rem;

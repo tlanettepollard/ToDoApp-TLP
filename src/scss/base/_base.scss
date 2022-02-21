@@ -9,8 +9,16 @@
 
 html {
     font: 62.5% / 1.15 sans-serif;
-    margin: 0;
 }
+
+html,
+body {
+    overflow-x: hidden;
+    position: relative;
+    margin: 0; 
+    padding: 0;
+}
+
 
 h1, 
 h2 {

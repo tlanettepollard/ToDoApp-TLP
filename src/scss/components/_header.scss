@@ -3,8 +3,15 @@
     background-image: $header-bg-image-mobile;
     background-size: 100%;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
     @include flex (row, center, center);
+
+    @media screen and (min-width: $desktop-width){
+        height: 30rem;
+        background-image: $header-bg-image-desktop;
+    }
     
     &-title {
         letter-spacing: 1.5rem;
