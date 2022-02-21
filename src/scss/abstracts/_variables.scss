@@ -3,17 +3,24 @@
 // Colors
 //Primary
 
-$bright-blue: hsl(220, 98%, 61%);
-$check-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+$filter-text-active-color: hsl(220, 98%, 61%);
+$check-box-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+$check-box-border-hover: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
 // Light Theme Colors
 $main-pg-bg: hsl(0, 0%, 98%);
-$line-color: hsl(236, 33%, 92%);
+$input-bg: hsl(0, 0%, 98%);
+$input-text-color: hsl(236, 9%, 61%);
+$todo-list-bg:hsl(0, 0%, 98%);
+$todo-list-text-color: hsl(235, 19%, 35%);
+$todo-list-item-border: hsl(0, 0%, 59%);
+$filter-text-color:hsl(236, 9%, 61%);
+$instruction-text-color: hsl(236, 9%, 61%);
 $line-border-color: hsl(236, 33%, 92%);
-$shadow-color: hsl(233, 11%, 84%);
+$completed-item-text-color: hsl(233, 11%, 84%);
 $task-name-check-color: hsl(233, 11%, 84%); 
-$task-name-uncheck-color: hsl(236, 9%, 61%);
-$input-color: hsl(235, 19%, 35%);
+$shadow-color: hsl(233, 11%, 84%);
+
 
 // Light Theme Images
 $header-bg-image-mobile-: url('../../images/bg-mobile-light.jpg');
@@ -21,15 +28,19 @@ $header-bg-image-desktop: url('../../images/bg-desktop-light.jpg');
 $icon-moon: url('../../images/icon-moon.svg');
 
 // Dark Theme 
-$main-pg-bg: hsl(235, 24%, 19%);
+$main-pg-bg: hsl(235, 21%, 11%);
 $input-bg: hsl(235, 24%, 19%);
 $input-text-color: hsl(234, 11%, 52%);
-$todo-list-bg: hsl(235, 24%, 19%); 
+$todo-list-bg: hsl(237, 14%, 26%);
 $todo-list-text-color: hsl(234, 39%, 85%);
-$light-grayish-blue-hover: hsl(236, 33%, 92%);
+$todo-list-item-border: hsl(0, 0%, 59%);
+$filter-text-color: hsl(235, 16%, 43%);
+$instruction-text-color: hsl(235, 16%, 43%);
+$text-hover: hsl(236, 33%, 92%);
 $shadow-color: hsl(233, 14%, 35%);
-$check-box-border: hsl(0, 0%, 3%);
-$check-box-inactive: hsl(237, 14%, 26%);
+$completed-item-text-color: hsl(233, 14%, 35%);
+$line-border-color: hsl(234, 11%, 52%);
+
 
 //Dark Theme Images
 $header-bg-image-mobile: url('../../images/bg-mobile-dark.jpg');
@@ -46,49 +57,15 @@ $weight-regular: 400;
 $mobile-width: 580px;
 
 
-.is-dark-mode {
 
-    $container-bg-color: $very-dk-desat-blue;
-    $shadow-color: $very-dk-blue;
-    $line-color: $very-dk-grayish-blue-dth-1;
-    $line-border-color: $very-dk-grayish-blue-dth-2;
-    $task-name-check-color: $dark-grayish-blue-dth;
-    $task-name-uncheck-color: $light-grayish-blue-dth;
-    $input-color: $light-grayish-blue-dth;
-}
-
-    
-    
-    
-    
-
-
-.is-light-mode {
-    
-    $bg-header-mobile: $header-bg-image-mobile-light;
-    $header-bg-dekstop: $header-bg-image-desktop-light;
-    $icon-color-mode: $icon-moon;
-    $container-bg-color: white;
-    $shadow-color: $light-grayish-blue-lth;
-    $line-color: $very-light-grayish-blue;
-    $line-border-color: $very-light-grayish-blue;
-    $task-name-check-color: $light-grayish-blue-lth;
-    $task-name-uncheck-color: $dark-grayish-blue-lth;
-    $input-color: $very-dk-grayish-blue-lth;
-}
-
-/* Dark Theme */
 
    
-    $bg-header-mobile: $header-bg-image-mobile-dark;
-    $header-bg-dekstop: $header-bg-image-desktop-dark;
-    $icon-color-mode: $icon-sun;
-    $container-bg-color: $very-dk-desat-blue;
-    $shadow-color: $very-dk-blue;
-    $line-color: $very-dk-grayish-blue-dth-1;
-    $line-border-color: $very-dk-grayish-blue-dth-2;
-    $task-name-check-color: $dark-grayish-blue-dth;
-    $task-name-uncheck-color: $light-grayish-blue-dth;
-    $input-color: $light-grayish-blue-dth;
+
+
+
+    
+    
+    
+    
 
 
