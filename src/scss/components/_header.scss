@@ -1,10 +1,10 @@
 .header {
     min-height: 20rem;
-    background-image: $header-bg-image-mobile-light;
+    background-image: $header-bg-image-mobile;
     background-size: 100%;
     background-position: center;
     color: #fff;
-    @include flex (row, space-between, center);
+    @include flex (row, center, center);
     
     &-title {
         letter-spacing: 1.5rem;
