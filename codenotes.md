@@ -56,6 +56,7 @@ Resources:
 
 - [Mileine](https://github.com/mileine/frontendmentor-todo-app-react)-- used as reference for organizing theme and building theme changer.
 - [Kremenovic](https://github.com/kremenovic/react-todo-app)-- resource sites for working with dark theme
+- [How to create a dark mode in sass](https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995) by Katie McTigue
 
 ---
 

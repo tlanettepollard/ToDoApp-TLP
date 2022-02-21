@@ -1,7 +1,5 @@
-/* Light Theme */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
-/* Dark Theme */
 /* RESETS */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -115,13 +113,13 @@ h1 {
 
 .header {
   min-height: 20rem;
-  background-image: url("../../images/bg-mobile-light.jpg");
+  background-image: url("../../images/bg-mobile-dark.jpg");
   background-size: 100%;
   background-position: center;
   color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .header-title {
