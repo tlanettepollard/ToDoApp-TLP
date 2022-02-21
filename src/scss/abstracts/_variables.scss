@@ -6,30 +6,34 @@
 $bright-blue: hsl(220, 98%, 61%);
 $check-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
-// Light Theme
-$very-light-gray: hsl(0, 0%, 98%);
-$very-light-grayish-blue: hsl(236, 33%, 92%);
-$light-grayish-blue-lth: hsl(233, 11%, 84%);
-$dark-grayish-blue-lth: hsl(236, 9%, 61%);
-$very-dk-grayish-blue-lth: hsl(235, 19%, 35%);
+// Light Theme Colors
+$main-pg-bg: hsl(0, 0%, 98%);
+$line-color: hsl(236, 33%, 92%);
+$line-border-color: hsl(236, 33%, 92%);
+$shadow-color: hsl(233, 11%, 84%);
+$task-name-check-color: hsl(233, 11%, 84%); 
+$task-name-uncheck-color: hsl(236, 9%, 61%);
+$input-color: hsl(235, 19%, 35%);
 
-$header-bg-image-mobile-light: url('../../images/bg-mobile-light.jpg');
-$header-bg-image-desktop-light: url('../../images/bg-desktop-light.jpg');
-
+// Light Theme Images
+$header-bg-image-mobile-: url('../../images/bg-mobile-light.jpg');
+$header-bg-image-desktop: url('../../images/bg-desktop-light.jpg');
 $icon-moon: url('../../images/icon-moon.svg');
 
 // Dark Theme 
-$very-dk-blue: hsl(235, 21%, 11%);
-$very-dk-desat-blue: hsl(235, 24%, 19%);
-$light-grayish-blue-dth: hsl(234, 39%, 85%);
+$main-pg-bg: hsl(235, 24%, 19%);
+$input-bg: hsl(235, 24%, 19%);
+$input-text-color: hsl(234, 11%, 52%);
+$todo-list-bg: hsl(235, 24%, 19%); 
+$todo-list-text-color: hsl(234, 39%, 85%);
 $light-grayish-blue-hover: hsl(236, 33%, 92%);
-$dark-grayish-blue-dth: hsl(234, 11%, 52%);
-$very-dk-grayish-blue-dth-1: hsl(233, 14%, 35%);
-$very-dk-grayish-blue-dth-2: hsl(237, 14%, 26%);
+$shadow-color: hsl(233, 14%, 35%);
+$check-box-border: hsl(0, 0%, 3%);
+$check-box-inactive: hsl(237, 14%, 26%);
 
-$header-bg-image-mobile-dark: url('../../images/bg-mobile-dark.jpg');
-$header-bg-image-desktop-dark: url('../../images/bg-desktop-dark.jpg');
-
+//Dark Theme Images
+$header-bg-image-mobile: url('../../images/bg-mobile-dark.jpg');
+$header-bg-image-desktop: url('../../images/bg-desktop-dark.jpg');
 $icon-sun: url('../../images/icon-sun.svg');
 
 
@@ -40,3 +44,51 @@ $weight-regular: 400;
 
 
 $mobile-width: 580px;
+
+
+.is-dark-mode {
+
+    $container-bg-color: $very-dk-desat-blue;
+    $shadow-color: $very-dk-blue;
+    $line-color: $very-dk-grayish-blue-dth-1;
+    $line-border-color: $very-dk-grayish-blue-dth-2;
+    $task-name-check-color: $dark-grayish-blue-dth;
+    $task-name-uncheck-color: $light-grayish-blue-dth;
+    $input-color: $light-grayish-blue-dth;
+}
+
+    
+    
+    
+    
+
+
+.is-light-mode {
+    
+    $bg-header-mobile: $header-bg-image-mobile-light;
+    $header-bg-dekstop: $header-bg-image-desktop-light;
+    $icon-color-mode: $icon-moon;
+    $container-bg-color: white;
+    $shadow-color: $light-grayish-blue-lth;
+    $line-color: $very-light-grayish-blue;
+    $line-border-color: $very-light-grayish-blue;
+    $task-name-check-color: $light-grayish-blue-lth;
+    $task-name-uncheck-color: $dark-grayish-blue-lth;
+    $input-color: $very-dk-grayish-blue-lth;
+}
+
+/* Dark Theme */
+
+   
+    $bg-header-mobile: $header-bg-image-mobile-dark;
+    $header-bg-dekstop: $header-bg-image-desktop-dark;
+    $icon-color-mode: $icon-sun;
+    $container-bg-color: $very-dk-desat-blue;
+    $shadow-color: $very-dk-blue;
+    $line-color: $very-dk-grayish-blue-dth-1;
+    $line-border-color: $very-dk-grayish-blue-dth-2;
+    $task-name-check-color: $dark-grayish-blue-dth;
+    $task-name-uncheck-color: $light-grayish-blue-dth;
+    $input-color: $light-grayish-blue-dth;
+
+

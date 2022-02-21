@@ -1,7 +1,7 @@
-/* Theme Settings */
-/* Theme Settings */
-/* RESETS */
+/* Light Theme */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+/* Dark Theme */
+/* RESETS */
 *,
 *::before,
 *::after {
@@ -47,14 +47,6 @@ input[type=text] {
 body {
   width: 100%;
   margin: 0 auto;
-  font: 1.6rem/1.25 Arial, sans-serif;
-  background: #fafafa;
-}
-@media screen and (min-width: 620px) {
-  body {
-    font-size: 1.9rem;
-    line-height: 1.31579;
-  }
 }
 
 /* Added Reset */
@@ -62,36 +54,6 @@ body {
   min-height: 100vh;
   width: 100vw;
   padding: 0 2rem;
-}
-.light .container {
-  background: url("../../images/bg-mobile-light.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 580px1) {
-  .light .container {
-    background: url("../../images/bg-desktop-light.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-}
-.dark .container {
-  background: url("../../images/bg-mobile-dark.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 580px1) {
-  .dark .container {
-    background: url("../../images/bg-desktop-dark.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-}
-.light .container {
-  background-color: white;
-}
-.dark .container {
-  background-color: #25273c;
 }
 
 main {
@@ -128,67 +90,15 @@ main {
 }
 
 /* End Global Styles */
-/* Theme 
-@media (prefers-color-scheme: light) {
-    :root {
-        $page-bg: $very-light-gray;
-        $bg-header-mobile: $header-bg-image-mobile-light;
-        $header-bg-dekstop: $header-bg-image-desktop-light;
-        $icon-color-mode: $icon-moon;
-        $container-bg-color: white;
-        $shadow-color: $light-grayish-blue-lth;
-        $line-color: $very-light-grayish-blue;
-        $line-border-color: $very-light-grayish-blue;
-        $task-name-check-color: $light-grayish-blue-lth;
-        $task-name-uncheck-color: $dark-grayish-blue-lth;
-        $input-color: $very-dk-grayish-blue-lth;
-    }
+body {
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.is-light-mode {
-    $page-bg: $very-light-gray;
-    $bg-header-mobile: $header-bg-image-mobile-light;
-    $header-bg-dekstop: $header-bg-image-desktop-light;
-    $icon-color-mode: $icon-moon;
-    $container-bg-color: white;
-    $shadow-color: $light-grayish-blue-lth;
-    $line-color: $very-light-grayish-blue;
-    $line-border-color: $very-light-grayish-blue;
-    $task-name-check-color: $light-grayish-blue-lth;
-    $task-name-uncheck-color: $dark-grayish-blue-lth;
-    $input-color: $very-dk-grayish-blue-lth;
+h1 {
+  font-size: 2.222em;
+  font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark){
-    :root {
-        $page-bg: $very-dk-blue;
-        $bg-header-mobile: $header-bg-image-mobile-dark;
-        $header-bg-dekstop: $header-bg-image-desktop-dark;
-        $icon-color-mode: $icon-sun;
-        $container-bg-color: $very-dk-desat-blue;
-        $shadow-color: $very-dk-blue;
-        $line-color: $very-dk-grayish-blue-dth-1;
-        $line-border-color: $very-dk-grayish-blue-dth-2;
-        $task-name-check-color: $dark-grayish-blue-dth;
-        $task-name-uncheck-color: $light-grayish-blue-dth;
-        $input-color: $light-grayish-blue-dth;
-    }
-}
-
-.is-dark-mode {
-    $page-bg: $very-dk-blue;
-    $bg-header-mobile: $header-bg-image-mobile-dark;
-    $header-bg-dekstop: $header-bg-image-desktop-dark;
-    $icon-color-mode: $icon-sun;
-    $container-bg-color: $very-dk-desat-blue;
-    $shadow-color: $very-dk-blue;
-    $line-color: $very-dk-grayish-blue-dth-1;
-    $line-border-color: $very-dk-grayish-blue-dth-2;
-    $task-name-check-color: $dark-grayish-blue-dth;
-    $task-name-uncheck-color: $light-grayish-blue-dth;
-    $input-color: $light-grayish-blue-dth;
-}
-*/
 .form-control {
   background-color: white;
   width: 100%;
@@ -201,6 +111,21 @@ main {
   gap: 2.4rem;
   border-radius: 1rem;
   margin-bottom: 2.4rem;
+}
+
+.header {
+  min-height: 20rem;
+  background-image: url("../../images/bg-mobile-light.jpg");
+  background-size: 100%;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title {
+  letter-spacing: 1.5rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

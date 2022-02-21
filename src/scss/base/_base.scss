@@ -1,7 +1,3 @@
-@import '../abstracts/mixins';
-@import '../abstracts/themes';
-@import '../abstracts/variables';
-
 
 /* RESETS */
 *,
@@ -50,22 +46,12 @@ body {
     width: 100%;
     //max-width: 68rem;
     margin: 0 auto;
-    font: 1.6rem/1.25 Arial, sans-serif;
-    background: $very-light-gray;
-    //color: #4d4d4d; 
-
-    @media screen and (min-width: 620px) {
-        font-size: 1.9rem;
-        line-height: 1.31579;
-    }
 }
 
 /* Added Reset */
 .container {
     min-height: 100vh;
     width: 100vw;
-    @include backgroundImg;
-    @include apply-theme-color('background-color', 'container-bg-color');
     padding: 0 2rem;
 }
 
@@ -106,64 +92,4 @@ main {
 /* End Global Styles */ 
 
 
-/* Theme 
-@media (prefers-color-scheme: light) {
-    :root {
-        $page-bg: $very-light-gray;
-        $bg-header-mobile: $header-bg-image-mobile-light;
-        $header-bg-dekstop: $header-bg-image-desktop-light;
-        $icon-color-mode: $icon-moon;
-        $container-bg-color: white;
-        $shadow-color: $light-grayish-blue-lth;
-        $line-color: $very-light-grayish-blue;
-        $line-border-color: $very-light-grayish-blue;
-        $task-name-check-color: $light-grayish-blue-lth;
-        $task-name-uncheck-color: $dark-grayish-blue-lth;
-        $input-color: $very-dk-grayish-blue-lth;
-    }
-}
 
-.is-light-mode {
-    $page-bg: $very-light-gray;
-    $bg-header-mobile: $header-bg-image-mobile-light;
-    $header-bg-dekstop: $header-bg-image-desktop-light;
-    $icon-color-mode: $icon-moon;
-    $container-bg-color: white;
-    $shadow-color: $light-grayish-blue-lth;
-    $line-color: $very-light-grayish-blue;
-    $line-border-color: $very-light-grayish-blue;
-    $task-name-check-color: $light-grayish-blue-lth;
-    $task-name-uncheck-color: $dark-grayish-blue-lth;
-    $input-color: $very-dk-grayish-blue-lth;
-}
-
-@media (prefers-color-scheme: dark){
-    :root {
-        $page-bg: $very-dk-blue;
-        $bg-header-mobile: $header-bg-image-mobile-dark;
-        $header-bg-dekstop: $header-bg-image-desktop-dark;
-        $icon-color-mode: $icon-sun;
-        $container-bg-color: $very-dk-desat-blue;
-        $shadow-color: $very-dk-blue;
-        $line-color: $very-dk-grayish-blue-dth-1;
-        $line-border-color: $very-dk-grayish-blue-dth-2;
-        $task-name-check-color: $dark-grayish-blue-dth;
-        $task-name-uncheck-color: $light-grayish-blue-dth;
-        $input-color: $light-grayish-blue-dth;
-    }
-}
-
-.is-dark-mode {
-    $page-bg: $very-dk-blue;
-    $bg-header-mobile: $header-bg-image-mobile-dark;
-    $header-bg-dekstop: $header-bg-image-desktop-dark;
-    $icon-color-mode: $icon-sun;
-    $container-bg-color: $very-dk-desat-blue;
-    $shadow-color: $very-dk-blue;
-    $line-color: $very-dk-grayish-blue-dth-1;
-    $line-border-color: $very-dk-grayish-blue-dth-2;
-    $task-name-check-color: $dark-grayish-blue-dth;
-    $task-name-uncheck-color: $light-grayish-blue-dth;
-    $input-color: $light-grayish-blue-dth;
-}
-*/

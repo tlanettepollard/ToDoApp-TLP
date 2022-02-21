@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faCircle } from '@fortawesome/free-regular-svg-icons';
+
 
 function usePrevious(value) {
     const ref = useRef();
@@ -119,7 +118,11 @@ export default function ToDoList(props) {
     }, [wasEditing, isEditing]);
 
     
-    return <li className='todo'>
-        {isEditing ? editingTemplate : viewTemplate}
-    </li>;
+    return (
+        <div className={`todo-list-wrapper`}>
+            <li className='todo'>
+                {isEditing ? editingTemplate : viewTemplate}
+            </li>
+        </div>
+    )
 }
