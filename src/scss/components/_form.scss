@@ -1,11 +1,12 @@
-.form-control {
+.form-container {
     background-color: white;
-    width: 100%;
-    height: 6.4rem;
-    @include flex (row, stretch, center);
-    padding: 2.4rem;
-    gap: 2.4rem;
-    border-radius: 1rem;
-    margin-bottom: 2.4rem;
+    max-width: 32.7rem;
+    margin: 0 auto;
     
+    @media screen and (min-width: $desktop-width) {
+        max-width: 54rem;
+    }
+    @media screen and (max-width: $mobile-width) {
+        max-width: 27.5rem;
+    }
 }
