@@ -43,6 +43,7 @@ Hi. Started early this morning. Finally figured out why I was having an undefine
 Resources:
 
 - [Mileine](https://github.com/mileine/frontendmentor-todo-app-react)
+- [How to Use Font Awesome 5 with React](https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react)--by Chris on Code; ended up not using the icons, but good information.
 
 ### 02/19/2022
 
@@ -81,8 +82,6 @@ Drag and drop to reorder list
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-
-
 
 <ul
                className='todo-list'
