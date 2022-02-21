@@ -122,7 +122,7 @@ function App(props) {
         <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
           {taskList}
         </ul>
-        <div className='filters btn-group stack-exception'>
+        <div className='filter-container btn-group stack-exception'>
           <h4 id="list-heading">
             {headingText}
           </h4>

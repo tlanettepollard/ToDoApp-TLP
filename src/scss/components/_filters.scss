@@ -1,0 +1,13 @@
+.filter-container {
+   max-width: 32.7rem;
+   margin: auto;
+   @include flex(row, center,space-between);
+
+   @media screen and (min-width: $desktop-width) {
+       max-width: 54rem;
+   }
+
+   @media screen and (max-width: $mobile-width) {
+       max-width: 27.5rem;
+   }
+}

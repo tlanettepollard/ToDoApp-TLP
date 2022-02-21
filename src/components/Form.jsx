@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faCircle } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
 function Form(props) {
     const [name, setName] = useState('');
@@ -16,25 +16,25 @@ function Form(props) {
     }
 
     return (
-        <div className='form-container'>
-            <div className='form-control'>
-                <div className='checkbox-border-wrap'>
-                    <span className='checkbox'></span>
-                </div>
-                <form onSubmit={handleSubmit}>
-                    <label htmlFor='todoInput' className='visually-hidden'>Add New Todo</label>
-                    <input 
-                        type='text'
-                        id='new-todo-input'
-                        className='input input__lg'
-                        name="text"
-                        autoComplete='off'
-                        placeholder='Create a new todo...'
-                        value={name}
-                        onChange={handleChange}
-                    />
-                </form>
-            </div>
+        <div className='form-container'> 
+            <form onSubmit={handleSubmit}>
+                <FontAwesomeIcon
+                    className='form-icon'
+                    icon={faCircle}
+                />
+                <label htmlFor='todoInput' className='visually-hidden'>Add New Todo</label>
+                <input 
+                    type='text'
+                    id='new-todo-input'
+                    className='input input__lg'
+                    name="text"
+                    autoComplete='off'
+                    placeholder='Create a new todo...'
+                    value={name}
+                    onChange={handleChange}
+                />
+            </form>
+            
         </div>
     );
 }

@@ -1,12 +1,12 @@
 .form-container {
-    background-color: white;
     max-width: 32.7rem;
-    margin: 0 auto;
-    
+    margin: auto;
+
     @media screen and (min-width: $desktop-width) {
         max-width: 54rem;
     }
+
     @media screen and (max-width: $mobile-width) {
         max-width: 27.5rem;
     }
-}
+}   

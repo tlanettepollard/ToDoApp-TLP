@@ -35,7 +35,7 @@ export default function ToDoList(props) {
     }
 
     const editingTemplate = (
-        <form className='stack-small' onSubmit={handleSubmit}>
+        <form className='todolist-container' onSubmit={handleSubmit}>
             <div className='form-group'>
                 <label
                     className="todo-label"
@@ -71,7 +71,7 @@ export default function ToDoList(props) {
 
     
     const viewTemplate = (
-        <div className='stack-small'>
+        <div className='todo-item'>
             <div className="c-cb">
                 <input
                     id={props.id}
@@ -100,7 +100,8 @@ export default function ToDoList(props) {
                     className='btn btn__danger'
                     onClick={() => props.deleteTask(props.id)}
                 >
-                    Delete <span className='visually-hidden'>
+                   Delete
+                    <span className='visually-hidden'>
                        {props.name}
                     </span>
                 </button>
@@ -123,6 +124,7 @@ export default function ToDoList(props) {
             <li className='todo'>
                 {isEditing ? editingTemplate : viewTemplate}
             </li>
+
         </div>
     )
 }

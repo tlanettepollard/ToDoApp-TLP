@@ -123,10 +123,28 @@ h1 {
   font-weight: 700;
 }
 
-.form-container {
-  background-color: white;
+.filter-container {
   max-width: 32.7rem;
-  margin: 0 auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .filter-container {
+    max-width: 54rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .filter-container {
+    max-width: 27.5rem;
+  }
+}
+
+.form-container {
+  max-width: 32.7rem;
+  margin: auto;
 }
 @media screen and (min-width: 1024px) {
   .form-container {
