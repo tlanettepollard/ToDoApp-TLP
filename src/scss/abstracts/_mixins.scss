@@ -19,6 +19,12 @@
     }
 };
 
+@mixin desktop {
+    @media screen and (min-width: #{$desktop-width}) {
+        @content
+    }
+};
+
 
 
 

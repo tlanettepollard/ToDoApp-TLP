@@ -57,15 +57,7 @@ body {
 }
 
 /* Added Reset */
-.container {
-    min-height: 100vh;
-    width: 100vw;
-    padding: 0 2rem;
-}
 
-main {
-    height: 100vh;
-}
 
 .pointer {
     cursor: pointer;
@@ -83,10 +75,6 @@ main {
     
 }
 
-[class*='stack'] > * {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 .attribution {
     font-size: 11px;

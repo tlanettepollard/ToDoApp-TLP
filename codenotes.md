@@ -63,6 +63,12 @@ Resources:
 
 ## Hey! Today I'm going to focus on styling the structure before I worry about the theme changing. Ugh! Now my delete button isn't working. It's deleting everything on the page.
 
+### 02/22/2022
+
+I decided to start again today. I was coming too confused about how to continue the app. I'm still going to refer to the MDN article.
+
+---
+
 Code holder
 
 .attribution { font-size: 11px; text-align: center; }
