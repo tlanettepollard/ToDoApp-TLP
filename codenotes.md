@@ -65,7 +65,11 @@ Resources:
 
 ### 02/22/2022
 
-I decided to start again today. I was coming too confused about how to continue the app. I'm still going to refer to the MDN article.
+I decided to start again today. I was coming too confused about how to continue the app. I'm still going to refer to the MDN article. So I erased all of my files and I am starting from scratch. 
+
+Resources:
+
+- [Cyishere.dev](https://codesandbox.io/s/iwfy7?file=/src/components/TodoList.js)-- followed his organization for component file structure and app template.
 
 ---
 
