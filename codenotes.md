@@ -60,7 +60,6 @@ Resources:
 - [How to create a dark mode in sass](https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995) by Katie McTigue
 
 ### 02/21/2022
-
 ## Hey! Today I'm going to focus on styling the structure before I worry about the theme changing. Ugh! Now my delete button isn't working. It's deleting everything on the page.
 
 ### 02/22/2022
@@ -71,6 +70,8 @@ Resources:
 
 - [Cyishere.dev](https://codesandbox.io/s/iwfy7?file=/src/components/TodoList.js)-- followed his organization for component file structure and app template.
 
+### 02/25/2022
+Hi. I have a little time since we have a delayed opening today. I will try to get one or two components done. 
 ---
 
 Code holder

@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoList from './components/TodoList';
 import './scss/main.scss';
 import moon from '../src/images/icon-moon.svg';
 import sun from '../src/images/icon-sun.svg';
@@ -33,59 +34,15 @@ function App(props) {
             </form>
           <section className='todo-list-section'>
             
-             <ul
+            <ul
               className="todo-list"
               aria-labelledby="list-heading"
-              >
-                <li className="todo stack-small">
-                  <div className="c-cb">
-                    <input id="todo-0" type="checkbox" defaultChecked={true} />
-                    <label className="todo-label" htmlFor="todo-0">
-                      Eat
-                    </label>
-                  </div>
-                  <div className="btn-group">
-                    <button type="button" className="btn">
-                      Edit <span className="visually-hidden">Eat</span>
-                    </button>
-                    <button type="button" className="btn btn__danger">
-                      Delete <span className="visually-hidden">Eat</span>
-                    </button>
-                  </div>
-                </li>
-                <li className="todo stack-small">
-                    <div className="c-cb">
-                    <input id="todo-1" type="checkbox" />
-                    <label className="todo-label" htmlFor="todo-1">
-                      Sleep
-                    </label>
-                    </div>
-                    <div className="btn-group">
-                      <button type="button" className="btn">
-                      Edit <span className="visually-hidden">Sleep</span>
-                      </button>
-                      <button type="button" className="btn btn__danger">
-                      Delete <span className="visually-hidden">Sleep</span>
-                      </button>
-                    </div>
-                </li>
-                <li className="todo stack-small">
-                  <div className="c-cb">
-                    <input id="todo-2" type="checkbox" />
-                    <label className="todo-label" htmlFor="todo-2">
-                      Repeat
-                    </label>
-                  </div>
-                  <div className="btn-group">
-                    <button type="button" className="btn">
-                      Edit <span className="visually-hidden">Repeat</span>
-                    </button>
-                    <button type="button" className="btn btn__danger">
-                      Delete <span className="visually-hidden">Repeat</span>
-                    </button>
-                  </div>
-                </li>
-              </ul>
+            >
+              <TodoList name='Eat' completed={true} id='todo-0' />
+              <TodoList name='Sleep' completed={false} id='todo-1'/>
+              <TodoList name='Repeat' completed={false} id='todo-2'/>
+                
+            </ul>
           
               <div className='filter-control'>
                 <div className='todos-count'>3 tasks remaining
