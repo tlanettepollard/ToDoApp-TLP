@@ -5,6 +5,9 @@ import moon from '../src/images/icon-moon.svg';
 import sun from '../src/images/icon-sun.svg';
 
 function App(props) {
+  const taskList = props.tasks?.map(task => (
+    <TodoList id={task.id} name={task.name} completed={task.completed} key={task.id}/>
+  ));
   
     return (
       <div className='wrapper'>
@@ -38,9 +41,7 @@ function App(props) {
               className="todo-list"
               aria-labelledby="list-heading"
             >
-              <TodoList name='Eat' completed={true} id='todo-0' />
-              <TodoList name='Sleep' completed={false} id='todo-1'/>
-              <TodoList name='Repeat' completed={false} id='todo-2'/>
+              {taskList}
                 
             </ul>
           

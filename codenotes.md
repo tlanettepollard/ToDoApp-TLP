@@ -166,3 +166,7 @@ Drag and drop to reorder list
                         className='input-icon'
                         icon={faCircle}
                     />
+
+<TodoList name='Eat' completed={true} id='todo-0' />
+              <TodoList name='Sleep' completed={false} id='todo-1'/>
+              <TodoList name='Repeat' completed={false} id='todo-2'/>
