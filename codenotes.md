@@ -60,19 +60,20 @@ Resources:
 - [How to create a dark mode in sass](https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995) by Katie McTigue
 
 ### 02/21/2022
+
 ## Hey! Today I'm going to focus on styling the structure before I worry about the theme changing. Ugh! Now my delete button isn't working. It's deleting everything on the page.
 
 ### 02/22/2022
 
-I decided to start again today. I was coming too confused about how to continue the app. I'm still going to refer to the MDN article. So I erased all of my files and I am starting from scratch. 
+I decided to start again today. I was coming too confused about how to continue the app. I'm still going to refer to the MDN article. So I erased all of my files and I am starting from scratch.
 
 Resources:
 
 - [Cyishere.dev](https://codesandbox.io/s/iwfy7?file=/src/components/TodoList.js)-- followed his organization for component file structure and app template.
 
 ### 02/25/2022
-Hi. I have a little time since we have a delayed opening today. I will try to get one or two components done. 
----
+
+## Hi. I have a little time since we have a delayed opening today. I will try to get one or two components done. I was able to complete all of the components and add them to App.
 
 Code holder
 
@@ -170,8 +171,6 @@ Drag and drop to reorder list
 <TodoList name='Eat' completed={true} id='todo-0' />
               <TodoList name='Sleep' completed={false} id='todo-1'/>
               <TodoList name='Repeat' completed={false} id='todo-2'/>
-
-
 
               <div className='todos-count'>3 tasks remaining
                 </div>
