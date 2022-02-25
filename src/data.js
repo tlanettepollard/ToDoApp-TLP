@@ -7,27 +7,27 @@ const dataList = [
     {
         id: "todo-1",
         name: 'Pick up groceries',
-        completed: true
+        completed: false
     },
     {
         id: "todo-2",
         name: 'Vet appointment',
-        completed: true
+        completed: false
     },
     {
         id: "todo-3",
         name: 'Pick up prescription',
-        completed: true
+        completed: false
     },
     {
         id: "todo-4",
         name: 'Wash clothes',
-        completed: true
+        completed: false
     },
     {
         id: "todo-5",
         name: 'Vacuum',
-        completed: true
+        completed: false
     },
 ]
 
