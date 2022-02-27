@@ -73,7 +73,17 @@ Resources:
 
 ### 02/25/2022
 
-## Hi. I have a little time since we have a delayed opening today. I will try to get one or two components done. I was able to complete all of the components and add them to App.
+Hi. I have a little time since we have a delayed opening today. I will try to get one or two components done. I was able to complete all of the components and add them to App. I also added my data file to my app to generate my fake todos.
+
+### 02/27/2022
+
+Hi, back again. Ready to work on this app. Today I'm going to add the interactivity to the app. Goal: To learn about handling events and state in React, and use those to start making the case study app interactive.
+
+#### Learned
+
+- Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+
+---
 
 Code holder
 
