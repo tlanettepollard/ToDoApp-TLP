@@ -77,7 +77,7 @@ Hi. I have a little time since we have a delayed opening today. I will try to ge
 
 ### 02/27/2022
 
-Hi, back again. Ready to work on this app. 
+Hi, back again. Ready to work on this app. Today I'm going to add the interactivity to the app. Goal: To learn about handling events and state in React, and use those to start making the case study app interactive. 
 
 ----
 
