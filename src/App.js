@@ -57,7 +57,7 @@ function App(props) {
           </header>  
           <main>
             <button className='btn theme-toggle-btn'>
-              <img src={moon} alt='icon-mooon' />
+              <img src={moon} alt='icon-moon' />
               <img src={sun} alt='icon-sun' />
             </button>
           

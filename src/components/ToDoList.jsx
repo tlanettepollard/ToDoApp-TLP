@@ -1,4 +1,6 @@
 import React from 'react';
+import crossIcon from '../images/icon-cross.svg';
+import editIcon from '../images/icons8-edit.svg';
 
 export default function ToDoList(props) {
     return (
@@ -15,14 +17,14 @@ export default function ToDoList(props) {
                 </label>
             </div>
             <div className="btn-group">
-            <button type="button" className="btn">
-                Edit <span className="visually-hidden">{props.name}</span>
-            </button>
+                <button type="button" className="btn">
+                    <img src={editIcon} alt='icon-edit' /> <span className="visually-hidden">{props.name}</span>
+                </button>
                 <button
                     type="button"
                     className="btn btn__danger"
                     onClick={() => props.deleteTask(props.id)}>
-                    Delete <span className="visually-hidden">{props.name}</span>
+                    <img src={crossIcon} alt='icon-cross' /> <span className="visually-hidden">{props.name}</span>
                 </button>
             </div>
         </li>
