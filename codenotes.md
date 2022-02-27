@@ -73,7 +73,13 @@ Resources:
 
 ### 02/25/2022
 
-## Hi. I have a little time since we have a delayed opening today. I will try to get one or two components done. I was able to complete all of the components and add them to App.
+Hi. I have a little time since we have a delayed opening today. I will try to get one or two components done. I was able to complete all of the components and add them to App. I also added my data file to my app to generate my fake todos. 
+
+### 02/27/2022
+
+Hi, back again. Ready to work on this app. 
+
+----
 
 Code holder
 

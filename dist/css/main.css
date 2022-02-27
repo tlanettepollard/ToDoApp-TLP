@@ -108,6 +108,17 @@ h1 {
   font-weight: 700;
 }
 
+footer {
+  line-height: 1.5;
+  text-align: center;
+}
+footer .attribution {
+  font-size: 11px;
+}
+footer .attribution a {
+  color: #3e52a3;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
