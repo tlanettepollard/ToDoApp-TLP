@@ -77,7 +77,7 @@ Hi. I have a little time since we have a delayed opening today. I will try to ge
 
 ### 02/27/2022
 
-Hi, back again. Ready to work on this app. Today I'm going to add the interactivity to the app. Goal: To learn about handling events and state in React, and use those to start making the case study app interactive.
+Hi, back again. Ready to work on this app. Today I'm going to add the interactivity to the app. Goal: To learn about handling events and state in React, and use those to start making the case study app interactive. I added functions for the editing and saving of edited todos. I also added the delete functionality for the todos. Tomorrow I will focus on the filters.
 
 #### Learned
 
@@ -192,3 +192,28 @@ Drag and drop to reorder list
                     Clear Completed
                   </button>
                 </div>
+
+
+
+                <div className="c-cb">
+                <input
+                    id={props.id}
+                    type="checkbox"
+                    defaultChecked={props.completed}
+                    onChange={() => props.toggleTaskCompleted(props.id)}
+                />
+                <label className="todo-label" htmlFor={props.id}>
+                    {props.name}
+                </label>
+            </div>
+            <div className="btn-group">
+                <button type="button" className="btn">
+                    <img src={editIcon} alt='icon-edit' /> <span className="visually-hidden">{props.name}</span>
+                </button>
+                <button
+                    type="button"
+                    className="btn btn__danger"
+                    onClick={() => props.deleteTask(props.id)}>
+                    <img src={crossIcon} alt='icon-cross' /> <span className="visually-hidden">{props.name}</span>
+                </button>
+            </div>

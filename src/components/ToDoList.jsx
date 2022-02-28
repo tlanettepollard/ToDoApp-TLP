@@ -1,30 +1,81 @@
-import React from 'react';
+import React, { useState } from 'react';
+import crossIcon from '../images/icon-cross.svg';
+import editIcon from '../images/icons8-edit.svg';
 
 export default function ToDoList(props) {
-    return (
-        <li className="todo stack-small">
-            <div className="c-cb">
+    const [isEditing, setEditing] = useState(false);
+    const [newName, setNewName] = useState('');
+
+    // Set new task name
+    function handleChange(e) {
+        setNewName(e.target.value);
+    }
+
+    // Handle submit on new edited todo
+    function handleSubmit(e) {
+        e.preventDefault();
+        props.editTask(props.id, newName);
+        setNewName('');
+        setEditing(false);
+    }
+
+    const editingTemplate = (
+        <form className='edit-form' onSubmit={handleSubmit}>
+            <div className='form-group'>
+                <label className='todo-label' htmlFor={props.id}>
+                    New name for {props.name}
+                </label>
                 <input
                     id={props.id}
-                    type="checkbox"
+                    className='todo-text'
+                    type='text'
+                    value={newName}
+                    onChange={handleChange}
+                />
+            </div>
+            <div className='btn-group'>
+                <button type='button' className='btn todo-cancel' onClick={() => setEditing(false)}>
+                    Cancel <span className='visually-hidden'>renaming {props.name}</span>
+                </button>
+                <button type='submit' className='btn todo-edit'>
+                    Save <span className='visually-hidden'>new name for {props.name}</span>
+                </button>
+            </div>
+        </form>
+    );
+
+    const viewTemplate = (
+        <div className='view-form'>
+            <div className='todo-view'>
+                <input
+                    id={props.id}
+                    type='checkbox'
                     defaultChecked={props.completed}
                     onChange={() => props.toggleTaskCompleted(props.id)}
                 />
-                <label className="todo-label" htmlFor={props.id}>
+                <label className='todo-label' htmlFor='{props.id'>
                     {props.name}
                 </label>
             </div>
-            <div className="btn-group">
-            <button type="button" className="btn">
-                Edit <span className="visually-hidden">{props.name}</span>
-            </button>
+            <div className='btn-group'>
+                <button type='button' className='btn' onClick={() => setEditing(true)}>
+                    <img src={editIcon} alt='icon-edit' /> <span className='visually-hidden'>{props.name}</span>
+                </button>
                 <button
-                    type="button"
-                    className="btn btn__danger"
-                    onClick={() => props.deleteTask(props.id)}>
-                    Delete <span className="visually-hidden">{props.name}</span>
+                    type='button'
+                    className='btn todo-view'
+                    onClick={() => props.deleteTask(props.id)}
+                >
+                    <img src={crossIcon} alt='icon-cross' /> <span className='visually-hidden'>{props.name}</span>
                 </button>
             </div>
+        </div>
+    );
+
+
+    return (
+        <li className="todo">
+            {isEditing ? editingTemplate : viewTemplate}
         </li>
     );
 }
