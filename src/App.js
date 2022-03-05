@@ -18,8 +18,8 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
-  const [filter, setFilter] = useState('All'); {/* Default Filter */ }
-
+  const [filter, setFilter] = useState('All'); 
+  
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map(task => {
@@ -51,7 +51,9 @@ function App(props) {
     setTasks(editedTaskList);
   }
 
-  const taskList = tasks.map(task => (
+  const taskList = tasks
+    .filter(FILTER_MAP[filter])
+    .map(task => (
     <TodoList
       id={task.id}
       name={task.name}
@@ -64,8 +66,15 @@ function App(props) {
   ));
 
   const filterList = FILTER_NAMES.map(name => (
-    <FilterControl key={name} name={name}/>
-  ))
+    <FilterControl
+      key={name}
+      name={name}
+      isPressed={name === filter}
+      setFilter={setFilter}
+    />
+  ));
+
+  
 
   function addTask(name) {
     const newTask = { id: 'todo-' + nanoid(), name: name, completed: false };
@@ -106,22 +115,8 @@ function App(props) {
             </section>
           
             {/* For Mobile */}
-            <section className="filters mobile-filter-control  ">
-                <button type="button" className="btn toggle-btn" aria-pressed="true">
-                  <span className="visually-hidden">Show </span>
-                  <span>all</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
-                <button type="button" className="btn toggle-btn" aria-pressed="false">
-                  <span className="visually-hidden">Show </span>
-                  <span>Active</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
-                <button type="button" className="btn toggle-btn" aria-pressed="false">
-                  <span className="visually-hidden">Show </span>
-                  <span>Completed</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
+            <section className="filters mobile-filter-control">
+                {filterList}
             </section> 
           </main>
           <Footer />

@@ -222,3 +222,22 @@ Drag and drop to reorder list
                     <img src={crossIcon} alt='icon-cross' /> <span className="visually-hidden">{props.name}</span>
                 </button>
             </div>
+
+
+
+mobile
+<button type="button" className="btn toggle-btn" aria-pressed="true">
+                  <span className="visually-hidden">Show </span>
+                  <span>all</span>
+                  <span className="visually-hidden"> tasks</span>
+                </button>
+                <button type="button" className="btn toggle-btn" aria-pressed="false">
+                  <span className="visually-hidden">Show </span>
+                  <span>Active</span>
+                  <span className="visually-hidden"> tasks</span>
+                </button>
+                <button type="button" className="btn toggle-btn" aria-pressed="false">
+                  <span className="visually-hidden">Show </span>
+                  <span>Completed</span>
+                  <span className="visually-hidden"> tasks</span>
+                </button>
