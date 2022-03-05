@@ -17,15 +17,7 @@ export default function FilterControl(props) {
                     <span className='visually-hidden'>tasks</span>   
                </button>
             </div>
-            <div className='control-btn clear-btn'>
-                <button
-                    type='button'
-                    className='btn'
-                    
-                >
-                    Clear Completed
-                </button>
-            </div>
+            
         </div>
     );
 }

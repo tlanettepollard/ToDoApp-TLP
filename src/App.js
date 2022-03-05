@@ -61,7 +61,7 @@ function App(props) {
       key={task.id}
       toggleTaskCompleted={toggleTaskCompleted}
       deleteTask={deleteTask}
-      editTask={editTask}
+      editTask={editTask} 
     />
   ));
 
@@ -75,7 +75,6 @@ function App(props) {
   ));
 
   
-
   function addTask(name) {
     const newTask = { id: 'todo-' + nanoid(), name: name, completed: false };
     setTasks([...tasks, newTask]);
@@ -83,7 +82,11 @@ function App(props) {
   const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
-  
+
+  const clearCompletedTasks = () => {
+    setTasks(tasks.filter((task) => !task.completed));
+    FILTER_MAP('all');
+  };
   
     return (
       <div className='wrapper'>
@@ -110,8 +113,16 @@ function App(props) {
               <div className='filter-control'>
                 <h2 id='list-heading'>{headingText}</h2>
                 {filterList}
+                 <div className='control-btn clear-btn'>
+                    <button
+                      type='button'
+                      className='btn'
+                      onClick={clearCompletedTasks}
+                    >
+                      Clear Completed
+                    </button>
+                  </div>
               </div>
-              
             </section>
           
             {/* For Mobile */}
