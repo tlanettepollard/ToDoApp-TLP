@@ -127,7 +127,16 @@ function App(props) {
           
             {/* For Mobile */}
             <section className="filters mobile-filter-control">
-                {filterList}
+              {filterList}
+              <div className='control-btn clear-btn'>
+                  <button
+                    type='button'
+                    className='btn'
+                    onClick={clearCompletedTasks}
+                  >
+                    Clear Completed
+                  </button>
+                </div>
             </section> 
           </main>
           <Footer />

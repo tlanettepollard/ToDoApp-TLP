@@ -1,24 +1,40 @@
-/*
-$main-pg-bg: hsl(235, 21%, 11%);
-$input-bg: hsl(235, 24%, 19%);
-$input-text-color: hsl(234, 11%, 52%);
-$todo-list-bg: hsl(237, 14%, 26%);
-$todo-list-text-color: hsl(234, 39%, 85%);
-$todo-list-item-border: hsl(0, 0%, 59%);
-$filter-text-color: hsl(235, 16%, 43%);
-$instruction-text-color: hsl(235, 16%, 43%);
-$text-hover: hsl(236, 33%, 92%);
-$shadow-color: hsl(233, 14%, 35%);
-$completed-item-text-color: hsl(233, 14%, 35%);
-$line-border-color: hsl(234, 11%, 52%);
-
-
-//Dark Theme Images
-$header-bg-image-mobile: url('../../images/bg-mobile-dark.jpg');
-$header-bg-image-desktop: url('../../images/bg-desktop-dark.jpg');
-*/
-/* RESETS */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+:root {
+  --main-pg-bg: hsl(0, 0%, 98%);
+  --input-bg: hsl(0, 0%, 98%);
+  --input-text-color: hsl(236, 9%, 61%);
+  --todo-list-bg:hsl(0, 0%, 98%);
+  --todo-list-text-color: hsl(235, 19%, 35%);
+  --todo-list-item-border: hsl(0, 0%, 59%);
+  --filter-text-color:hsl(236, 9%, 61%);
+  --instruction-text-color: hsl(236, 9%, 61%);
+  --line-border-color: hsl(236, 33%, 92%);
+  --completed-item-text-color: hsl(233, 11%, 84%);
+  --task-name-check-color: hsl(233, 11%, 84%);
+  --shadow-color: hsl(233, 11%, 84%);
+  --header-bg-image-mobile: url("../../images/bg-mobile-light.jpg");
+  --header-bg-image-desktop: url("../../images/bg-desktop-light.jpg");
+  --main-pg-bg: hsl(235, 21%, 11%);
+  --input-bg: hsl(235, 24%, 19%);
+  --input-text-color: hsl(234, 11%, 52%);
+  --todo-list-bg: hsl(237, 14%, 26%);
+  --todo-list-text-color: hsl(234, 39%, 85%);
+  --todo-list-item-border: hsl(0, 0%, 59%);
+  --filter-text-color: hsl(235, 16%, 43%);
+  --instruction-text-color: hsl(235, 16%, 43%);
+  --text-hover: hsl(236, 33%, 92%);
+  --shadow-color: hsl(233, 14%, 35%);
+  --completed-item-text-color: hsl(233, 14%, 35%);
+  --line-border-color: hsl(234, 11%, 52%);
+  --header-bg-image-mobile: url("../../images/bg-mobile-dark.jpg");
+  --header-bg-image-desktop: url("../../images/bg-desktop-dark.jpg");
+  --body-font-family: "Josefin Sans",
+  sans-serif;
+  --weight-bold: 700;
+  --weight-regular: 400;
+}
+
+/* RESETS */
 *,
 *::before,
 *::after {
@@ -48,14 +64,13 @@ ul {
   padding: 0;
 }
 
+body,
 button,
-input,
+input[type=text],
 optgroup,
 select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+textarea,
+button {
   margin: 0;
 }
 
@@ -79,6 +94,20 @@ body {
 }
 
 /* Global Styles */
+.wrapper {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+/* Theme-- Light */
+.wrapper.light {
+  background-color: var(--main-pg-bg);
+}
+
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -99,13 +128,22 @@ body {
 }
 
 /* End Global Styles */
-body {
-  font-family: "Josefin Sans", sans-serif;
+body,
+button,
+input[type=text],
+optgroup,
+select,
+textarea,
+button {
+  font-family: var(--body-font-family);
+  font-size: 1.8rem;
+  font-weight: var(--weight-regular);
+  line-height: 1.15;
 }
 
 h1 {
   font-size: 2.222em;
-  font-weight: 700;
+  font-weight: var(--weight-regular);
 }
 
 footer {

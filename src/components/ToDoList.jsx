@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import crossIcon from '../images/icon-cross.svg';
 import editIcon from '../images/icons8-edit.svg';
 
+
 export default function ToDoList(props) {
     const [isEditing, setEditing] = useState(false);
     const [newName, setNewName] = useState('');
-    
+
 
     // Set new task name
     function handleChange(e) {
