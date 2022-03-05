@@ -8,8 +8,18 @@ import './scss/main.scss';
 import moon from '../src/images/icon-moon.svg';
 import sun from '../src/images/icon-sun.svg';
 
+const FILTER_MAP = {
+  All: () => true,
+  Active: task => !task.completed, 
+  Completed: task => task.completed
+};
+
+const FILTER_NAMES = Object.keys(FILTER_MAP);
+
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
+  const [filter, setFilter] = useState('All'); {/* Default Filter */ }
+
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map(task => {
@@ -53,6 +63,10 @@ function App(props) {
     />
   ));
 
+  const filterList = FILTER_NAMES.map(name => (
+    <FilterControl key={name} name={name}/>
+  ))
+
   function addTask(name) {
     const newTask = { id: 'todo-' + nanoid(), name: name, completed: false };
     setTasks([...tasks, newTask]);
@@ -86,11 +100,12 @@ function App(props) {
               
               <div className='filter-control'>
                 <h2 id='list-heading'>{headingText}</h2>
-                <FilterControl />
+                {filterList}
               </div>
               
             </section>
           
+            {/* For Mobile */}
             <section className="filters mobile-filter-control  ">
                 <button type="button" className="btn toggle-btn" aria-pressed="true">
                   <span className="visually-hidden">Show </span>
