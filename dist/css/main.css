@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 :root {
+  --filter-text-active-color: hsl(220, 98%, 61%);
+  --check-box-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --check-box-border-hover: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   --main-pg-bg: hsl(0, 0%, 98%);
   --input-bg: hsl(0, 0%, 98%);
   --input-text-color: hsl(236, 9%, 61%);
@@ -32,6 +35,9 @@
   sans-serif;
   --weight-bold: 700;
   --weight-regular: 400;
+  --mobile-width: 580px;
+  --tablet-width: 768px;
+  --desktop-width: 1024px;
 }
 
 /* RESETS */

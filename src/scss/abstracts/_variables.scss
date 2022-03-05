@@ -1,13 +1,13 @@
 
 
 // Colors
-//Primary
-
-$filter-text-active-color: hsl(220, 98%, 61%);
-$check-box-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-$check-box-border-hover: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
 :root {
+//Primary 
+--filter-text-active-color: hsl(220, 98%, 61%);
+--check-box-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+--check-box-border-hover: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
 // Light Theme Colors
 --main-pg-bg: hsl(0, 0%, 98%);
 --input-bg: hsl(0, 0%, 98%);
@@ -52,15 +52,19 @@ sans-serif;
 --weight-bold: 700;
 --weight-regular: 400;
 
+
+// Breakpoints 
+--mobile-width: 580px;
+--tablet-width: 768px;
+--desktop-width: 1024px;
+
 }
 
 
 
 
 
-$mobile-width: 580px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
+
 
 
 
