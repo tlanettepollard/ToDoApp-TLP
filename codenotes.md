@@ -83,6 +83,11 @@ Hi, back again. Ready to work on this app. Today I'm going to add the interactiv
 
 - Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
+### 03/05/2022
+Hey! I'm back. No coding the past few days due to house work. Now I'm ready to finish this app. Today I will work on the filter buttons. I left off with adding the editing feature on the user interface. 
+
+#### Learn
+- Object Keys method used to return an array of a given object's own enumerable property names iterated in the same order that a normal loop would.
 ---
 
 Code holder
@@ -217,3 +222,22 @@ Drag and drop to reorder list
                     <img src={crossIcon} alt='icon-cross' /> <span className="visually-hidden">{props.name}</span>
                 </button>
             </div>
+
+
+
+mobile
+<button type="button" className="btn toggle-btn" aria-pressed="true">
+                  <span className="visually-hidden">Show </span>
+                  <span>all</span>
+                  <span className="visually-hidden"> tasks</span>
+                </button>
+                <button type="button" className="btn toggle-btn" aria-pressed="false">
+                  <span className="visually-hidden">Show </span>
+                  <span>Active</span>
+                  <span className="visually-hidden"> tasks</span>
+                </button>
+                <button type="button" className="btn toggle-btn" aria-pressed="false">
+                  <span className="visually-hidden">Show </span>
+                  <span>Completed</span>
+                  <span className="visually-hidden"> tasks</span>
+                </button>

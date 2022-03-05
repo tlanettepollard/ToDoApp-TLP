@@ -8,8 +8,18 @@ import './scss/main.scss';
 import moon from '../src/images/icon-moon.svg';
 import sun from '../src/images/icon-sun.svg';
 
+const FILTER_MAP = {
+  All: () => true,
+  Active: task => !task.completed, 
+  Completed: task => task.completed
+};
+
+const FILTER_NAMES = Object.keys(FILTER_MAP);
+
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
+  const [filter, setFilter] = useState('All'); 
+  
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map(task => {
@@ -41,7 +51,9 @@ function App(props) {
     setTasks(editedTaskList);
   }
 
-  const taskList = tasks.map(task => (
+  const taskList = tasks
+    .filter(FILTER_MAP[filter])
+    .map(task => (
     <TodoList
       id={task.id}
       name={task.name}
@@ -49,10 +61,20 @@ function App(props) {
       key={task.id}
       toggleTaskCompleted={toggleTaskCompleted}
       deleteTask={deleteTask}
-      editTask={editTask}
+      editTask={editTask} 
     />
   ));
 
+  const filterList = FILTER_NAMES.map(name => (
+    <FilterControl
+      key={name}
+      name={name}
+      isPressed={name === filter}
+      setFilter={setFilter}
+    />
+  ));
+
+  
   function addTask(name) {
     const newTask = { id: 'todo-' + nanoid(), name: name, completed: false };
     setTasks([...tasks, newTask]);
@@ -60,7 +82,11 @@ function App(props) {
   const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
-  
+
+  const clearCompletedTasks = () => {
+    setTasks(tasks.filter((task) => !task.completed));
+    FILTER_MAP('all');
+  };
   
     return (
       <div className='wrapper'>
@@ -86,27 +112,22 @@ function App(props) {
               
               <div className='filter-control'>
                 <h2 id='list-heading'>{headingText}</h2>
-                <FilterControl />
+                {filterList}
+                 <div className='control-btn clear-btn'>
+                    <button
+                      type='button'
+                      className='btn'
+                      onClick={clearCompletedTasks}
+                    >
+                      Clear Completed
+                    </button>
+                  </div>
               </div>
-              
             </section>
           
-            <section className="filters mobile-filter-control  ">
-                <button type="button" className="btn toggle-btn" aria-pressed="true">
-                  <span className="visually-hidden">Show </span>
-                  <span>all</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
-                <button type="button" className="btn toggle-btn" aria-pressed="false">
-                  <span className="visually-hidden">Show </span>
-                  <span>Active</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
-                <button type="button" className="btn toggle-btn" aria-pressed="false">
-                  <span className="visually-hidden">Show </span>
-                  <span>Completed</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
+            {/* For Mobile */}
+            <section className="filters mobile-filter-control">
+                {filterList}
             </section> 
           </main>
           <Footer />
