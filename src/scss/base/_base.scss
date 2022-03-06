@@ -70,12 +70,14 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
+
+    @include themify($themes){
+        background: themed('main-bg');
+        color: themed('page-text');
+    }
 }
 
-/* Theme-- Light */
-.wrapper.light {
-    background-color: var(--main-pg-bg);
-}
+
 
 .visually-hidden {
     position: absolute !important;

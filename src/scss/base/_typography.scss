@@ -8,9 +8,9 @@ optgroup,
 select,
 textarea,
 button {
-    font-family: var(--body-font-family);
+    font-family: $body-font-family;
     font-size: 1.8rem;
-    font-weight: var(--weight-regular);
+    font-weight: $weight-regular;
     line-height: 1.15;
 }
 
