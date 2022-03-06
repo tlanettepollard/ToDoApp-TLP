@@ -1,0 +1,35 @@
+@import 'variables';
+
+$themes: (
+    light: (
+        main-bg: $lt-main-pg-bg,
+        page-text: $lt-main-text-color,
+        input-bg: $lt-input-bg,
+        input-text: $lt-input-text-color,
+        todo-bg: $lt-todo-list-bg,
+        todo-text: $lt-todo-list-text-color,
+        todo-item-border: $lt-todo-list-item-border,
+        filter-text: $lt-filter-text-color,
+        paragraph-text: $lt-paragraph-text-color,
+        text-hover: $lt-text-hover-color,
+        border-color: $lt-line-border-color,
+        completed-item-text: $lt-completed-item-text-color,
+        task-check: $lt-task-name-check-color,
+        shadow-color: $lt-shadow-color,
+    ), 
+    dark: (
+        main-bg: $dk-main-pg-bg,
+        page-text: $dk-main-text-color,
+        input-bg: $dk-input-bg,
+        input-text: $dk-input-text-color,
+        todo-bg: $dk-todo-list-bg,
+        todo-text: $dk-todo-list-text-color,
+        todo-item-border: $dk-todo-list-item-border,
+        filter-text: $dk-filter-text-color,
+        paragraph-text: $dk-paragraph-text-color,
+        text-hover: $dk-text-hover-color,
+        border-color: $dk-line-border-color,
+        completed-item-text: $dk-completed-item-text-color,
+        shadow-color: $dk-shadow-color,
+    ), 
+);

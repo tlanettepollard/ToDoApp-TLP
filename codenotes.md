@@ -84,10 +84,17 @@ Hi, back again. Ready to work on this app. Today I'm going to add the interactiv
 - Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
 ### 03/05/2022
-Hey! I'm back. No coding the past few days due to house work. Now I'm ready to finish this app. Today I will work on the filter buttons. I left off with adding the editing feature on the user interface. 
+
+Hey! I'm back. No coding the past few days due to house work. Now I'm ready to finish this app. Today I will work on the filter buttons. I left off with adding the editing feature on the user interface. I did a happy dance because I figured out how to get my 'clear completed' button to work. Now I am working on the styling and the themes for the app. I am referring to the article below for how to add dark mode to a React/Sass project.
 
 #### Learn
+
 - Object Keys method used to return an array of a given object's own enumerable property names iterated in the same order that a normal loop would.
+
+Resource:
+
+- [The Best Way to Add Dark Mode to Your React/Sass Project](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616), by Jimmy Lam
+
 ---
 
 Code holder
@@ -223,21 +230,19 @@ Drag and drop to reorder list
                 </button>
             </div>
 
-
-
 mobile
 <button type="button" className="btn toggle-btn" aria-pressed="true">
-                  <span className="visually-hidden">Show </span>
-                  <span>all</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
-                <button type="button" className="btn toggle-btn" aria-pressed="false">
-                  <span className="visually-hidden">Show </span>
-                  <span>Active</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
-                <button type="button" className="btn toggle-btn" aria-pressed="false">
-                  <span className="visually-hidden">Show </span>
-                  <span>Completed</span>
-                  <span className="visually-hidden"> tasks</span>
-                </button>
+<span className="visually-hidden">Show </span>
+<span>all</span>
+<span className="visually-hidden"> tasks</span>
+</button>
+<button type="button" className="btn toggle-btn" aria-pressed="false">
+<span className="visually-hidden">Show </span>
+<span>Active</span>
+<span className="visually-hidden"> tasks</span>
+</button>
+<button type="button" className="btn toggle-btn" aria-pressed="false">
+<span className="visually-hidden">Show </span>
+<span>Completed</span>
+<span className="visually-hidden"> tasks</span>
+</button>

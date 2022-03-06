@@ -2,63 +2,66 @@
 
 // Colors
 
-:root {
+
 //Primary 
---filter-text-active-color: hsl(220, 98%, 61%);
---check-box-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
---check-box-border-hover: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+$filter-text-active-color: hsl(220, 98%, 61%);
+$check-box-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+$check-box-border-hover: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
 // Light Theme Colors
---main-pg-bg: hsl(0, 0%, 98%);
---input-bg: hsl(0, 0%, 98%);
---input-text-color: hsl(236, 9%, 61%);
---todo-list-bg:hsl(0, 0%, 98%);
---todo-list-text-color: hsl(235, 19%, 35%);
---todo-list-item-border: hsl(0, 0%, 59%);
---filter-text-color:hsl(236, 9%, 61%);
---instruction-text-color: hsl(236, 9%, 61%);
---line-border-color: hsl(236, 33%, 92%);
---completed-item-text-color: hsl(233, 11%, 84%);
---task-name-check-color: hsl(233, 11%, 84%);
---shadow-color: hsl(233, 11%, 84%);
+$lt-main-pg-bg: hsl(0, 0%, 98%);
+$lt-main-text-color: hsl(236, 9%, 61%);
+$lt-input-bg: hsl(0, 0%, 98%);
+$lt-input-text-color: hsl(236, 9%, 61%);
+$lt-todo-list-bg:hsl(0, 0%, 98%);
+$lt-todo-list-text-color: hsl(235, 19%, 35%);
+$lt-todo-list-item-border: hsl(0, 0%, 59%);
+$lt-filter-text-color:hsl(236, 9%, 61%);
+$lt-paragraph-text-color: hsl(236, 9%, 61%);
+$lt-text-hover-color: hsl(235, 19%, 35%);
+$lt-line-border-color: hsl(236, 33%, 92%);
+$lt-completed-item-text-color: hsl(233, 11%, 84%);
+$lt-task-name-check-color: hsl(233, 11%, 84%);
+$lt-shadow-color: hsl(233, 11%, 84%);
 
 
 // Light Theme Images
---header-bg-image-mobile: url('../../images/bg-mobile-light.jpg');
---header-bg-image-desktop: url('../../images/bg-desktop-light.jpg');
+$lt-header-bg-image-mobile: url('../../images/bg-mobile-light.jpg');
+$lt-header-bg-image-desktop: url('../../images/bg-desktop-light.jpg');
 
 // Dark Theme 
---main-pg-bg: hsl(235, 21%, 11%);
---input-bg: hsl(235, 24%, 19%);
---input-text-color: hsl(234, 11%, 52%);
---todo-list-bg: hsl(237, 14%, 26%);
---todo-list-text-color: hsl(234, 39%, 85%);
---todo-list-item-border: hsl(0, 0%, 59%);
---filter-text-color: hsl(235, 16%, 43%);
---instruction-text-color: hsl(235, 16%, 43%);
---text-hover: hsl(236, 33%, 92%);
---shadow-color: hsl(233, 14%, 35%);
---completed-item-text-color: hsl(233, 14%, 35%);
---line-border-color: hsl(234, 11%, 52%);
+$dk-main-pg-bg: hsl(235, 21%, 11%);
+$dk-main-text-color: hsl(233, 14%, 35%);
+$dk-input-bg: hsl(235, 24%, 19%);
+$dk-input-text-color: hsl(234, 11%, 52%);
+$dk-todo-list-bg: hsl(237, 14%, 26%);
+$dk-todo-list-text-color: hsl(234, 39%, 85%);
+$dk-todo-list-item-border: hsl(0, 0%, 59%);
+$dk-filter-text-color: hsl(235, 16%, 43%);
+$dk-paragraph-text-color: hsl(235, 16%, 43%);
+$dk-text-hover-color: hsl(236, 33%, 92%);
+$dk-shadow-color: hsl(233, 14%, 35%);
+$dk-completed-item-text-color: hsl(233, 14%, 35%);
+$dk-line-border-color: hsl(234, 11%, 52%);
 
 
 //Dark Theme Images
---header-bg-image-mobile: url('../../images/bg-mobile-dark.jpg');
---header-bg-image-desktop: url('../../images/bg-desktop-dark.jpg');
+$dk-header-bg-image-mobile: url('../../images/bg-mobile-dark.jpg');
+$dk-header-bg-image-desktop: url('../../images/bg-desktop-dark.jpg');
 
 // Typography
---body-font-family: 'Josefin Sans',
+$body-font-family: 'Josefin Sans',
 sans-serif;
---weight-bold: 700;
---weight-regular: 400;
+$weight-bold: 700;
+$weight-regular: 400;
 
 
 // Breakpoints 
---mobile-width: 580px;
---tablet-width: 768px;
---desktop-width: 1024px;
+$mobile-width: 580px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
 
-}
+
 
 
 

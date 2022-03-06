@@ -3,6 +3,8 @@ import TodoList  from './components/TodoList';
 import  TodoForm  from './components/TodoForm';
 import FilterControl from './components/FilterControl';
 import Footer from './components/Footer';
+//import ThemeSetter from './components/ThemeSetter';
+import ThemeProvider from './components/contexts/ThemeProvider';
 import { nanoid } from 'nanoid';
 import './scss/main.scss';
 import moon from '../src/images/icon-moon.svg';
@@ -88,7 +90,8 @@ function App(props) {
     FILTER_MAP('all');
   };
   
-    return (
+  return (
+    <ThemeProvider>
       <div className='wrapper'>
         <div className='container'>
           <header>
@@ -111,7 +114,7 @@ function App(props) {
               </ul>
               
               <div className='filter-control'>
-                <h2 id='list-heading'>{headingText}</h2>
+                <p id='remaining-text'>{headingText}</p>
                 {filterList}
                  <div className='control-btn clear-btn'>
                     <button
@@ -141,7 +144,8 @@ function App(props) {
           </main>
           <Footer />
         </div> 
-      </div> // Wrapper
+      </div> 
+    </ThemeProvider> 
   );
 }
   
