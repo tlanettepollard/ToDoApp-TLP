@@ -1,5 +1,4 @@
 
-
 /* RESETS */
 *,
 *::before,
@@ -69,12 +68,18 @@ body {
     min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    /*background-image: url('../../images/bg-mobile-light.jpg');
     background-size: 100% auto;
-    background-repeat: no-repeat;*/
-    @include backgroundImg;
+    background-repeat: no-repeat;
+    
     @include themed() {
         background-color: t('main-bg');
+        background-image: t('bg-img-mobile');
+    }
+
+    @include desktop {
+        @include themed () {
+            background-image: t('bg-img-desktop');
+        }
     }
     
 }

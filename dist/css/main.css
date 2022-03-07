@@ -65,39 +65,24 @@ body {
   min-height: 100vh;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  /*background-image: url('../../images/bg-mobile-light.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;*/
-}
-.light .wrapper {
-  background: url("../../images/bg-mobile-light.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-@media screen and (min-width: 1024px) {
-  .light .wrapper {
-    background: url("../../images/bg-desktop-light.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-}
-.dark .wrapper {
-  background: url("../../images/bg-mobile-dark.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 1024px) {
-  .dark .wrapper {
-    background: url("../../images/bg-desktop-dark.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
 }
 .theme--light .wrapper {
   background-color: #fafafa;
+  background-image: url("../../images/bg-mobile-light.jpg");
 }
 .theme--dark .wrapper {
   background-color: #161722;
+  background-image: url("../../images/bg-mobile-dark.jpg");
+}
+@media screen and (min-width: 1024px) {
+  .theme--light .wrapper {
+    background-image: url("../../images/bg-desktop-light.jpg");
+  }
+  .theme--dark .wrapper {
+    background-image: url("../../images/bg-desktop-dark.jpg");
+  }
 }
 
 .visually-hidden {

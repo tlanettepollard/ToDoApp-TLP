@@ -26,8 +26,8 @@ $lt-shadow-color: hsl(233, 11%, 84%);
 
 
 // Light Theme Images
-$lt-header-bg-image-mobile: url('../../images/bg-mobile-light.jpg');
-$lt-header-bg-image-desktop: url('../../images/bg-desktop-light.jpg');
+$lt-wrapper-bg-image-mobile: url('../../images/bg-mobile-light.jpg');
+$lt-wrapper-bg-image-desktop: url('../../images/bg-desktop-light.jpg');
 
 // Dark Theme 
 $dk-header-text: hsl(0, 0%, 100%);
@@ -47,8 +47,8 @@ $dk-line-border-color: hsl(234, 11%, 52%);
 
 
 //Dark Theme Images
-$dk-header-bg-image-mobile: url('../../images/bg-mobile-dark.jpg');
-$dk-header-bg-image-desktop: url('../../images/bg-desktop-dark.jpg');
+$dk-wrapper-bg-img-mobile: url('../../images/bg-mobile-dark.jpg');
+$dk-wrapper-bg-img-desktop: url('../../images/bg-desktop-dark.jpg');
 
 // Typography
 $body-font-family: 'Josefin Sans',
