@@ -1,34 +1,72 @@
 @import 'variables';
 
+/* Theme Settings */
 $themes: (
-    light: (
-        main-bg: $lt-main-pg-bg,
-        page-text: $lt-main-text-color,
-        input-bg: $lt-input-bg,
-        input-text: $lt-input-text-color,
-        todo-bg: $lt-todo-list-bg,
-        todo-text: $lt-todo-list-text-color,
-        todo-item-border: $lt-todo-list-item-border,
-        filter-text: $lt-filter-text-color,
-        paragraph-text: $lt-paragraph-text-color,
-        text-hover: $lt-text-hover-color,
-        border-color: $lt-line-border-color,
-        completed-item-text: $lt-completed-item-text-color,
-        shadow-color: $lt-shadow-color,
+    'light': (
+        'header-text': $lt-header-text,
+        'main-bg': $lt-main-pg-bg,
+        'page-text': $lt-main-text-color,
+        'input-bg': $lt-input-bg,
+        'input-text': $lt-input-text-color,
+        'todo-bg': $lt-todo-list-bg,
+        'todo-text': $lt-todo-list-text-color,
+        'todo-item-border': $lt-todo-list-item-border,
+        'filter-text': $lt-filter-text-color,
+        'paragraph-text': $lt-paragraph-text-color,
+        'text-hover': $lt-text-hover-color,
+        'border-color': $lt-line-border-color,
+        'completed-item-text': $lt-completed-item-text-color,
+        'shadow-color': $lt-shadow-color,
     ), 
-    dark: (
-        main-bg: $dk-main-pg-bg,
-        page-text: $dk-main-text-color,
-        input-bg: $dk-input-bg,
-        input-text: $dk-input-text-color,
-        todo-bg: $dk-todo-list-bg,
-        todo-text: $dk-todo-list-text-color,
-        todo-item-border: $dk-todo-list-item-border,
-        filter-text: $dk-filter-text-color,
-        paragraph-text: $dk-paragraph-text-color,
-        text-hover: $dk-text-hover-color,
-        border-color: $dk-line-border-color,
-        completed-item-text: $dk-completed-item-text-color,
-        shadow-color: $dk-shadow-color,
+    'dark': (
+        'header-text': $dk-header-text,
+        'main-bg': $dk-main-pg-bg,
+        'page-text': $dk-main-text-color,
+        'input-bg': $dk-input-bg,
+        'input-text': $dk-input-text-color,
+        'todo-bg': $dk-todo-list-bg,
+        'todo-text': $dk-todo-list-text-color,
+        'todo-item-border': $dk-todo-list-item-border,
+        'filter-text': $dk-filter-text-color,
+        'paragraph-text': $dk-paragraph-text-color,
+        'text-hover': $dk-text-hover-color,
+        'border-color': $dk-line-border-color,
+        'completed-item-text': $dk-completed-item-text-color,
+        'shadow-color': $dk-shadow-color,
     ), 
 );
+
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function t($key) {
+    @return map-get($theme-map, $key);
+}
+
+$theme-list: light dark;
+
+@mixin backgroundImg {
+    @each $theme-name in $theme-list {
+        .#{$theme-name} & {
+            background: url('../../images/bg-mobile-'+$theme-name+'.jpg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            @include desktop {
+                background: url('../../images/bg-desktop-'+$theme-name+'.jpg');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

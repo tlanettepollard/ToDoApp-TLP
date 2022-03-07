@@ -9,6 +9,7 @@ import ThemeProvider from './components/contexts/ThemeProvider';
 import { nanoid } from 'nanoid';
 import './scss/main.scss';
 
+
 const FILTER_MAP = {
   All: () => true,
   Active: task => !task.completed, 
@@ -20,6 +21,7 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState('All'); 
+  
   
 
   function toggleTaskCompleted(id) {
@@ -91,7 +93,7 @@ function App(props) {
   
   return (
     <ThemeProvider>
-      <div className='wrapper'>
+      <div className={`wrapper`}>
         <Header />
         <main>
           <TodoForm addTask={addTask}/>

@@ -19,6 +19,7 @@ const ThemeProvider = ({ children }) => {
         localStorage.setItem('globalTheme', theme);
     }, [theme]);
 
+
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>
             <div className={`theme--${theme}`}>
