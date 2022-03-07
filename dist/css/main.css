@@ -62,11 +62,42 @@ body {
 /* Global Styles */
 .wrapper {
   width: 100%;
+  min-height: 100vh;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  /*background-image: url('../../images/bg-mobile-light.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;*/
+}
+.light .wrapper {
+  background: url("../../images/bg-mobile-light.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+}
+@media screen and (min-width: 1024px) {
+  .light .wrapper {
+    background: url("../../images/bg-desktop-light.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+.dark .wrapper {
+  background: url("../../images/bg-mobile-dark.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .dark .wrapper {
+    background: url("../../images/bg-desktop-dark.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+.theme--light .wrapper {
+  background-color: #fafafa;
+}
+.theme--dark .wrapper {
+  background-color: #161722;
 }
 
 .visually-hidden {

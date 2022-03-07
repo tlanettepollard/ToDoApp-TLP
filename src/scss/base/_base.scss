@@ -66,12 +66,16 @@ body {
 /* Global Styles */
 .wrapper {
     width: 100%;
+    min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-
+    /*background-image: url('../../images/bg-mobile-light.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;*/
+    @include backgroundImg;
+    @include themed() {
+        background-color: t('main-bg');
+    }
     
 }
 

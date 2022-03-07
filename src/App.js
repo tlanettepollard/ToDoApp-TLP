@@ -93,7 +93,7 @@ function App(props) {
   
   return (
     <ThemeProvider>
-      <div className='wrapper'>
+      <div className={`wrapper`}>
         <Header />
         <main>
           <TodoForm addTask={addTask}/>

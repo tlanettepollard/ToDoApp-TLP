@@ -53,3 +53,20 @@ $themes: (
 @function t($key) {
     @return map-get($theme-map, $key);
 }
+
+$theme-list: light dark;
+
+@mixin backgroundImg {
+    @each $theme-name in $theme-list {
+        .#{$theme-name} & {
+            background: url('../../images/bg-mobile-'+$theme-name+'.jpg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            @include desktop {
+                background: url('../../images/bg-desktop-'+$theme-name+'.jpg');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
