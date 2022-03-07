@@ -1,19 +1,17 @@
 import React from 'react';
-import moon from '../images/icon-moon.svg'
-import sun from '../images/icon-sun.svg';
+import ThemeSetter from './ThemeSetter';
 
-export default function Header() {
+const Header = () => {
     
     return (
         <header className='title-container'>
-            <h1>Todo</h1>
-            <button className='btn'>
-                <img src={moon} alt='icon-moon' />
-                <img src={sun} alt='icon-sun' />
-            </button>
+            <h1 className='title'>Todo</h1>
+            <ThemeSetter />
         </header> 
     )
 }
+
+export default Header
 
 
 /* import React, { useContext } from 'react';
