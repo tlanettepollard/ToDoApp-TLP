@@ -1,9 +1,10 @@
 
-
 /* RESETS */
 *,
 *::before,
 *::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     outline: 1px solid black;
 }
@@ -52,8 +53,6 @@ input[type="text"] {
 
 body {
     width: 100%;
-    //max-width: 68rem;
-    margin: 0 auto;
 }
 
 /* Added Reset */
@@ -69,14 +68,30 @@ body {
     min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    /*background-image: url('../../images/bg-mobile-light.jpg');
     background-size: 100% auto;
-    background-repeat: no-repeat;*/
-    @include backgroundImg;
+    background-repeat: no-repeat;
+    
     @include themed() {
         background-color: t('main-bg');
+        background-image: t('bg-img-mobile');
+    }
+
+    @include desktop {
+        @include themed () {
+            background-image: t('bg-img-desktop');
+        }
     }
     
+}
+
+.main {
+    max-width: 90%;
+    margin: auto;
+    @include flex (column, center, center);
+
+    @include desktop {
+        max-width: 54rem;
+    }
 }
 
 

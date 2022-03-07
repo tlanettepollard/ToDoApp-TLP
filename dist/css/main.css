@@ -4,6 +4,8 @@
 *,
 *::before,
 *::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   outline: 1px solid black;
 }
@@ -51,7 +53,6 @@ input[type=text] {
 
 body {
   width: 100%;
-  margin: 0 auto;
 }
 
 /* Added Reset */
@@ -65,39 +66,38 @@ body {
   min-height: 100vh;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  /*background-image: url('../../images/bg-mobile-light.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;*/
-}
-.light .wrapper {
-  background: url("../../images/bg-mobile-light.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-@media screen and (min-width: 1024px) {
-  .light .wrapper {
-    background: url("../../images/bg-desktop-light.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-}
-.dark .wrapper {
-  background: url("../../images/bg-mobile-dark.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 1024px) {
-  .dark .wrapper {
-    background: url("../../images/bg-desktop-dark.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
 }
 .theme--light .wrapper {
   background-color: #fafafa;
+  background-image: url("../../images/bg-mobile-light.jpg");
 }
 .theme--dark .wrapper {
   background-color: #161722;
+  background-image: url("../../images/bg-mobile-dark.jpg");
+}
+@media screen and (min-width: 769px) {
+  .theme--light .wrapper {
+    background-image: url("../../images/bg-desktop-light.jpg");
+  }
+  .theme--dark .wrapper {
+    background-image: url("../../images/bg-desktop-dark.jpg");
+  }
+}
+
+.main {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .main {
+    max-width: 54rem;
+  }
 }
 
 .visually-hidden {

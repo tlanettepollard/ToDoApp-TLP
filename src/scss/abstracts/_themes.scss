@@ -17,6 +17,8 @@ $themes: (
         'border-color': $lt-line-border-color,
         'completed-item-text': $lt-completed-item-text-color,
         'shadow-color': $lt-shadow-color,
+        'bg-img-mobile': $lt-wrapper-bg-image-mobile,
+        'bg-img-desktop': $lt-wrapper-bg-image-desktop,
     ), 
     'dark': (
         'header-text': $dk-header-text,
@@ -33,6 +35,8 @@ $themes: (
         'border-color': $dk-line-border-color,
         'completed-item-text': $dk-completed-item-text-color,
         'shadow-color': $dk-shadow-color,
+        'bg-img-mobile': $dk-wrapper-bg-img-mobile,
+        'bg-img-desktop': $dk-wrapper-bg-img-desktop,
     ), 
 );
 
@@ -54,19 +58,3 @@ $themes: (
     @return map-get($theme-map, $key);
 }
 
-$theme-list: light dark;
-
-@mixin backgroundImg {
-    @each $theme-name in $theme-list {
-        .#{$theme-name} & {
-            background: url('../../images/bg-mobile-'+$theme-name+'.jpg');
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            @include desktop {
-                background: url('../../images/bg-desktop-'+$theme-name+'.jpg');
-                background-size: 100% auto;
-                background-repeat: no-repeat;
-            }
-        }
-    }
-}

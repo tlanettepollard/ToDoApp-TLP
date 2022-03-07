@@ -93,9 +93,9 @@ function App(props) {
   
   return (
     <ThemeProvider>
-      <div className={`wrapper`}>
-        <Header />
-        <main>
+      <div className='wrapper'>
+        <main className='main'>
+          <Header />
           <TodoForm addTask={addTask}/>
           <section className='todo-list-section'>
           
