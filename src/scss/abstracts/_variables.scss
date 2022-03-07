@@ -9,6 +9,7 @@ $check-box-bg: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 $check-box-border-hover: linear-gradient (2deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
 // Light Theme Colors
+$lt-header-text: hsl(0, 0%, 100%); 
 $lt-main-pg-bg: hsl(0, 0%, 98%);
 $lt-main-text-color: hsl(236, 9%, 61%);
 $lt-input-bg: hsl(0, 0%, 98%);
@@ -29,6 +30,7 @@ $lt-header-bg-image-mobile: url('../../images/bg-mobile-light.jpg');
 $lt-header-bg-image-desktop: url('../../images/bg-desktop-light.jpg');
 
 // Dark Theme 
+$dk-header-text: hsl(0, 0%, 100%);
 $dk-main-pg-bg: hsl(235, 21%, 11%);
 $dk-main-text-color: hsl(233, 14%, 35%);
 $dk-input-bg: hsl(235, 24%, 19%);

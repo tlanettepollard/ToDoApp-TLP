@@ -4,7 +4,7 @@ import ThemeSetter from './ThemeSetter';
 const Header = () => {
     
     return (
-        <header className='title-container'>
+        <header className='header-container'>
             <h1 className='title'>Todo</h1>
             <ThemeSetter />
         </header> 

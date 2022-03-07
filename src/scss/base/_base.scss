@@ -1,4 +1,5 @@
 
+
 /* RESETS */
 *,
 *::before,
@@ -71,10 +72,7 @@ body {
     background-position: top center;
     background-size: contain;
 
-    @include themify($themes){
-        background: themed('main-bg');
-        color: themed('page-text');
-    }
+    
 }
 
 
