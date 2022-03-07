@@ -97,7 +97,10 @@ Resource:
 
 ### 03/06/2022
 
-Hi. Today my focus is working on the styling and the theme switcher.
+Hi. Today my focus is working on the styling and the theme switcher. I had a problem after I took a break from coding today. I couldn't get my app to appear in the browser with localhost. I searched for at least an hour and finally, I found the answer in the article below. I had made my tags in my Header component start with an uppercase. I had created an infinite loop by nesting the parent component within the same parent component. Once I changed the tags to lowercase, it worked.
+
+Resources:
+[Having Problems with Your React App Not Loading and Throwing Page Unresponsive Message? Here's the Fix](https://hashnode.com/post/having-problems-with-your-react-app-not-loading-and-throwing-the-page-unresponsive-message-heres-a-fix-ckmli1ims044ro4s14xgobdhc), by Adedotun Adedigba
 
 ---
 
