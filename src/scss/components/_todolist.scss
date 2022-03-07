@@ -1,0 +1,8 @@
+.todo-list-wrapper {
+   @include flex (column, space-between, center);
+   width: 90%; 
+
+   .todo-list {
+       width: 100%;
+   }
+}

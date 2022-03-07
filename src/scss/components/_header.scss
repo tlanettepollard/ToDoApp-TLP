@@ -1,12 +1,14 @@
 @import '../abstracts/themes';
 
 .header-container {
+    width: 90%;
     @include flex (row, space-between, baseline);
     margin-top: 7rem;
     margin-bottom: 5rem;
+    @include desktop{
+        width: 100%;
+    }
     
-    
-
     .title {
         text-transform: uppercase;
         letter-spacing: 1.5rem;
@@ -15,5 +17,13 @@
             color: t('header-text');
         }
         
+    }
+
+    .btn-toggle {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }

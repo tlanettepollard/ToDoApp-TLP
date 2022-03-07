@@ -17,11 +17,13 @@ export default function TodoForm(props) {
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="new-todo-input" className="label visually-hidden">
+      <form onSubmit={handleSubmit}>
+        <div className="input-wrapper">
+            <button aria-label="Add new todo" type='submit' className="input-check visually-hidden">
             Add New Todo
-            </label>
-            <input
+            </button>
+          <input
+              aria-label="Add new todo"
               type="text"
               id="todoInput"
               className="todo-input"
@@ -34,6 +36,7 @@ export default function TodoForm(props) {
             <button type="submit" id='submitNewTodo' className="visually-hidden">
               Add
             </button>
-        </form>
+        </div>
+      </form>
     );
 }

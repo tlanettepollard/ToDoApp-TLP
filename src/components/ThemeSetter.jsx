@@ -11,7 +11,7 @@ export default function ThemeSetter() {
     }
 
     return (
-        <button aria-label='Switch Theme' toggleTheme={toggleTheme} className='btn' onClick={() => toggleTheme()}>
+        <button aria-label='Switch Theme' toggleTheme={toggleTheme} className='btn-toggle' onClick={() => toggleTheme()}>
             {theme === 'light' ? <DarkIcon /> : <LightIcon />}    
         </button>
     );
