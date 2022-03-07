@@ -3,6 +3,8 @@
 *,
 *::before,
 *::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     outline: 1px solid black;
 }
@@ -51,8 +53,6 @@ input[type="text"] {
 
 body {
     width: 100%;
-    //max-width: 68rem;
-    margin: 0 auto;
 }
 
 /* Added Reset */
@@ -82,6 +82,16 @@ body {
         }
     }
     
+}
+
+.main {
+    max-width: 90%;
+    margin: auto;
+    @include flex (column, center, center);
+
+    @include desktop {
+        max-width: 54rem;
+    }
 }
 
 

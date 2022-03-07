@@ -103,7 +103,7 @@ Resources:
 [Having Problems with Your React App Not Loading and Throwing Page Unresponsive Message? Here's the Fix](https://hashnode.com/post/having-problems-with-your-react-app-not-loading-and-throwing-the-page-unresponsive-message-heres-a-fix-ckmli1ims044ro4s14xgobdhc), by Adedotun Adedigba
 
 ### 03/07/2022
-Hi again. Today I stayed home from school due to my allergies. This is giving me a chance to code. 
+Hi again. Today I stayed home from school due to my allergies. This is giving me a chance to code. I did it!!! I got the theme to work and added the background image based on size. 
 
 ---
 
