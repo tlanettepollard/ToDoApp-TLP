@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import Header from './components/Header';
 import TodoList  from './components/TodoList';
 import  TodoForm  from './components/TodoForm';
 import FilterControl from './components/FilterControl';
@@ -7,8 +8,6 @@ import Footer from './components/Footer';
 import ThemeProvider from './components/contexts/ThemeProvider';
 import { nanoid } from 'nanoid';
 import './scss/main.scss';
-import moon from '../src/images/icon-moon.svg';
-import sun from '../src/images/icon-sun.svg';
 
 const FILTER_MAP = {
   All: () => true,
@@ -93,45 +92,22 @@ function App(props) {
   return (
     <ThemeProvider>
       <div className='wrapper'>
-        <div className='container'>
-          <header>
-            <h1>Todo</h1>
-          </header>  
-          <main>
-            <button className='btn theme-toggle-btn'>
-              <img src={moon} alt='icon-moon' />
-              <img src={sun} alt='icon-sun' />
-            </button>
+        <Header />
+        <main>
+          <TodoForm addTask={addTask}/>
+          <section className='todo-list-section'>
           
-            <TodoForm addTask={addTask}/>
-            <section className='todo-list-section'>
+            <ul
+              className="todo-list"
+              aria-labelledby="list-heading"
+            >
+              {taskList}   
+            </ul>
             
-              <ul
-                className="todo-list"
-                aria-labelledby="list-heading"
-              >
-                {taskList}   
-              </ul>
-              
-              <div className='filter-control'>
-                <p id='remaining-text'>{headingText}</p>
-                {filterList}
-                 <div className='control-btn clear-btn'>
-                    <button
-                      type='button'
-                      className='btn'
-                      onClick={clearCompletedTasks}
-                    >
-                      Clear Completed
-                    </button>
-                  </div>
-              </div>
-            </section>
-          
-            {/* For Mobile */}
-            <section className="filters mobile-filter-control">
+            <div className='filter-control'>
+              <p id='remaining-text'>{headingText}</p>
               {filterList}
-              <div className='control-btn clear-btn'>
+                <div className='control-btn clear-btn'>
                   <button
                     type='button'
                     className='btn'
@@ -140,10 +116,24 @@ function App(props) {
                     Clear Completed
                   </button>
                 </div>
-            </section> 
-          </main>
-          <Footer />
-        </div> 
+            </div>
+          </section>
+        
+          {/* For Mobile */}
+          <section className="filters mobile-filter-control">
+            {filterList}
+            <div className='control-btn clear-btn'>
+                <button
+                  type='button'
+                  className='btn'
+                  onClick={clearCompletedTasks}
+                >
+                  Clear Completed
+                </button>
+              </div>
+          </section> 
+        </main>
+        <Footer />
       </div> 
     </ThemeProvider> 
   );

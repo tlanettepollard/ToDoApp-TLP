@@ -95,6 +95,10 @@ Resource:
 
 - [The Best Way to Add Dark Mode to Your React/Sass Project](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616), by Jimmy Lam
 
+### 03/06/2022
+
+Hi. Today my focus is working on the styling and the theme switcher.
+
 ---
 
 Code holder
