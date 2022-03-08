@@ -105,6 +105,9 @@ Resources:
 ### 03/07/2022
 Hi again. Today I stayed home from school due to my allergies. This is giving me a chance to code. I did it!!! I got the theme to work and added the background image based on size. 
 
+### 03/08/2022 
+Hi. Still excited about getting the theme switcher to work. Today I need to redo the filters section. 
+
 ---
 
 Code holder

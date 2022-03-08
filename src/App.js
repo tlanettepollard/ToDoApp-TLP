@@ -97,7 +97,7 @@ function App(props) {
         <main className='main'>
           <Header />
           <TodoForm addTask={addTask}/>
-          <section className='todo-list-wrapper'>
+          <div className='todo-list-wrapper'>
           
             <ul
               className="todo-list"
@@ -106,9 +106,13 @@ function App(props) {
               {taskList}   
             </ul>
             
-            <div className='filter-control-wrapper'>
+            <div className='bottom-navbar'>
               <p id='remaining-text'>{headingText}</p>
-              {filterList}
+
+              {/* Desktop Size only */}
+              <div className='desktop-size'>
+                {filterList}
+              </div>
               <div className='control-btn clear-btn'>
                 <button
                     type='button'
@@ -119,24 +123,12 @@ function App(props) {
                 </button>
               </div>
             </div>
-          </section>
+          </div>
         
-          {/* For Mobile */}
-          <section className="filters mobile-filter-control">
-            <div className='control-btn clear-btn'>
-              <p id='remaining-text'>{headingText}</p>
-              <button
-                type='button'
-                className='btn'
-                onClick={clearCompletedTasks}
-              >
-                Clear Completed
-              </button>
-            </div>
-            <div>
-              {filterList}
-            </div>
-          </section> 
+          {/* Mobile Size Only */}
+          <div className="filters mobile-filter-control">
+             {filterList}
+          </div> 
         </main>
         <Footer />
       </div> 
