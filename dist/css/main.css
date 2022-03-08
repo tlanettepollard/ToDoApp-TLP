@@ -142,6 +142,7 @@ h1 {
 footer {
   line-height: 1.5;
   text-align: center;
+  margin-top: 10rem;
 }
 footer .attribution {
   font-size: 11px;
@@ -197,11 +198,48 @@ form .input-wrapper input {
   height: 2.5rem;
 }
 
-.theme--light .todo-list {
-  background-color: #fafafa;
+.todo-list-wrapper .todo-list .todo .view-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
-.theme--dark .todo-list {
-  background-color: #393a4c;
+.todo-list-wrapper .bottom-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-list-wrapper .bottom-navbar .desktop-size {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 580px) {
+  .todo-list-wrapper .bottom-navbar .desktop-size {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 581px) and (max-width: 1023px) {
+  .todo-list-wrapper .bottom-navbar .desktop-size {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.mobile-size {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .mobile-size {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

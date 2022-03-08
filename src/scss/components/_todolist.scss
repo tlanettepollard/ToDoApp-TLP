@@ -1,5 +1,39 @@
-.todo-list {
-    @include themed() {
-        background-color: t('todo-bg');
+.todo-list-wrapper {
+    .todo-list {
+        .todo {
+            .view-form {
+                @include flex (row, space-between, baseline);
+            }
+        }
+        
+    }
+
+    .bottom-navbar {
+        @include flex (row, space-between, center);
+
+        .desktop-size {
+            @include mobile {
+                display: none;
+                visibility: hidden;
+            }
+
+            @include tablet {
+                display: none;
+                visibility: hidden;
+            }
+
+            @include flex (row, center, center);
+        }
+    }
+
+
+}
+
+.mobile-size {
+    @include flex (row, center, center);
+
+    @include desktop {
+        display: none;
+        visibility: hidden;
     }
 }
