@@ -1,0 +1,5 @@
+.todo-list {
+    @include themed() {
+        background-color: t('todo-bg');
+    }
+}

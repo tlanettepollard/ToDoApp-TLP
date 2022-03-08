@@ -85,12 +85,15 @@ body {
 }
 
 .main {
-    width: 37.5rem;
+    width: 32.7rem;
     margin: auto;
-    @include flex (column, center, center);
+
+    @include tablet {
+        width: 50rem;
+    }
 
     @include desktop {
-        max-width: 54rem;
+        width: 54rem;
     }
 }
 
