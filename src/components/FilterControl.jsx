@@ -5,7 +5,7 @@ export default function FilterControl(props) {
 
     return (
         <div className='filter-control'>
-            <div className='control-btn desktop-filter-control btn-group'>
+            <div className='control-btn btn-group'>
                 <button
                     type='button'
                     className='btn toggle-btn'

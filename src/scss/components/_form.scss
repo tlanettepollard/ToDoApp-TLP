@@ -1,34 +1,20 @@
 form {
-    width: 90%;
-
-    @include desktop {
-        width: 100%;
-    }
     .input-wrapper {
-        width: 100%;
-        @include flex (row, center, center);
-        padding: 2rem;
-        border-radius: .5rem;
-        @include themed() {
-            background-color: t('input-bg');
-        }
+        margin: 2rem 0;
         input {
-            &:focus {
-                @include themed(){
-                    color: t('input-bg');
-                }
-            }
-            &::placeholder {
-                @include themed() {
-                    color: t('input-text');
-                }
-            }
-        }
+            width: 32.7rem;
+            height: 4.8rem;
+            border-radius: 0.5rem;
 
-        input {
-            width: 100%;
-            background-color: transparent;
-            border-color: transparent;
+            @include tablet {
+                width: 50rem;
+                height: 5.6rem;
+            }
+            @include desktop {
+                width: 54rem;
+                height: 6.4rem;
+            }
         }
     }
 }
+    

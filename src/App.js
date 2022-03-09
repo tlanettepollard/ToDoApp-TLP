@@ -110,10 +110,10 @@ function App(props) {
               <p id='remaining-text'>{headingText}</p>
 
               {/* Desktop Size only */}
-              <div className='desktop-size'>
+              <div className='desktop-size filters'>
                 {filterList}
               </div>
-              <div className='control-btn clear-btn'>
+              <div className='clear-btn'>
                 <button
                     type='button'
                     className='btn'
@@ -126,7 +126,7 @@ function App(props) {
           </div>
         
           {/* Mobile Size Only */}
-          <div className="filters mobile-filter-control">
+          <div className="mobile-size filters">
              {filterList}
           </div> 
         </main>
