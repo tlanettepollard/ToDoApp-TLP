@@ -93,7 +93,8 @@ Hey! I'm back. No coding the past few days due to house work. Now I'm ready to f
 
 Resource:
 
-- [The Best Way to Add Dark Mode to Your React/Sass Project](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616), by Jimmy Lam
+- [The Best Way to Add Dark Mode to Your React/Sass Project](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616), by Jimmy Lam 
+- [Coding a CSS Theme Switcher: A Multitude of Ways](https://joshuatz.com/posts/2019/coding-a-css-theme-switcher-a-multitude-of-web-dev-options/#method-b) 
 
 ### 03/06/2022
 
@@ -103,10 +104,16 @@ Resources:
 [Having Problems with Your React App Not Loading and Throwing Page Unresponsive Message? Here's the Fix](https://hashnode.com/post/having-problems-with-your-react-app-not-loading-and-throwing-the-page-unresponsive-message-heres-a-fix-ckmli1ims044ro4s14xgobdhc), by Adedotun Adedigba
 
 ### 03/07/2022
-Hi again. Today I stayed home from school due to my allergies. This is giving me a chance to code. I did it!!! I got the theme to work and added the background image based on size. 
 
-### 03/08/2022 
-Hi. Still excited about getting the theme switcher to work. Today I need to redo the filters section. 
+Hi again. Today I stayed home from school due to my allergies. This is giving me a chance to code. I did it!!! I got the theme to work and added the background image based on size.
+
+### 03/08/2022
+
+Hi. Still excited about getting the theme switcher to work. Today I need to redo the filters section.
+
+### 03/10/2022
+
+Hi! I'm home today due to illness, but I can code. I want to make my color system less complicated in my themes.
 
 ---
 
@@ -260,8 +267,7 @@ mobile
 <span className="visually-hidden"> tasks</span>
 </button>
 
-
-/*@mixin themed() {
+/\*@mixin themed() {
 
     @each $theme,
     $map in $themes {
@@ -278,9 +284,9 @@ mobile
             $theme-map: null !global;
         }
     }
-}
 
+}
 
 @function t($key) {
     @return map-get($theme-map, $key);
-}*/
+}\*/

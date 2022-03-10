@@ -70,7 +70,7 @@ body {
   background-repeat: no-repeat;
 }
 .theme--light .wrapper {
-  background-color: #fafafa;
+  background-color: #e4e5f1;
   background-image: url("../../images/bg-mobile-light.jpg");
 }
 .theme--dark .wrapper {
