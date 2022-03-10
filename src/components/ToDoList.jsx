@@ -61,14 +61,14 @@ export default function ToDoList(props) {
             </div>
             <div className='btn-group'>
                 <button type='button' className='btn' onClick={() => setEditing(true)}>
-                    <img src={editIcon} alt='icon-edit' /> <span className='visually-hidden'>{props.name}</span>
+                    <img src={editIcon} alt='icon-edit' /> <span className='edit-icon visually-hidden'>{props.name}</span>
                 </button>
                 <button
                     type='button'
                     className='btn todo-view'
                     onClick={() => props.deleteTask(props.id)}
                 >
-                    <img src={crossIcon} alt='icon-cross' /> <span className='visually-hidden'>{props.name}</span>
+                    <img src={crossIcon} alt='icon-cross' /> <span className='delete-icon visually-hidden'>{props.name}</span>
                 </button>
             </div>
         </div>
