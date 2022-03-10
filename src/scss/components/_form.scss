@@ -1,10 +1,18 @@
 form {
+    
     .input-wrapper {
         margin: 2rem 0;
+        @include themed() {
+            background-color: t('input-bg');
+        }
         input {
             width: 32.7rem;
             height: 4.8rem;
             border-radius: 0.5rem;
+            border: none;
+            @include themed() {
+                background-color: t('input-bg');
+            }
 
             @include tablet {
                 width: 50rem;

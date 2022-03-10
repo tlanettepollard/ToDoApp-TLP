@@ -70,7 +70,7 @@ body {
   background-repeat: no-repeat;
 }
 .theme--light .wrapper {
-  background-color: #fafafa;
+  background-color: #e4e5f1;
   background-image: url("../../images/bg-mobile-light.jpg");
 }
 .theme--dark .wrapper {
@@ -154,10 +154,23 @@ footer .attribution a {
 form .input-wrapper {
   margin: 2rem 0;
 }
+.theme--light form .input-wrapper {
+  background-color: LT-very-light-gray;
+}
+.theme--dark form .input-wrapper {
+  background-color: #25273c;
+}
 form .input-wrapper input {
   width: 32.7rem;
   height: 4.8rem;
   border-radius: 0.5rem;
+  border: none;
+}
+.theme--light form .input-wrapper input {
+  background-color: LT-very-light-gray;
+}
+.theme--dark form .input-wrapper input {
+  background-color: #25273c;
 }
 @media screen and (min-width: 581px) and (max-width: 1023px) {
   form .input-wrapper input {
@@ -198,6 +211,14 @@ form .input-wrapper input {
   height: 2.5rem;
 }
 
+.theme--light .todo-list-wrapper .todo-list {
+  background-color: #fafafa;
+  color: #484b6a;
+}
+.theme--dark .todo-list-wrapper .todo-list {
+  background-color: #25273c;
+  color: #cacde8;
+}
 .todo-list-wrapper .todo-list .todo .view-form {
   display: flex;
   flex-direction: row;
