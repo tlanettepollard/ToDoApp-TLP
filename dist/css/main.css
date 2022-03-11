@@ -98,6 +98,11 @@ body {
     background-image: url("../../images/bg-desktop-dark.jpg");
   }
 }
+@media screen and (max-width: 479px) {
+  .wrapper {
+    min-height: 150vh;
+  }
+}
 
 .main {
   width: 90%;
@@ -153,6 +158,14 @@ h1 {
   font-size: 0.75em;
   width: 100%;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.theme--light .attribution {
+  color: #9394a5;
+}
+.theme--dark .attribution {
+  color: white;
 }
 .attribution .attribution a {
   color: #3e52a3;

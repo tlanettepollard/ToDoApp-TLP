@@ -5,7 +5,12 @@
     font-size: .750em;
     width: 100%;
     bottom: 0;
-
+    display: flex;
+    justify-content: center;
+    @include themed(){
+        background-color: t('main-pg');
+        color: t('attribution-text');
+    }
         
    
 
