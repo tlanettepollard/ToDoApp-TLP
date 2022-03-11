@@ -1,3 +1,9 @@
+/*@mixin flex ($direction, $justifyContent, $alignItems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+};*/
 /* Theme Settings */
 /* RESETS */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
@@ -62,7 +68,7 @@ body {
 
 /* Global Styles */
 .wrapper {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -87,8 +93,10 @@ body {
 }
 
 .main {
-  width: 32.7rem;
+  width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 581px) and (max-width: 1023px) {
   .main {
@@ -97,7 +105,7 @@ body {
 }
 @media screen and (min-width: 769px) {
   .main {
-    width: 54rem;
+    max-width: 54rem;
   }
 }
 
@@ -109,15 +117,6 @@ body {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
 }
 
 /* End Global Styles */
@@ -145,14 +144,17 @@ footer {
   margin-top: 10rem;
 }
 footer .attribution {
-  font-size: 11px;
+  position: fixed;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2em;
 }
 footer .attribution a {
   color: #3e52a3;
 }
 
 form .input-wrapper {
-  margin: 2rem 0;
+  margin: auto;
 }
 .theme--light form .input-wrapper {
   background-color: LT-very-light-gray;
@@ -160,43 +162,26 @@ form .input-wrapper {
 .theme--dark form .input-wrapper {
   background-color: #25273c;
 }
-form .input-wrapper input {
-  width: 32.7rem;
-  height: 4.8rem;
-  border-radius: 0.5rem;
-  border: none;
-}
 .theme--light form .input-wrapper input {
   background-color: LT-very-light-gray;
 }
 .theme--dark form .input-wrapper input {
   background-color: #25273c;
 }
-@media screen and (min-width: 581px) and (max-width: 1023px) {
-  form .input-wrapper input {
-    width: 50rem;
-    height: 5.6rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  form .input-wrapper input {
-    width: 54rem;
-    height: 6.4rem;
-  }
-}
-
 /* Theme Settings */
 .header-container {
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
 .header-container .title {
   text-transform: uppercase;
   letter-spacing: 1.5rem;
-  font-size: 2.222em;
+  font-size: 40px;
+  font-weight: 700;
 }
 .theme--light .header-container .title {
   color: white;
@@ -211,6 +196,10 @@ form .input-wrapper input {
   height: 2.5rem;
 }
 
+.todo-list-wrapper {
+  width: 90%;
+  height: 37rem;
+}
 .theme--light .todo-list-wrapper .todo-list {
   background-color: #fafafa;
   color: #484b6a;
@@ -218,24 +207,6 @@ form .input-wrapper input {
 .theme--dark .todo-list-wrapper .todo-list {
   background-color: #25273c;
   color: #cacde8;
-}
-.todo-list-wrapper .todo-list .todo .view-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.todo-list-wrapper .bottom-navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.todo-list-wrapper .bottom-navbar .desktop-size {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 @media screen and (max-width: 580px) {
   .todo-list-wrapper .bottom-navbar .desktop-size {
@@ -250,12 +221,6 @@ form .input-wrapper input {
   }
 }
 
-.mobile-size {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 @media screen and (min-width: 769px) {
   .mobile-size {
     display: none;

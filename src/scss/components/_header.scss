@@ -2,12 +2,18 @@
 
 .header-container {
     width: 100%;
-    @include flex (row, space-between, baseline);
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
 
     .title {
         text-transform: uppercase;
         letter-spacing: 1.5rem;
-        font-size: 2.222em;
+        font-size: 40px;
+        font-weight: $weight-bold; 
         @include themed() {
             color: t('header-text');
         }
