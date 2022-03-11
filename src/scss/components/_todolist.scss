@@ -1,4 +1,9 @@
 .todo-list-wrapper {
+    
+    width: 90%;
+    height: 37rem;
+   
+
     .todo-list {
         @include themed() {
             background-color: t('todolist-bg');
@@ -6,14 +11,14 @@
         }
         .todo {
             .view-form {
-                @include flex (row, space-between, baseline);
+                
             }
         }
         
     }
 
     .bottom-navbar {
-        @include flex (row, space-between, center);
+        
 
         .desktop-size {
             @include mobile {
@@ -26,7 +31,7 @@
                 visibility: hidden;
             }
 
-            @include flex (row, center, center);
+           
         }
     }
 
@@ -34,7 +39,7 @@
 }
 
 .mobile-size {
-    @include flex (row, center, center);
+   
 
     @include desktop {
         display: none;
