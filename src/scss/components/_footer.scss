@@ -1,16 +1,13 @@
-footer {
-    line-height: 1.5;
-    text-align: center;
-    margin-top: 10rem;
+.attribution {
+    position: fixed;
+    padding: 1rem;
+    text-align: center;  
+    font-size: .750em;
+    width: 100%;
+    bottom: 0;
+
+        
    
-
-    .attribution {
-        position: fixed;
-        padding: 1rem;
-        text-align: center;
-
-        font-size: 1.200em;
-    }
 
     .attribution a {
         color: hsl(228, 45%, 44%);

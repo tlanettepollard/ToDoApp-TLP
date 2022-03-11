@@ -12,7 +12,7 @@
     .title {
         text-transform: uppercase;
         letter-spacing: 1.5rem;
-        font-size: 40px;
+        font-size: 2.222em;
         font-weight: $weight-bold; 
         @include themed() {
             color: t('header-text');
