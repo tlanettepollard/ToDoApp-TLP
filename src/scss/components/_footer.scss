@@ -1,17 +1,20 @@
 .attribution {
-    position: fixed;
+    margin-top: 5rem;
     padding: 1rem;
     text-align: center;  
     font-size: .750em;
     width: 100%;
     bottom: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     @include themed(){
         background-color: t('main-pg');
         color: t('attribution-text');
     }
-        
+    @media screen and (max-width: 479px) {
+        margin-top: 30rem;
+    }
    
 
     .attribution a {
