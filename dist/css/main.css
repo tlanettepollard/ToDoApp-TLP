@@ -150,7 +150,7 @@ h1 {
 }
 
 .attribution {
-  margin-top: 5rem;
+  margin-top: 25rem;
   padding: 1rem;
   text-align: center;
   font-size: 0.75em;
@@ -168,7 +168,17 @@ h1 {
 }
 @media screen and (max-width: 479px) {
   .attribution {
-    margin-top: 30rem;
+    margin-top: 50rem;
+  }
+}
+@media screen and (min-width: 581px) and (max-width: 1023px) {
+  .attribution {
+    margin-top: 10rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .attribution {
+    margin-top: 10rem;
   }
 }
 .attribution .attribution a {
@@ -279,7 +289,7 @@ form .input-check {
   max-width: 54rem;
   margin-top: 2.5rem;
   border-radius: 0.5rem;
-  min-height: 30rem;
+  min-height: 50rem;
 }
 .theme--light .todo-list-wrapper {
   background: #fafafa;
@@ -289,13 +299,26 @@ form .input-check {
   background: #25273c;
   box-shadow: 0px 35px 50px black;
 }
-.theme--light .todo-list-wrapper .todo-list {
-  background-color: #fafafa;
-  color: #484b6a;
+.todo-list-wrapper .todo-list .todo-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.125em;
+  letter-spacing: -0.025rem;
 }
-.theme--dark .todo-list-wrapper .todo-list {
-  background-color: #25273c;
-  color: #cacde8;
+.todo-list-wrapper .todo-list .todo-item .view-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.todo-list-wrapper .bottom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
 @media screen and (max-width: 580px) {
   .todo-list-wrapper .bottom-navbar .desktop-size {
@@ -310,6 +333,11 @@ form .input-check {
   }
 }
 
+.mobile-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (min-width: 769px) {
   .mobile-size {
     display: none;
