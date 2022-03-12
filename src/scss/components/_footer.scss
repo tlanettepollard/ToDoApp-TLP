@@ -1,5 +1,5 @@
 .attribution {
-    margin-top: 5rem;
+    margin-top: 25rem;
     padding: 1rem;
     text-align: center;  
     font-size: .750em;
@@ -13,7 +13,13 @@
         color: t('attribution-text');
     }
     @media screen and (max-width: 479px) {
-        margin-top: 30rem;
+        margin-top: 50rem;
+    }
+    @include tablet {
+        margin-top: 10rem;
+    }
+    @include desktop {
+        margin-top: 10rem;
     }
    
 

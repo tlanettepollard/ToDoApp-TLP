@@ -5,28 +5,37 @@
     max-width: 54rem;
     margin-top: 2.5rem;
     border-radius: .5rem;
-    min-height: 30rem;
+    min-height: 50rem;
     @include themed() {
         background: t('todolist-bg');
         box-shadow: t('shadow');
     }
    
-
     .todo-list {
-        @include themed() {
-            background-color: t('todolist-bg');
-            color: t('todolist-text');
-        }
-        .todo {
+        .todo-item {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            font-size: 1.125em;
+            letter-spacing: -0.025rem;
+
             .view-form {
-                
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
             }
         }
-        
     }
+    
 
     .bottom-navbar {
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
 
         .desktop-size {
             @include mobile {
@@ -47,7 +56,9 @@
 }
 
 .mobile-size {
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
     @include desktop {
         display: none;
