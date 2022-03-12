@@ -309,10 +309,27 @@ form .input-check {
   font-size: 1.125em;
   letter-spacing: -0.025rem;
 }
+.theme--light .todo-list-wrapper .todo-list .todo-item {
+  color: #484b6a;
+  border-bottom: 1px solid #e4e5f1;
+}
+.theme--dark .todo-list-wrapper .todo-list .todo-item {
+  color: #cacde8;
+  border-bottom: 1px solid #393a4c;
+}
 .todo-list-wrapper .todo-list .todo-item .view-form {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.todo-list-wrapper .todo-list .todo-item input:checked + label {
+  text-decoration: line-through;
+}
+.theme--light .todo-list-wrapper .todo-list .todo-item input:checked + label {
+  color: #d2d3db;
+}
+.theme--dark .todo-list-wrapper .todo-list .todo-item input:checked + label {
+  color: #393a4c;
 }
 .todo-list-wrapper .bottom-navbar {
   display: flex;

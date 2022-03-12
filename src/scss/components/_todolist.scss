@@ -21,11 +21,22 @@
             padding: 2rem;
             font-size: 1.125em;
             letter-spacing: -0.025rem;
-
+            @include themed() {
+                color: t('todolist-text');
+                border-bottom: t('border-color');
+            }
+            
             .view-form {
                 width: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-between;   
+            }
+
+            input:checked + label{
+                @include themed() {
+                    color: t('task-done-text');
+                }
+                text-decoration: line-through;
             }
         }
     }

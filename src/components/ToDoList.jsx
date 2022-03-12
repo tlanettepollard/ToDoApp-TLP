@@ -76,7 +76,7 @@ export default function ToDoList(props) {
 
 
     return (
-        <li className="todo-item pointer">
+        <li className='todo-item pointer'>
             {isEditing ? editingTemplate : viewTemplate}
         </li>
     );
