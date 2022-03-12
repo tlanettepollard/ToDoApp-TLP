@@ -19,8 +19,7 @@ export default function TodoForm(props) {
     return (
       <form onSubmit={handleSubmit}>
         <div className="input-wrapper">
-            <button aria-label="Add new todo" type='submit' className="input-check visually-hidden">
-            Add New Todo
+            <button aria-label="Add new todo" type='submit' className="input-check">
             </button>
           <input
               aria-label="Add new todo"
