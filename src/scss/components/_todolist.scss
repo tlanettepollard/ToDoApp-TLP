@@ -29,6 +29,7 @@
             .view-form {
                 width: 100%;
                 display: flex;
+                align-items: center;
                 justify-content: space-between;   
             }
 
@@ -38,6 +39,14 @@
                 }
                 text-decoration: line-through;
             }
+
+            &:first-of-type {
+                border-top-left-radius: .5rem;
+                border-top-right-radius: .5rem;
+            }
+
+            
+
         }
     }
     

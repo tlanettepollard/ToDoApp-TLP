@@ -49,15 +49,18 @@ export default function ToDoList(props) {
     const viewTemplate = (
         <div className='view-form'>
             <div className='todo-view'>
-                <input
-                    id={props.id}
-                    type='checkbox'
-                    defaultChecked={props.completed}
-                    onChange={() => props.toggleTaskCompleted(props.id)}
-                />
-                <label className='todo-label' htmlFor='{props.id'>
+                <div className='item-check-wrapper'>
+                    <input
+                        id={props.id}
+                        className='item-check'
+                        type='checkbox'
+                        defaultChecked={props.completed}
+                        onChange={() => props.toggleTaskCompleted(props.id)}
+                    />
+                    <label className='todo-label' htmlFor='{props.id'>
                     {props.name}
-                </label>
+                    </label>
+                </div>  
             </div>
             <div className='btn-group'>
                 <button type='button' className='btn' onClick={() => setEditing(true)}>
@@ -65,7 +68,7 @@ export default function ToDoList(props) {
                 </button>
                 <button
                     type='button'
-                    className='btn todo-view'
+                    className='btn todo-view-btn'
                     onClick={() => props.deleteTask(props.id)}
                 >
                     <img src={crossIcon} alt='icon-cross' /> <span className='delete-icon visually-hidden'>{props.name}</span>
