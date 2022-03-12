@@ -1,7 +1,15 @@
 .todo-list-wrapper {
-    
-    width: 90%;
-    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 54rem;
+    margin-top: 2.5rem;
+    border-radius: .5rem;
+    min-height: 30rem;
+    @include themed() {
+        background: t('todolist-bg');
+        box-shadow: t('shadow');
+    }
    
 
     .todo-list {
