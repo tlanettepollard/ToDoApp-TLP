@@ -152,13 +152,14 @@ h1 {
 }
 
 .attribution {
-  position: fixed;
+  margin-top: 5rem;
   padding: 1rem;
   text-align: center;
   font-size: 0.75em;
   width: 100%;
   bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .theme--light .attribution {
@@ -166,6 +167,11 @@ h1 {
 }
 .theme--dark .attribution {
   color: white;
+}
+@media screen and (max-width: 479px) {
+  .attribution {
+    margin-top: 30rem;
+  }
 }
 .attribution .attribution a {
   color: #3e52a3;
