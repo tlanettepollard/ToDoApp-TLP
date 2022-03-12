@@ -93,8 +93,8 @@ Hey! I'm back. No coding the past few days due to house work. Now I'm ready to f
 
 Resource:
 
-- [The Best Way to Add Dark Mode to Your React/Sass Project](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616), by Jimmy Lam 
-- [Coding a CSS Theme Switcher: A Multitude of Ways](https://joshuatz.com/posts/2019/coding-a-css-theme-switcher-a-multitude-of-web-dev-options/#method-b) 
+- [The Best Way to Add Dark Mode to Your React/Sass Project](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616), by Jimmy Lam
+- [Coding a CSS Theme Switcher: A Multitude of Ways](https://joshuatz.com/posts/2019/coding-a-css-theme-switcher-a-multitude-of-web-dev-options/#method-b)
 
 ### 03/06/2022
 
@@ -114,6 +114,13 @@ Hi. Still excited about getting the theme switcher to work. Today I need to redo
 ### 03/10/2022
 
 Hi! I'm home today due to illness, but I can code. I want to make my color system less complicated in my themes.
+
+### 03/12/2022
+
+Happy Saturday! It's cold, windy, and dreary. Focusing on the styling today. Today I learned how to style a checked list item.
+
+Resources:
+[MDN Web Docs- :checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
 
 ---
 
