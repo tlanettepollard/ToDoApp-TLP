@@ -117,10 +117,13 @@ Hi! I'm home today due to illness, but I can code. I want to make my color syste
 
 ### 03/12/2022
 
-Happy Saturday! It's cold, windy, and dreary. Focusing on the styling today. Today I learned how to style a checked list item.
+Happy Saturday! It's cold, windy, and dreary. Focusing on the styling today. Today I learned how to style a checked list item. I got stuck on styling the checkboxes.
 
 Resources:
-[MDN Web Docs- :checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
+
+- [MDN Web Docs- :checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
+- [Style Checkboxes and Radio Buttons](https://www.cssportal.com/blog/style-checkboxes-radio-buttons/)
+- [How to Style a Checkbox with CSS](https://www.w3docs.com/snippets/css/how-to-style-a-checkbox-with-css.html)
 
 ---
 

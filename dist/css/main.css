@@ -303,10 +303,10 @@ form .input-check {
   position: relative;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   padding: 2rem;
-  font-size: 1.125em;
+  font-size: 1.2em;
   letter-spacing: -0.025rem;
 }
 .theme--light .todo-list-wrapper .todo-list .todo-item {
@@ -335,6 +335,10 @@ form .input-check {
 .todo-list-wrapper .todo-list .todo-item:first-of-type {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+.todo-list-wrapper .todo-list .todo-item .item-wrapper {
+  display: flex;
+  position: relative;
 }
 .todo-list-wrapper .bottom-navbar {
   display: flex;
