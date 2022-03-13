@@ -16,10 +16,10 @@
             position: relative;
             width: 100%;
             display: flex;
-            align-items: center;
+            align-items: baseline;
             justify-content: space-between;
             padding: 2rem;
-            font-size: 1.125em;
+            font-size: 1.2em;
             letter-spacing: -0.025rem;
             @include themed() {
                 color: t('todolist-text');
@@ -33,7 +33,7 @@
                 justify-content: space-between;   
             }
 
-            input:checked + label{
+            input:checked + label {
                 @include themed() {
                     color: t('task-done-text');
                 }
@@ -44,9 +44,12 @@
                 border-top-left-radius: .5rem;
                 border-top-right-radius: .5rem;
             }
-
-            
-
+            .item-wrapper {
+                display: flex;
+                position: relative;
+              
+            }  
+             
         }
     }
     
