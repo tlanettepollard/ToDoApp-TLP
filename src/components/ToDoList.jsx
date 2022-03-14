@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import crossIcon from '../images/icon-cross.svg';
 import editIcon from '../images/icons8-edit.svg';
-import checkIcon from '../images/icon-check.svg';
 
 
 export default function ToDoList(props) {
@@ -58,12 +57,11 @@ export default function ToDoList(props) {
                         defaultChecked={props.completed}
                         onChange={() => props.toggleTaskCompleted(props.id)}
                     />
-                
-                    <label className='item-check' for='{props.id}'>
+                    <label className='item pointer' htmlFor={props.id}>
                         {props.name}
                     </label>
-                    
-                </div>
+                </div>      
+                
             </div>
             <div className='btn-group'>
                 <button type='button' className='btn' onClick={() => setEditing(true)}>

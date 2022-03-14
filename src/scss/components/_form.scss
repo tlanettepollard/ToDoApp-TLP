@@ -48,7 +48,7 @@ form {
         margin-right: 1rem;
         background: transparent;
         @include themed() {
-            border: t('border-color');
+            border: t('border');
         }
     }
 

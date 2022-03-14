@@ -125,6 +125,8 @@ Resources:
 - [Style Checkboxes and Radio Buttons](https://www.cssportal.com/blog/style-checkboxes-radio-buttons/)
 - [How to Style a Checkbox with CSS](https://www.w3docs.com/snippets/css/how-to-style-a-checkbox-with-css.html)
 
+### 03/14/2022
+Hi. Yesterday I was stuck on report card comments. Today I will focus on the checkbox. 
 ---
 
 Code holder

@@ -19,7 +19,7 @@
             align-items: baseline;
             justify-content: space-between;
             padding: 2rem;
-            font-size: 1.2em;
+            font-size: 1.1em;
             letter-spacing: -0.025rem;
             @include themed() {
                 color: t('todolist-text');
@@ -46,9 +46,34 @@
             }
             .item-wrapper {
                 display: flex;
-                position: relative;
+                position: relative; 
               
-            }  
+            } 
+            
+            // Checkbox style
+
+            input[type='checkbox'] {
+                appearance: none;
+                position: relative;
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 100%;
+                margin-right: 1rem;
+                @include themed(){
+                    border: t('border');
+                }
+            }
+            input[type='checkbox']:checked {
+                border-radius: 100%;
+                background: url('../../images/icon-check.svg'),
+                linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            
+
+            
+            
              
         }
     }
