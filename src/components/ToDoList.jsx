@@ -57,7 +57,7 @@ export default function ToDoList(props) {
                         defaultChecked={props.completed}
                         onChange={() => props.toggleTaskCompleted(props.id)}
                     />
-                    <label className='item pointer' htmlFor={props.id}>
+                    <label className='pointer' htmlFor={props.id}>
                         {props.name}
                     </label>
                 </div>      

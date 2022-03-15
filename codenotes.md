@@ -126,7 +126,12 @@ Resources:
 - [How to Style a Checkbox with CSS](https://www.w3docs.com/snippets/css/how-to-style-a-checkbox-with-css.html)
 
 ### 03/14/2022
-Hi. Yesterday I was stuck on report card comments. Today I will focus on the checkbox. 
+Hi. Yesterday I was stuck on report card comments. Today I will focus on the checkbox. I learned today that you cannot change the default design of a checkbox on an input. However you can do a workaround to add your own style to the text box. 
+
+Resources: 
+- [MDN: Advanced Form Styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling#Check_boxes_and_radio_buttons)
+
+
 ---
 
 Code holder

@@ -46,8 +46,9 @@
             }
             .item-wrapper {
                 display: flex;
-                position: relative; 
-              
+                position: relative;
+                margin-right: 1rem;
+            
             } 
             
             // Checkbox style
@@ -62,18 +63,25 @@
                 @include themed(){
                     border: t('border');
                 }
+                
             }
+
+            
             input[type='checkbox']:checked {
                 border-radius: 100%;
                 background: url('../../images/icon-check.svg'),
                 linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
                 background-repeat: no-repeat;
                 background-position: center;
+
+                &:focus {
+                    outline: none;
+                }
             }
             
-
-            
-            
+            input[type='checkbox']:hover {
+                border-color: hsl(280, 87%, 65%);
+            }
              
         }
     }
