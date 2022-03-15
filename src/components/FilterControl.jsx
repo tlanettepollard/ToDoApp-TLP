@@ -5,10 +5,10 @@ export default function FilterControl(props) {
 
     return (
         <div className='filter-control'>
-            <div className='control-btn btn-group'>
+            <div className='btn-group'>
                 <button
                     type='button'
-                    className='btn toggle-btn'
+                    className='btn toggle-btn pointer'
                     aria-pressed={props.isPressed}
                     onClick={() => props.setFilter(props.name)}
                 >

@@ -1,0 +1,18 @@
+.filter-control {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    @include themed(){
+        background: t('todolist-bg');
+        box-shadow: t('shadow');
+    }
+
+    .toggle-btn {
+        margin-right: 2rem;
+        background: transparent;
+        font-size: 0.875em;
+        border: none;
+    }
+}

@@ -23,7 +23,7 @@
             letter-spacing: -0.025rem;
             @include themed() {
                 color: t('todolist-text');
-                border-bottom: t('border-color');
+                border-bottom: t('border');
             }
             
             .view-form {
@@ -94,7 +94,7 @@
             }
             .edit-icon:hover,
             .delete-icon:hover{
-                opacity: 1;
+                opacity: 1; 
             }
         }
     }
