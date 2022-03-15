@@ -82,7 +82,20 @@
             input[type='checkbox']:hover {
                 border-color: blue;
             }
-             
+
+            .edit-icon,
+            .delete-icon {
+                transition: opacity 0.5s ease-in-out;
+                background: transparent;
+                border: none;
+                padding: 0 1rem;   
+                opacity: 0;
+               
+            }
+            .edit-icon:hover,
+            .delete-icon:hover{
+                opacity: 1;
+            }
         }
     }
     
