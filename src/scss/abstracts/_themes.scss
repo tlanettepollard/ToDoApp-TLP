@@ -9,7 +9,7 @@ $themes: (
         'todolist-bg': $LT-very-light-gray,
         'todolist-text': $LT-very-dark-grayish-blue,
         'task-done-text': $LT-light-grayish-blue,
-        'border-color': 1px solid
+        'border': 1px solid
         $LT-very-light-grayish-blue,
         'input-bg': $LT-very-light-gray,
         'input-text': $LT-very-dark-grayish-blue, 
@@ -29,7 +29,7 @@ $themes: (
         'todolist-bg': $DT-very-dark-desaturated-blue,
         'todolist-text': $DT-light-grayish-blue,
         'task-done-text': $DT-very-dark-grayish-blue,
-        'border-color': 1px solid $DT-very-dark-grayish-blue,
+        'border': 1px solid $DT-very-dark-grayish-blue,
         'input-bg': $DT-very-dark-desaturated-blue,
         'input-text': $DT-light-grayish-blue,
         'input-placeholder': $DT-dark-grayish-blue,
