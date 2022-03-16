@@ -186,6 +186,18 @@ h1 {
 .filter-control .btn-group .toggle-btn:focus {
   border: none;
 }
+.theme--light .filter-control .btn-group .toggle-btn:focus {
+  color: #3a7bfd;
+}
+.theme--dark .filter-control .btn-group .toggle-btn:focus {
+  color: #3a7bfd;
+}
+.theme--light .filter-control .btn-group .toggle-btn:hover {
+  color: #484b6a;
+}
+.theme--dark .filter-control .btn-group .toggle-btn:hover {
+  color: #cacde8;
+}
 @media screen and (min-width: 1024px) {
   .filter-control .btn-group .toggle-btn {
     font-size: 0.75em;
@@ -446,8 +458,31 @@ form .input-check {
   padding: 2rem;
 }
 .todo-list-wrapper .bottom-navbar .remaining-text {
-  font-size: 0.75em;
+  font-size: 0.875em;
   letter-spacing: -0.19px;
+}
+.theme--light .todo-list-wrapper .bottom-navbar .remaining-text {
+  color: #9394a5;
+}
+.theme--dark .todo-list-wrapper .bottom-navbar .remaining-text {
+  color: #4d5066;
+}
+.todo-list-wrapper .bottom-navbar .clear-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.875em;
+}
+.theme--light .todo-list-wrapper .bottom-navbar .clear-btn {
+  color: #9394a5;
+}
+.theme--dark .todo-list-wrapper .bottom-navbar .clear-btn {
+  color: #4d5066;
+}
+.theme--light .todo-list-wrapper .bottom-navbar .clear-btn:hover {
+  color: #484b6a;
+}
+.theme--dark .todo-list-wrapper .bottom-navbar .clear-btn:hover {
+  color: #cacde8;
 }
 .todo-list-wrapper .bottom-navbar .desktop-size {
   display: flex;

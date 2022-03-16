@@ -24,6 +24,14 @@
             }
             &:focus {
                 border: none;
+                @include themed() {
+                    color: t('active-btn');
+                }
+            }
+            &:hover {
+                @include themed() {
+                    color: t('todolist-text');
+                }
             }
 
             @media screen and (min-width: 1024px) {

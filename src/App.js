@@ -107,16 +107,16 @@ function App(props) {
             </ul>
             
             <div className='bottom-navbar'>
-              <p id='remaining-text'>{headingText}</p>
+              <p id='remaining-text' className='remaining-text'>{headingText}</p>
 
               {/* Desktop Size only */}
               <div className='desktop-size filters'>
                 {filterList}
               </div>
-              <div className='clear-btn'>
+              <div className='clear-btn-wrapper'>
                 <button
                     type='button'
-                    className='btn'
+                    className='clear-btn btn'
                     onClick={clearCompletedTasks}
                   >
                     Clear Completed
