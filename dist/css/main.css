@@ -88,7 +88,7 @@ body {
   background-color: #161722;
   background-image: url("../../images/bg-mobile-dark.jpg");
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .theme--light .wrapper {
     background-image: url("../../images/bg-desktop-light.jpg");
   }
@@ -104,19 +104,26 @@ body {
 
 .main {
   width: 90%;
-  height: 80vh;
+  height: 95vh;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 375px) {
+  .main {
+    height: 100vh;
+  }
+}
 @media screen and (min-width: 581px) and (max-width: 768px) {
   .main {
     width: 50rem;
+    height: 95vh;
   }
 }
 @media screen and (min-width: 769px) {
   .main {
-    max-width: 54rem;
+    max-width: 56rem;
+    height: 100vh;
   }
 }
 
@@ -150,25 +157,39 @@ h1 {
 }
 
 .filter-control {
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
-  padding: 2rem;
 }
-.theme--light .filter-control {
-  background: #fafafa;
-  box-shadow: 0px 35px 50px #c2c3d6;
+@media screen and (min-width: 769px) {
+  .filter-control {
+    padding: 0;
+    margin: 0;
+  }
 }
-.theme--dark .filter-control {
-  background: #25273c;
-  box-shadow: 0px 35px 50px black;
+.filter-control .btn-group {
+  padding: 0.5rem;
 }
-.filter-control .toggle-btn {
-  margin-right: 2rem;
+.filter-control .btn-group .toggle-btn {
   background: transparent;
-  font-size: 0.875em;
   border: none;
+  font-size: 0.875em;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.theme--light .filter-control .btn-group .toggle-btn {
+  color: #9394a5;
+}
+.theme--dark .filter-control .btn-group .toggle-btn {
+  color: #4d5066;
+}
+.filter-control .btn-group .toggle-btn:focus {
+  border: none;
+}
+@media screen and (min-width: 1024px) {
+  .filter-control .btn-group .toggle-btn {
+    font-size: 0.75em;
+  }
 }
 
 .attribution {
@@ -285,6 +306,16 @@ form .input-check {
   justify-content: space-between;
   align-items: baseline;
 }
+@media screen and (min-width: 581px) and (max-width: 1024px) {
+  .header-container {
+    margin-top: 14rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header-container {
+    margin-top: 10rem;
+  }
+}
 .header-container .title {
   text-transform: uppercase;
   letter-spacing: 1.5rem;
@@ -308,10 +339,10 @@ form .input-check {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 54rem;
+  max-width: 56rem;
   margin-top: 2.5rem;
   border-radius: 0.5rem;
-  min-height: 50rem;
+  max-height: 50rem;
 }
 .theme--light .todo-list-wrapper {
   background: #fafafa;
@@ -320,6 +351,11 @@ form .input-check {
 .theme--dark .todo-list-wrapper {
   background: #25273c;
   box-shadow: 0px 35px 50px black;
+}
+@media screen and (max-width: 374px) {
+  .todo-list-wrapper {
+    min-height: 60rem;
+  }
 }
 .todo-list-wrapper .todo-list .todo-item {
   position: relative;
@@ -409,6 +445,15 @@ form .input-check {
   align-items: center;
   padding: 2rem;
 }
+.todo-list-wrapper .bottom-navbar .remaining-text {
+  font-size: 0.75em;
+  letter-spacing: -0.19px;
+}
+.todo-list-wrapper .bottom-navbar .desktop-size {
+  display: flex;
+  padding: 1rem;
+  margin: 0.5rem;
+}
 @media screen and (max-width: 580px) {
   .todo-list-wrapper .bottom-navbar .desktop-size {
     display: none;
@@ -426,6 +471,15 @@ form .input-check {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+}
+.theme--light .mobile-size {
+  background: #fafafa;
+}
+.theme--dark .mobile-size {
+  background: #25273c;
 }
 @media screen and (min-width: 769px) {
   .mobile-size {

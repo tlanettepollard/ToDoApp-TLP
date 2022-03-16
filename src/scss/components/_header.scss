@@ -8,6 +8,14 @@
     justify-content: space-between;
     align-items: baseline;
 
+    @media screen and (min-width: 581px) and (max-width: 1024px){
+        margin-top: 14rem;
+    }
+
+    @media screen and (min-width: 1025px) {
+        margin-top: 10rem;
+    }
+
     .title {
         text-transform: uppercase;
         letter-spacing: 1.5rem;

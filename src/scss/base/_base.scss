@@ -80,10 +80,11 @@ body {
         background-image: t('bg-img-mobile');
     }
 
-    @include desktop {
+    @media screen and (min-width: 1025px) {
         @include themed () {
             background-image: t('bg-img-desktop');
         }
+        
     }
 
     @media screen and (max-width: 479px){
@@ -94,17 +95,24 @@ body {
 
 .main {
     width: 90%;
-    height: 80vh;
+    height: 95vh;
     margin: auto;
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: 375px) {
+        height: 100vh;
+    }
+
     @include tablet {
        width: 50rem;
+       height: 95vh;
     }
 
     @include desktop {
-       max-width: 54rem;
+       max-width: 56rem;
+       height: 100vh;
+       
     }
 }
 
