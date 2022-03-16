@@ -135,7 +135,7 @@ Resources:
 
 ### 03/15/2022
 
-## Hi. I'm going to put off the gradient hover today on the checkbox. I'm going to focus on the other styles.
+Hi. I'm going to put off the gradient hover today on the checkbox. I'm going to focus on the other styles. Today went well. I was able to style the filters and bottom navbar. 
 
 Code holder
 

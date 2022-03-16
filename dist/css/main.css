@@ -111,7 +111,7 @@ body {
 }
 @media screen and (max-width: 375px) {
   .main {
-    height: 95vh;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 581px) and (max-width: 768px) {
