@@ -137,7 +137,9 @@ Resources:
 
 Hi. I'm going to put off the gradient hover today on the checkbox. I'm going to focus on the other styles. Today went well. I was able to style the filters and bottom navbar. I was also able to get my delete and edit icons to appear on hover. 
 
+### 03/16/2022
 
+Hi. Today I'm going to focus on the other styling. 
 
 Code holder
 

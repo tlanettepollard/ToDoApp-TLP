@@ -110,8 +110,25 @@
         
 
         .remaining-text {
-            font-size: 0.75em;
+            font-size: 0.875em;
             letter-spacing: -0.19px;
+            @include themed() {
+                color: t('page-text');
+            }
+        }
+
+        .clear-btn {
+            background: transparent;
+            border: none;
+            font-size: 0.875em;
+            @include themed() {
+                color: t('page-text');
+            }
+            &:hover {
+                @include themed() {
+                    color: t('todolist-text');
+                }
+            }
         }
 
         .desktop-size {
