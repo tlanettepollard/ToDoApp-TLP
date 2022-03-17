@@ -135,11 +135,18 @@ Resources:
 
 ### 03/15/2022
 
-Hi. I'm going to put off the gradient hover today on the checkbox. I'm going to focus on the other styles. Today went well. I was able to style the filters and bottom navbar. I was also able to get my delete and edit icons to appear on hover. 
+Hi. I'm going to put off the gradient hover today on the checkbox. I'm going to focus on the other styles. Today went well. I was able to style the filters and bottom navbar. I was also able to get my delete and edit icons to appear on hover.
 
 ### 03/16/2022
 
-Hi. Today I'm going to focus on the other styling. 
+Hi. Today I'm going to focus on the other styling. I will also try to add the Drag and Drop.
+
+Resources:
+
+- [How to Add Drag and Drop in React with React Beautiful DND](https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/)
+- [Repository for DND](https://github.com/colbyfayock/my-final-space-characters/blob/master/src/App.js)
+
+---
 
 Code holder
 
