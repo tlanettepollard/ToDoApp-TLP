@@ -147,8 +147,8 @@ Resources:
 - [Repository for DND](https://github.com/colbyfayock/my-final-space-characters/blob/master/src/App.js)
 
 ### 03/17/2022
-Happy St. Patrick's Day! Today I'm going to try the Drag and Drop. Wish me luck.
----
+
+## Happy St. Patrick's Day! Today I'm going to try the Drag and Drop. Wish me luck. Well, I didn't have any luck with DND. Will Try tomorrow.
 
 Code holder
 
