@@ -81,12 +81,12 @@ export default function ToDoList(props) {
         </div>
     );
 
-
     return (
-    
         <li className='todo-item pointer'>
             {isEditing ? editingTemplate : viewTemplate}
-        </li>
-            
+        </li>    
     );
+    
+    
+        
 }

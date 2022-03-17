@@ -146,7 +146,9 @@ Resources:
 - [How to Add Drag and Drop in React with React Beautiful DND](https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/)
 - [Repository for DND](https://github.com/colbyfayock/my-final-space-characters/blob/master/src/App.js)
 
----
+### 03/17/2022
+
+## Happy St. Patrick's Day! Today I'm going to try the Drag and Drop. Wish me luck. Well, I didn't have any luck with DND. Will Try tomorrow.
 
 Code holder
 
