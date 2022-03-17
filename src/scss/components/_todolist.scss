@@ -115,6 +115,12 @@
             @include themed() {
                 color: t('page-text');
             }
+
+            &:hover {
+                @include themed() {
+                    color: t('todolist-text');
+                }
+            }
         }
 
         .clear-btn {

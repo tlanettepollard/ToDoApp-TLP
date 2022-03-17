@@ -467,6 +467,12 @@ form .input-check {
 .theme--dark .todo-list-wrapper .bottom-navbar .remaining-text {
   color: #4d5066;
 }
+.theme--light .todo-list-wrapper .bottom-navbar .remaining-text:hover {
+  color: #484b6a;
+}
+.theme--dark .todo-list-wrapper .bottom-navbar .remaining-text:hover {
+  color: #cacde8;
+}
 .todo-list-wrapper .bottom-navbar .clear-btn {
   background: transparent;
   border: none;
