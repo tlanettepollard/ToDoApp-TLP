@@ -4,10 +4,10 @@ import TodoList  from './components/TodoList';
 import  TodoForm  from './components/TodoForm';
 import FilterControl from './components/FilterControl';
 import Footer from './components/Footer';
-//import ThemeSetter from './components/ThemeSetter';
 import ThemeProvider from './components/contexts/ThemeProvider';
 import { nanoid } from 'nanoid';
 import './scss/main.scss';
+//import dataList from './data';
 
 
 const FILTER_MAP = {
@@ -90,6 +90,8 @@ function App(props) {
     setTasks(tasks.filter((task) => !task.completed));
     FILTER_MAP('all');
   };
+
+  
   
   return (
     <ThemeProvider>
@@ -98,14 +100,12 @@ function App(props) {
           <Header />
           <TodoForm addTask={addTask}/>
           <div className='todo-list-wrapper'>
-          
             <ul
               className="todo-list"
               aria-labelledby="list-heading"
             >
               {taskList}   
             </ul>
-            
             <div className='bottom-navbar'>
               <p id='remaining-text' className='remaining-text'>{headingText}</p>
 
