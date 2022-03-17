@@ -5,7 +5,6 @@ import  TodoForm  from './components/TodoForm';
 import FilterControl from './components/FilterControl';
 import Footer from './components/Footer';
 import ThemeProvider from './components/contexts/ThemeProvider';
-//import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import { nanoid } from 'nanoid';
 import './scss/main.scss';
 //import dataList from './data';
