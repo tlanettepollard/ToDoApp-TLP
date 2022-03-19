@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Draggable } from 'react-beautiful-dnd';
 import crossIcon from '../images/icon-cross.svg';
 import editIcon from '../images/icons8-edit.svg';
 
@@ -21,7 +22,6 @@ export default function ToDoList(props) {
         setEditing(false);
     }
 
-    
 
     const editingTemplate = (
         <form className='edit-form' onSubmit={handleSubmit}>
@@ -82,11 +82,18 @@ export default function ToDoList(props) {
     );
 
     return (
-        <li className='todo-item pointer'>
-            {isEditing ? editingTemplate : viewTemplate}
-        </li>    
-    );
-    
-    
-        
+        <Draggable key={props.id} draggableId={props.id.toString()} index={props.id}>
+            {(provided) => (
+                <li
+                    ref={provided.innerRef}
+                    {...provided.draggableProps}
+                    {...provided.dragHandleProps}
+                    className='todo-item pointer'
+                >
+                        {isEditing ? editingTemplate : viewTemplate}
+                </li>
+            )}
+        </Draggable>   
+       
+    )
 }
