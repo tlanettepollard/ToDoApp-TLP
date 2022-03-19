@@ -153,7 +153,7 @@ Happy St. Patrick's Day! Today I'm going to try the Drag and Drop. Wish me luck.
 
 ### 03/19/2022
 
-Happy Saturday! I spent some time on another activity yesterday. I am back to this today. My goal is to add more to my TodoList component for the DND. I tried doing the DND feature with not luck. I think it's because of how my components are structured. 
+Happy Saturday! I spent some time on another activity yesterday. I am back to this today. My goal is to add more to my TodoList component for the DND. I tried doing the DND feature with not luck. I think it's because of how my components are structured. I've tried DND. I still got the error about the Draggable id requiring an integer index prop.
 
 ---
 
