@@ -4,7 +4,7 @@ import TodoList  from './components/TodoList';
 import  TodoForm  from './components/TodoForm';
 import FilterControl from './components/FilterControl';
 import Footer from './components/Footer';
-import ThemeProvider from './components/contexts/ThemeProvider';
+import ThemeProvider from './components/contexts/ThemeProvider'; 
 import { nanoid } from 'nanoid';
 import './scss/main.scss';
 //import dataList from './data';
@@ -18,11 +18,10 @@ const FILTER_MAP = {
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
+
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState('All'); 
-  
-  
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map(task => {
@@ -91,9 +90,9 @@ function App(props) {
     FILTER_MAP('all');
   };
 
+
   
-  
-  return (
+   return (
     <ThemeProvider>
       <div className='wrapper'>
         <main className='main'>

@@ -7,7 +7,8 @@ export default function ToDoList(props) {
     const [isEditing, setEditing] = useState(false);
     const [newName, setNewName] = useState('');
     
-
+   
+    
     // Set new task name
     function handleChange(e) {
         setNewName(e.target.value);
@@ -21,7 +22,6 @@ export default function ToDoList(props) {
         setEditing(false);
     }
 
-    
 
     const editingTemplate = (
         <form className='edit-form' onSubmit={handleSubmit}>
@@ -62,7 +62,7 @@ export default function ToDoList(props) {
                     <label className='pointer' htmlFor={props.id}>
                         {props.name}
                     </label>
-                </div>      
+                </div>
                 
             </div>
             <div className='btn-group'>
@@ -87,6 +87,4 @@ export default function ToDoList(props) {
         </li>    
     );
     
-    
-        
 }

@@ -145,10 +145,21 @@ Resources:
 
 - [How to Add Drag and Drop in React with React Beautiful DND](https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/)
 - [Repository for DND](https://github.com/colbyfayock/my-final-space-characters/blob/master/src/App.js)
+- [Build a To-Do App using React with Drag-and-Drop Functionality](https://betterprogramming.pub/build-a-to-do-app-using-react-with-drag-and-drop-functionality-954080ee9644)
 
 ### 03/17/2022
 
-## Happy St. Patrick's Day! Today I'm going to try the Drag and Drop. Wish me luck. Well, I didn't have any luck with DND. Will Try tomorrow.
+Happy St. Patrick's Day! Today I'm going to try the Drag and Drop. Wish me luck. Well, I didn't have any luck with DND. Will Try tomorrow.
+
+### 03/19/2022
+
+Happy Saturday! I spent some time on another activity yesterday. I am back to this today. My goal is to add more to my TodoList component for the DND. I tried doing the DND feature with not luck. I think it's because of how my components are structured. I've tried DND. I still got the error about the Draggable id requiring an integer index prop.
+
+### 03/25/2022
+
+Hi, I'm back again. I was working on another project. So, the last time I was here, I tried to do Draggable N Droppable. It didn't work for me yet. I may abandon that part of the project and make another todo list with that feature. 4:15pm- I decided to abandon the DND on this project. I will probably do another one with the DND later.
+
+---
 
 Code holder
 
