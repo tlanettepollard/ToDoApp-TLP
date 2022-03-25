@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Draggable } from 'react-beautiful-dnd';
 import crossIcon from '../images/icon-cross.svg';
 import editIcon from '../images/icons8-edit.svg';
 
@@ -8,7 +7,8 @@ export default function ToDoList(props) {
     const [isEditing, setEditing] = useState(false);
     const [newName, setNewName] = useState('');
     
-
+   
+    
     // Set new task name
     function handleChange(e) {
         setNewName(e.target.value);
@@ -62,7 +62,7 @@ export default function ToDoList(props) {
                     <label className='pointer' htmlFor={props.id}>
                         {props.name}
                     </label>
-                </div>      
+                </div>
                 
             </div>
             <div className='btn-group'>
@@ -82,18 +82,9 @@ export default function ToDoList(props) {
     );
 
     return (
-        <Draggable key={props.id} draggableId={props.id.toString()} index={props.id}>
-            {(provided) => (
-                <li
-                    ref={provided.innerRef}
-                    {...provided.draggableProps}
-                    {...provided.dragHandleProps}
-                    className='todo-item pointer'
-                >
-                        {isEditing ? editingTemplate : viewTemplate}
-                </li>
-            )}
-        </Draggable>   
-       
-    )
+        <li className='todo-item pointer'>
+            {isEditing ? editingTemplate : viewTemplate}
+        </li>    
+    );
+    
 }

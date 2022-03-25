@@ -5,7 +5,6 @@ import  TodoForm  from './components/TodoForm';
 import FilterControl from './components/FilterControl';
 import Footer from './components/Footer';
 import ThemeProvider from './components/contexts/ThemeProvider'; 
-import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import { nanoid } from 'nanoid';
 import './scss/main.scss';
 //import dataList from './data';
@@ -19,11 +18,10 @@ const FILTER_MAP = {
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
+
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState('All'); 
-  
-  
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map(task => {
@@ -92,38 +90,21 @@ function App(props) {
     FILTER_MAP('all');
   };
 
-  const handleOnDragEnd = (result) => {
-    let updatedItems = [];
-    if (!result.destination) return;
-    const updatedList = Array.from(tasks)
-    const reorderedItem = updatedList.splice(result.source.index, 1)
-    updatedList.splice(result.destination.index, 0, reorderedItem)
-    updatedItems(updatedList)
-  }
 
-
-  return (
+  
+   return (
     <ThemeProvider>
       <div className='wrapper'>
         <main className='main'>
           <Header />
           <TodoForm addTask={addTask}/>
           <div className='todo-list-wrapper'>
-            <DragDropContext onDragEnd={handleOnDragEnd}>
-              <Droppable droppableId='todo-list'>
-                {(provided) => (
-                <ul
-                  className="todo-list"
-                    aria-labelledby="list-heading"
-                    {...provided.droppableProps}
-                    ref={provided.innerRef}
-                >
-                    {taskList}
-                    {provided.placeholder}
-                  </ul>
-                )}
-              </Droppable>
-            </DragDropContext>
+            <ul
+              className="todo-list"
+              aria-labelledby="list-heading"
+            >
+              {taskList}   
+            </ul>
             <div className='bottom-navbar'>
               <p id='remaining-text' className='remaining-text'>{headingText}</p>
 
