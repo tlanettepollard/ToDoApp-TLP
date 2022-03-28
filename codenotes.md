@@ -159,6 +159,9 @@ Happy Saturday! I spent some time on another activity yesterday. I am back to th
 
 Hi, I'm back again. I was working on another project. So, the last time I was here, I tried to do Draggable N Droppable. It didn't work for me yet. I may abandon that part of the project and make another todo list with that feature. 4:15pm- I decided to abandon the DND on this project. I will probably do another one with the DND later.
 
+### 03/28/2022
+Hi, I'm back. I tried to work on the TodoList with the DnD. Still having issues. So I will complete the project without DND for now. 
+
 ---
 
 Code holder
