@@ -1,6 +1,6 @@
 # Welcome to My ToDo List Code Notes
 
-## 02/12/2022
+### 02/12/2022
 
 Today I am starting on the todo list. The hardest part is how to structure my files. I could go simple and have only five components or I could have each module for each task.
 
@@ -10,7 +10,7 @@ Resources:
 - [Implementing Dark Mode in your React App with SCSS](https://dev.to/cmcwebcode40/simple-react-dark-mode-with-scss-lae)
 - [Creating Add/Remove Effects for list items](https://dev.to/cmcwebcode40/simple-react-dark-mode-with-scss-lae)
 
-## 02/13/2022
+### 02/13/2022
 
 Just found out today that Node Sass has been deprecated. I got an error "Cannot find module sass". Thank you Stack Overflow! I decided to erase my app and start again. 🤞🏾 Now that I've started, I've been following the tutorial on MDN. I used a ul list for my tasks. I have six, but I know I can refactor them to be less.
 
@@ -30,15 +30,11 @@ Resources:
 
 Hi. Started early this morning. Finally figured out why I was having an undefined error for my Sass variables. I also changed the folder back to scss.
 
-#### I learned today about making a unique ToDo task using name and adding props to the ToDoList Component. New-- used localeStorage for getting and holding task data. I was having a hard time figuring out how to import my sample tasks.
-
-#### Learned: useState() creates a piece of state for a component, and its only parameter determines the initial value of that state. It returns two things: the state, and a function that can be used to update the state later.
-
-#### Learned: how to use an object spread syntax to create a new object and toggle checked property before returning it.
-
-#### Learned: using an Array.prototype.filter() to test and exclude a task from the new array if the id prop matches the id parameter passed into the deleteTask();
-
-#### Learned: how React deals with events and handles state, and implemented functionality to add tasks, delete tasks, and toggle tasks as completed.
+- I learned today about making a unique ToDo task using name and adding props to the ToDoList Component. New-- used localeStorage for getting and holding task data. I was having a hard time figuring out how to import my sample tasks.
+- Learned: useState() creates a piece of state for a component, and its only parameter determines the initial value of that state. It returns two things: the state, and a function that can be used to update the state later.
+- Learned: how to use an object spread syntax to create a new object and toggle checked property before returning it.
+- Learned: using an Array.prototype.filter() to test and exclude a task from the new array if the id prop matches the id parameter passed into the deleteTask();
+- Learned: how React deals with events and handles state, and implemented functionality to add tasks, delete tasks, and toggle tasks as completed.
 
 Resources:
 
@@ -60,11 +56,9 @@ Resources:
 - [How to create a dark mode in sass](https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995) by Katie McTigue
 
 ### 02/21/2022
-
-## Hey! Today I'm going to focus on styling the structure before I worry about the theme changing. Ugh! Now my delete button isn't working. It's deleting everything on the page.
+Hey! Today I'm going to focus on styling the structure before I worry about the theme changing. Ugh! Now my delete button isn't working. It's deleting everything on the page.
 
 ### 02/22/2022
-
 I decided to start again today. I was coming too confused about how to continue the app. I'm still going to refer to the MDN article. So I erased all of my files and I am starting from scratch.
 
 Resources:
@@ -87,8 +81,7 @@ Hi, back again. Ready to work on this app. Today I'm going to add the interactiv
 
 Hey! I'm back. No coding the past few days due to house work. Now I'm ready to finish this app. Today I will work on the filter buttons. I left off with adding the editing feature on the user interface. I did a happy dance because I figured out how to get my 'clear completed' button to work. Now I am working on the styling and the themes for the app. I am referring to the article below for how to add dark mode to a React/Sass project.
 
-#### Learn
-
+#### Learned
 - Object Keys method used to return an array of a given object's own enumerable property names iterated in the same order that a normal loop would.
 
 Resource:
@@ -160,180 +153,20 @@ Happy Saturday! I spent some time on another activity yesterday. I am back to th
 Hi, I'm back again. I was working on another project. So, the last time I was here, I tried to do Draggable N Droppable. It didn't work for me yet. I may abandon that part of the project and make another todo list with that feature. 4:15pm- I decided to abandon the DND on this project. I will probably do another one with the DND later.
 
 ### 03/28/2022
-Hi, I'm back. I tried to work on the TodoList with the DnD. Still having issues. So I will complete the project without DND for now. 
+
+Hi, I'm back. I tried to work on the TodoList with the DnD. Still having issues. So I will complete the project without DND for now.
+
+### 01/08/2023
+
+Happy New Year! It has been a long time since I've worked on this project. I did get my React Nanodegree from Udacity. It's time for me to keep my skills current. The last time I worked on this project, my dragged item wouldn't stay in the place where I dragged it to. I tried saving the item order state when dragging the item. It didn't work. I will have to look at it next time.
+
+Resources:
+
+- [How to add Drag and Drop in React with React Beautiful DND](https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/)
+
+### 01/14/2023
+
+Well after searching through the Stack Overflow and GitHub, I was unable to figure out why I kept getting errors about my draggable and droppable ids. I did manage to get my droppable ids fixed. However, I still wasn't able to
 
 ---
 
-Code holder
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-Todo
-
-  <!-- Add dynamic number --> items left
-
-All
-Active
-Completed
-
-Clear Completed
-
-Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-<ul
-               className='todo-list'
-               aria-labelledby='list-heading'
-            >
-                <li className='todo'>
-                    <FontAwesomeIcon
-                        className='input-icon'
-                        icon={faCircle}
-                    />
-                    <input id='todo-0' type='checkbox' defaultChecked={true} />
-                    <label className='todo-label' htmlFor='todo-0'>
-                        Pick up groceries
-                    </label>
-                </li>
-                <li className='todo'>
-                    <FontAwesomeIcon
-                        className='input-icon'
-                        icon={faCircle}
-                    />
-                    <input id='todo-1' type='checkbox' />
-                    <label className='todo-label' htmlFor='todo-1'>
-                        Take Shinxley and Mozeley to the vet
-                    </label>
-                </li>
-                <li className='todo'>
-                    <FontAwesomeIcon
-                        className='input-icon'
-                        icon={faCircle}
-                    />
-                    <input id='todo-2' type='checkbox' />
-                    <label className='todo-label' htmlFor='todo-2'>
-                        Vacuum
-                    </label>
-                </li>
-                <li className='todo'>
-                    <FontAwesomeIcon
-                        className='input-icon'
-                        icon={faCircle}
-                    />
-                    <input id='todo-3' type='checkbox' />
-                    <label className='todo-label' htmlFor='todo-3'>
-                        Wash clothes
-                    </label>
-                </li>
-                <li className='todo'>
-                    <FontAwesomeIcon
-                        className='input-icon'
-                        icon={faCircle}
-                    />
-                    <input id='todo-4' type='checkbox' />
-                    <label className='todo-label' htmlFor='todo-4'>
-                        Make doctor's appointment
-                    </label>
-                </li>
-                <li className='todo'>
-                    <FontAwesomeIcon
-                        className='input-icon'
-                        icon={faCircle}
-                    />
-                    <input id='todo-5' type='checkbox' />
-                    <label className='todo-label' htmlFor='todo-5'>
-                        Make hair appointment with Jenice.
-                    </label>
-                </li>
-            </ul>
-
-<FontAwesomeIcon
-                        className='input-icon'
-                        icon={faCircle}
-                    />
-
-<TodoList name='Eat' completed={true} id='todo-0' />
-              <TodoList name='Sleep' completed={false} id='todo-1'/>
-              <TodoList name='Repeat' completed={false} id='todo-2'/>
-
-              <div className='todos-count'>3 tasks remaining
-                </div>
-                <div className='control-btn desktop-filter-control btn-group'>
-                  All Active completed
-                </div>
-                <div className='control-btn'>
-                  <button className='btn'>
-                    Clear Completed
-                  </button>
-                </div>
-
-
-
-                <div className="c-cb">
-                <input
-                    id={props.id}
-                    type="checkbox"
-                    defaultChecked={props.completed}
-                    onChange={() => props.toggleTaskCompleted(props.id)}
-                />
-                <label className="todo-label" htmlFor={props.id}>
-                    {props.name}
-                </label>
-            </div>
-            <div className="btn-group">
-                <button type="button" className="btn">
-                    <img src={editIcon} alt='icon-edit' /> <span className="visually-hidden">{props.name}</span>
-                </button>
-                <button
-                    type="button"
-                    className="btn btn__danger"
-                    onClick={() => props.deleteTask(props.id)}>
-                    <img src={crossIcon} alt='icon-cross' /> <span className="visually-hidden">{props.name}</span>
-                </button>
-            </div>
-
-mobile
-<button type="button" className="btn toggle-btn" aria-pressed="true">
-<span className="visually-hidden">Show </span>
-<span>all</span>
-<span className="visually-hidden"> tasks</span>
-</button>
-<button type="button" className="btn toggle-btn" aria-pressed="false">
-<span className="visually-hidden">Show </span>
-<span>Active</span>
-<span className="visually-hidden"> tasks</span>
-</button>
-<button type="button" className="btn toggle-btn" aria-pressed="false">
-<span className="visually-hidden">Show </span>
-<span>Completed</span>
-<span className="visually-hidden"> tasks</span>
-</button>
-
-/\*@mixin themed() {
-
-    @each $theme,
-    $map in $themes {
-        .theme-#{$theme} & {
-            $theme-map: () !global;
-
-            @each $key,
-            $submap in $map {
-                $value: map-get(map-get($themes, $theme), '#{$key}');
-                $theme-map: map-merge($theme-map, ($key: $value)) !global;
-            }
-
-            @content;
-            $theme-map: null !global;
-        }
-    }
-
-}
-
-@function t($key) {
-    @return map-get($theme-map, $key);
-}\*/
