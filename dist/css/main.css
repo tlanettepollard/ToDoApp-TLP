@@ -13,7 +13,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid black;
 }
 
 html {
@@ -66,9 +65,7 @@ body {
 }
 .theme--dark body {
   background-color: hsl(235deg, 21%, 11%);
-}
-
-/* Added Reset */
+} /* Added Reset */
 .pointer {
   cursor: pointer;
 }
