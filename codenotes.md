@@ -162,6 +162,14 @@ Hi, I'm back again. I was working on another project. So, the last time I was he
 ### 03/28/2022
 Hi, I'm back. I tried to work on the TodoList with the DnD. Still having issues. So I will complete the project without DND for now. 
 
+### 01/08/2023
+
+Happy New Year! It has been a long time since I've worked on this project. I did get my React Nanodegree from Udacity. It's time for me to keep my skills current. The last time I worked on this project, my dragged item wouldn't stay in the place where I dragged it to. I tried saving the item order state when dragging the item. It didn't work. I will have to look at it next time.
+
+Resources:
+
+- [How to add Drag and Drop in React with React Beautiful DND](https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/)
+
 ---
 
 Code holder
