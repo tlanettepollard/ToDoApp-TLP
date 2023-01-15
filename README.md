@@ -36,7 +36,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile: Nokia](./Screenshots/TodoAppNokiaTLP.jpg)
+![Mobile: Nokia](./screenshot.jpg)
+![Mobile: Nokia](./screenshot.jpg)
 
 I have include six screen shots of three devices:
 
