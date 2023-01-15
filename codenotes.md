@@ -56,9 +56,11 @@ Resources:
 - [How to create a dark mode in sass](https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995) by Katie McTigue
 
 ### 02/21/2022
+
 Hey! Today I'm going to focus on styling the structure before I worry about the theme changing. Ugh! Now my delete button isn't working. It's deleting everything on the page.
 
 ### 02/22/2022
+
 I decided to start again today. I was coming too confused about how to continue the app. I'm still going to refer to the MDN article. So I erased all of my files and I am starting from scratch.
 
 Resources:
@@ -82,6 +84,7 @@ Hi, back again. Ready to work on this app. Today I'm going to add the interactiv
 Hey! I'm back. No coding the past few days due to house work. Now I'm ready to finish this app. Today I will work on the filter buttons. I left off with adding the editing feature on the user interface. I did a happy dance because I figured out how to get my 'clear completed' button to work. Now I am working on the styling and the themes for the app. I am referring to the article below for how to add dark mode to a React/Sass project.
 
 #### Learned
+
 - Object Keys method used to return an array of a given object's own enumerable property names iterated in the same order that a normal loop would.
 
 Resource:
@@ -166,7 +169,6 @@ Resources:
 
 ### 01/14/2023
 
-Well after searching through the Stack Overflow and GitHub, I was unable to figure out why I kept getting errors about my draggable and droppable ids. I did manage to get my droppable ids fixed. However, I still wasn't able to
+Well after searching through the Stack Overflow and GitHub, I was unable to figure out why I kept getting errors about my draggable and droppable ids. I did manage to get my droppable ids fixed. However, I still wasn't able to keep my dropped tasks in place. So I will submit this todo list withought DND. I will redo the DND todo list from scratch. I think that would be a better use of my time to start from the beginning. Once I get it working then I want to make sure I document the fix.
 
 ---
-
