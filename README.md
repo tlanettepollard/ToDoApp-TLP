@@ -37,19 +37,19 @@ Users should be able to:
 
 #### Mobile Page (Light and Dark)
 
-![Mobile: Nokia](./Screenshots/TodoAppNokiaTLP.jpg)
+![Mobile: Nokia](./src/screenshots/TodoAppNokiaTLP.jpg)
 
 ---
 
 #### Tablet Page (Light and Dark)
 
-![Tablet: iPad](./Screenshots/TodoAppiPadTLP.jpg)
+![Tablet: iPad](./src/screenshots/TodoAppiPadTLP.jpg)
 
 ---
 
 #### Desktop Page (Light and Dark)
 
-![Desktop: MacBook Air](./Screenshots/TodoAppMacBookTLP.jpg)
+![Desktop: MacBook Air](./src/screenshots/TodoAppMacBookTLP.jpg)
 
 I have include six screen shots of three devices:
 
