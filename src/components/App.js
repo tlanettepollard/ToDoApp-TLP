@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import TodoList from './components/TodoList';
-import TodoForm from './components/TodoForm';
-import FilterControl from './components/FilterControl';
-import Footer from './components/Footer';
-import ThemeProvider from './components/contexts/ThemeProvider';
+import Header from './Header';
+import TodoList from './TodoList';
+import TodoForm from './TodoForm';
+import FilterControl from './FilterControl';
+import Footer from './Footer';
+import ThemeProvider from './contexts/ThemeProvider';
 import { nanoid } from 'nanoid';
 import './scss/main.scss';
 //import dataList from './data';
