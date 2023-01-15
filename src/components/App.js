@@ -7,7 +7,7 @@ import Footer from './Footer';
 import ThemeProvider from './contexts/ThemeProvider';
 import { nanoid } from 'nanoid';
 import '../scss/main.scss';
-//import dataList from './data';
+
 
 const FILTER_MAP = {
 	All: () => true,
