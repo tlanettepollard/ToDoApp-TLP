@@ -65,18 +65,28 @@ I used the Responsively app while coding. They have a great screen-shot function
 
 ### What I learned
 
-I'm still a novice when it comes to working with React. In fact, I started this project before I worked on my React Nanodegree with Udacity. Many of my notes focus on learning key concepts in more detail:
+I'm still a novice when it comes to working with React. In fact, I started this project before I worked on my React Nanodegree with [Udacity](https://www.udacity.com/). Many of my notes focus on learning and reviewing key concepts I had learned through [Freecodecamp](https://www.freecodecamp.org/). While working on my Todo App, I learned:
 
-- I learned about making a unique ToDo task using name and adding props to the ToDoList Component. New-- used localeStorage for getting and holding task data. I was having a hard time figuring out how to import my sample tasks.
-- Learned: useState() creates a piece of state for a component, and its only parameter determines the initial value of that state. It returns two things: the state, and a function that can be used to update the state later.
-- Learned: how to use an object spread syntax to create a new object and toggle checked property before returning it.
-- Learned: using an Array.prototype.filter() to test and exclude a task from the new array if the id prop matches the id parameter passed into the deleteTask();
-- Learned: how React deals with events and handles state, and implemented functionality to add tasks, delete tasks, and toggle tasks as completed.
+- About making a unique ToDo task using name and adding props to the ToDoList Component. New-- used localeStorage for getting and holding task data. I was having a hard time figuring out how to import my sample tasks.
+- That useState() creates a piece of state for a component, and its only parameter determines the initial value of that state. It returns two things: the state, and a function that can be used to update the state later.
+- How to use an object spread syntax to create a new object and toggle checked property before returning it.
+- About using an Array.prototype.filter() to test and exclude a task from the new array if the id prop matches the id parameter passed into the deleteTask();
+- About how React deals with events and handles state, and implemented functionality to add tasks, delete tasks, and toggle tasks as completed.
+
+The section that I was most proud about was my **ThemeContent.jsx** and **\_themes.scss**. This was my first time building a React app with light and dark theme.
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+```React
+import React from 'react';
+
+export const initialThemeState = {
+    theme: 'light',
+    setTheme: () => null
+};
+
+const ThemeContext = React.createContext(initialThemeState);
+export default ThemeContext;
 ```
 
 ```css
