@@ -110,6 +110,10 @@ My main goal is to continue working with React to strengthen my skills. I was ha
 - [The Best Way to Add Dark Mode to Your React/Sass Project](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616), by Jimmy Lam
 - [Coding a CSS Theme Switcher: A Multitude of Ways](https://joshuatz.com/posts/2019/coding-a-css-theme-switcher-a-multitude-of-web-dev-options/#method-b)
 - [Having Problems with Your React App Not Loading and Throwing Page Unresponsive Message? Here's the Fix](https://hashnode.com/post/having-problems-with-your-react-app-not-loading-and-throwing-the-page-unresponsive-message-heres-a-fix-ckmli1ims044ro4s14xgobdhc), by Adedotun Adedigba
+- [MDN Web Docs- :checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
+- [Style Checkboxes and Radio Buttons](https://www.cssportal.com/blog/style-checkboxes-radio-buttons/)
+- [How to Style a Checkbox with CSS](https://www.w3docs.com/snippets/css/how-to-style-a-checkbox-with-css.html)
+- [MDN: Advanced Form Styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling#Check_boxes_and_radio_buttons)
 
 ## Author
 
@@ -117,9 +121,10 @@ My main goal is to continue working with React to strengthen my skills. I was ha
 - Frontend Mentor - [@tlanettepollard](https://www.frontendmentor.io/profile/tlanettepollard)
 - Twitter - [@TpLanetteNBCT](https://twitter.com/TpLanetteNBCT)
 
-
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I referred to the following web designers' code for guidance on this project:
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [Mileine](https://github.com/mileine/frontendmentor-todo-app-react)-- used as reference for organizing theme and building theme changer.
+- [Kremenovic](https://github.com/kremenovic/react-todo-app)-- resource sites for working with dark theme
+- [Cyishere.dev](https://codesandbox.io/s/iwfy7?file=/src/components/TodoList.js)-- followed his organization for component file structure and app template.
