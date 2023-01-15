@@ -170,5 +170,6 @@ Resources:
 ### 01/14/2023
 
 Well after searching through the Stack Overflow and GitHub, I was unable to figure out why I kept getting errors about my draggable and droppable ids. I did manage to get my droppable ids fixed. However, I still wasn't able to keep my dropped tasks in place. So I will submit this todo list withought DND. I will redo the DND todo list from scratch. I think that would be a better use of my time to start from the beginning. Once I get it working then I want to make sure I document the fix.
+Now I'm trying to deploy to Vercel.
 
 ---
