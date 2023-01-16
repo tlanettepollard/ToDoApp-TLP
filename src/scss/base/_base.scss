@@ -5,7 +5,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	//outline: 1px solid black;
+	outline: 1px solid black;
 }
 
 html {
@@ -54,6 +54,7 @@ input[type='text'] {
 
 body {
 	width: 100%;
+	min-height: 100%;
 
 	@include themed() {
 		background-color: t('main-bg');
