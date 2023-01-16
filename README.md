@@ -16,6 +16,8 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 ## Overview
 
 ### The challenge
@@ -59,8 +61,8 @@ I used the Responsively app while coding. They have a great screen-shot function
 
 ### Links
 
-- Solution URL: [ReactJS To-Do App w/SCSS](https://www.frontendmentor.io/solutions/todo-app-dYH4mKVRbu)
-- Live Site URL: [React Todo App TLP](https://to-do-app-tlp.vercel.app/)
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
