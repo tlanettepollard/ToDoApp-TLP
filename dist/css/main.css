@@ -74,6 +74,8 @@ body {
 .wrapper {
   width: 100vw;
   min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -351,7 +353,6 @@ form .input-check {
   max-width: 56rem;
   margin-top: 2.5rem;
   border-radius: 0.5rem;
-  max-height: 50rem;
 }
 .theme--light .todo-list-wrapper {
   background: hsl(0deg, 0%, 98%);
@@ -366,6 +367,10 @@ form .input-check {
     min-height: 60rem;
   }
 }
+.todo-list-wrapper .todo-list {
+  margin: 0;
+  padding: 0;
+}
 .todo-list-wrapper .todo-list .todo-item {
   position: relative;
   width: 100%;
@@ -375,6 +380,7 @@ form .input-check {
   padding: 2rem;
   font-size: 1.1em;
   letter-spacing: -0.025rem;
+  overflow-x: hidden;
 }
 .theme--light .todo-list-wrapper .todo-list .todo-item {
   color: hsl(235deg, 19%, 35%);
