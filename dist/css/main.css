@@ -120,13 +120,13 @@ body {
     min-height: 100vh;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 581px) and (max-width: 768px) {
   .main {
     width: 50rem;
     min-height: 95vh;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .main {
     max-width: 56rem;
     height: 100vh;
@@ -167,7 +167,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .filter-control {
     padding: 0;
     margin: 0;
@@ -233,12 +233,12 @@ h1 {
     margin-top: 50rem;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 581px) and (max-width: 768px) {
   .attribution {
     margin-top: 10rem;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .attribution {
     margin-top: 10rem;
   }
@@ -317,7 +317,10 @@ form .input-check {
 }
 
 /* Theme Settings */
-.header-container {
+header {
+  width: 90%;
+}
+header .header-container {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 5rem;
@@ -326,28 +329,28 @@ form .input-check {
   align-items: baseline;
 }
 @media screen and (min-width: 581px) and (max-width: 1024px) {
-  .header-container {
+  header .header-container {
     margin-top: 14rem;
   }
 }
 @media screen and (min-width: 1025px) {
-  .header-container {
+  header .header-container {
     margin-top: 10rem;
   }
 }
-.header-container .title {
+header .header-container .title {
   text-transform: uppercase;
   letter-spacing: 1.5rem;
   font-size: 2.222em;
   font-weight: 700;
 }
-.theme--light .header-container .title {
+.theme--light header .header-container .title {
   color: hsl(0deg, 0%, 100%);
 }
-.theme--dark .header-container .title {
+.theme--dark header .header-container .title {
   color: hsl(0deg, 0%, 100%);
 }
-.header-container .btn-toggle {
+header .header-container .btn-toggle {
   background-color: transparent;
   border: none;
   width: 2.5rem;
@@ -506,13 +509,13 @@ form .input-check {
   padding: 1rem;
   margin: 0.5rem;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 580px) {
   .todo-list-wrapper .bottom-navbar .desktop-size {
     display: none;
     visibility: hidden;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 581px) and (max-width: 768px) {
   .todo-list-wrapper .bottom-navbar .desktop-size {
     display: none;
     visibility: hidden;
@@ -533,7 +536,7 @@ form .input-check {
 .theme--dark .mobile-size {
   background: hsl(235deg, 24%, 19%);
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .mobile-size {
     display: none;
     visibility: hidden;
