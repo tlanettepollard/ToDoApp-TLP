@@ -116,8 +116,8 @@ function App(props) {
 					</div>
 					{/* Mobile Size Only */}
 					<div className='mobile-size filters'>{filterList}</div>
+					<Footer />
 				</main>
-				<Footer />
 			</div>
 		</ThemeProvider>
 	);
