@@ -111,9 +111,9 @@ function App(props) {
 									Clear Completed
 								</button>
 							</div>
-						</div>
+						</div>{' '}
+						{/*Bottom Navbar*/}
 					</div>
-
 					{/* Mobile Size Only */}
 					<div className='mobile-size filters'>{filterList}</div>
 				</main>
