@@ -5,7 +5,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	//outline: 1px solid black;
+	outline: 1px solid black;
 }
 
 html {
@@ -17,7 +17,7 @@ html {
 
 html,
 body {
-	//overflow-x: hidden;
+	//overflow: auto;
 	//position: relative;
 	margin: 0;
 	padding: 0;
@@ -54,6 +54,7 @@ input[type='text'] {
 
 body {
 	width: 100%;
+	min-height: 100%;
 
 	@include themed() {
 		background-color: t('main-bg');
@@ -93,21 +94,21 @@ body {
 
 .main {
 	width: 90%;
-	height: 100vh;
+	min-height: 100vh;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 
 	@media screen and (max-width: 375px) {
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 	@include tablet {
 		width: 50rem;
-		height: 95vh;
+		min-height: 95vh;
 	}
 
-	@include desktop {
+	@include sm-desktop {
 		max-width: 56rem;
 		height: 100vh;
 	}
