@@ -108,7 +108,7 @@ body {
 		min-height: 95vh;
 	}
 
-	@include sm-desktop {
+	@include desktop {
 		max-width: 56rem;
 		height: 100vh;
 	}
