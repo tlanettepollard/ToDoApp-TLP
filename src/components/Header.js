@@ -2,17 +2,19 @@ import React from 'react';
 import ThemeSetter from './ThemeSetter';
 
 const Header = () => {
-    
-    return (
-        <header className='header-container'>
-            <h1 className='title'>Todo</h1>
-            <ThemeSetter />
-        </header> 
-    )
-}
+	return (
+		<header>
+			<div className='header-container'>
+				<div className='title-container'>
+					<h1 className='title'>Todo</h1>
+					<ThemeSetter />
+				</div>
+			</div>
+		</header>
+	);
+};
 
-export default Header
-
+export default Header;
 
 /* import React, { useContext } from 'react';
 import ThemeContext from './contexts/ThemeContext';

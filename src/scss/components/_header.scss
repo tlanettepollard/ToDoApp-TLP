@@ -1,37 +1,67 @@
 @import '../abstracts/themes';
 
-.header-container {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+header {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	left: 0rem;
+	top: 0px;
 
-    @media screen and (min-width: 581px) and (max-width: 1024px){
-        margin-top: 14rem;
-    }
+	.header-container {
+		width: 100%;
+		height: 100%;
 
-    @media screen and (min-width: 1025px) {
-        margin-top: 10rem;
-    }
+		//margin: 3rem 30% 1.5rem 30%;
+		//margin-top: 4.375rem;
+		//margin-bottom: 3.125rem;
+		//display: flex;
+		//justify-content: space-between;
+		//align-items: center;
 
-    .title {
-        text-transform: uppercase;
-        letter-spacing: 1.5rem;
-        font-size: 2.222em;
-        font-weight: $weight-bold; 
-        @include themed() {
-            color: t('header-text');
-        }
-    }
+		/*@media screen and (min-width: 480px) and (max-width: 1024px) {
+			width: 100%;
+			margin-top: 14rem;
+		}
 
-    .btn-toggle {
-        background-color: transparent;
-        border: none;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    
+		@media screen and (min-width: 1025px) {
+			margin-top: 10rem;
+		}*/
 
+		@include tablet {
+			width: 43.75em;
+		}
+
+		.title-container {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 1.625rem;
+			top: 3rem;
+			.title {
+				text-transform: uppercase;
+				letter-spacing: 1.5rem;
+				font-size: 2.222em;
+				font-weight: $weight-bold;
+				@include themed() {
+					color: t('header-text');
+				}
+			}
+
+			.btn-toggle {
+				background-color: transparent;
+				border: none;
+				position: absolute;
+				width: 1.2075rem;
+				height: 1.25rem;
+				left: 31.25rem;
+				top: 3rem;
+				//width: 2.5rem;
+				//height: 2.5rem;
+
+				@include tablet {
+					left: 37.5rem;
+				}
+			}
+		}
+	}
 }

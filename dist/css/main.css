@@ -108,23 +108,23 @@ body {
 
 .main {
   width: 90%;
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 375px) {
   .main {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
-@media screen and (min-width: 581px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .main {
     width: 50rem;
-    height: 95vh;
+    min-height: 95vh;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .main {
     max-width: 56rem;
     height: 100vh;
@@ -165,7 +165,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .filter-control {
     padding: 0;
     margin: 0;
@@ -231,12 +231,12 @@ h1 {
     margin-top: 50rem;
   }
 }
-@media screen and (min-width: 581px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .attribution {
     margin-top: 10rem;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .attribution {
     margin-top: 10rem;
   }
@@ -315,41 +315,62 @@ form .input-check {
 }
 
 /* Theme Settings */
-.header-container {
+header {
+  position: absolute;
   width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  height: 200px;
+  left: 0rem;
+  top: 0px;
 }
-@media screen and (min-width: 581px) and (max-width: 1024px) {
-  .header-container {
-    margin-top: 14rem;
+header .header-container {
+  width: 100%;
+  height: 100%;
+  /*@media screen and (min-width: 480px) and (max-width: 1024px) {
+  	width: 100%;
+  	margin-top: 14rem;
+  }
+
+  @media screen and (min-width: 1025px) {
+  	margin-top: 10rem;
+  }*/
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  header .header-container {
+    width: 43.75em;
   }
 }
-@media screen and (min-width: 1025px) {
-  .header-container {
-    margin-top: 10rem;
-  }
+header .header-container .title-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 1.625rem;
+  top: 3rem;
 }
-.header-container .title {
+header .header-container .title-container .title {
   text-transform: uppercase;
   letter-spacing: 1.5rem;
   font-size: 2.222em;
   font-weight: 700;
 }
-.theme--light .header-container .title {
+.theme--light header .header-container .title-container .title {
   color: hsl(0deg, 0%, 100%);
 }
-.theme--dark .header-container .title {
+.theme--dark header .header-container .title-container .title {
   color: hsl(0deg, 0%, 100%);
 }
-.header-container .btn-toggle {
+header .header-container .title-container .btn-toggle {
   background-color: transparent;
   border: none;
-  width: 2.5rem;
-  height: 2.5rem;
+  position: absolute;
+  width: 1.2075rem;
+  height: 1.25rem;
+  left: 31.25rem;
+  top: 3rem;
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  header .header-container .title-container .btn-toggle {
+    left: 37.5rem;
+  }
 }
 
 .todo-list-wrapper {
@@ -504,13 +525,13 @@ form .input-check {
   padding: 1rem;
   margin: 0.5rem;
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 479px) {
   .todo-list-wrapper .bottom-navbar .desktop-size {
     display: none;
     visibility: hidden;
   }
 }
-@media screen and (min-width: 581px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .todo-list-wrapper .bottom-navbar .desktop-size {
     display: none;
     visibility: hidden;
@@ -531,7 +552,7 @@ form .input-check {
 .theme--dark .mobile-size {
   background: hsl(235deg, 24%, 19%);
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .mobile-size {
     display: none;
     visibility: hidden;
