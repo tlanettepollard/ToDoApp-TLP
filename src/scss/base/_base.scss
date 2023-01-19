@@ -9,10 +9,8 @@
 }
 
 html {
+	box-sizing: border-box;
 	font: 62.5% / 1.15 sans-serif;
-	@include themed() {
-		background-color: t('main-bg');
-	}
 }
 
 html,
@@ -54,7 +52,6 @@ input[type='text'] {
 
 body {
 	width: 100%;
-	min-height: 100%;
 
 	@include themed() {
 		background-color: t('main-bg');
@@ -70,7 +67,6 @@ body {
 /* Global Styles */
 .wrapper {
 	width: 100vw;
-	min-height: 100vh;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 	background-size: 100% auto;
