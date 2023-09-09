@@ -61,8 +61,8 @@ I used the Responsively app while coding. They have a great screen-shot function
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [ReactJS ToDo App with SCSS ]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/todo-app-dYH4mKVRbu))
+- Live Site URL: [ReactJS ToDo App with SCSS]([https://your-live-site-url.com](https://to-do-app-tlp.vercel.app/))
 
 ## My process
 
